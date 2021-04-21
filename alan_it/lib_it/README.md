@@ -54,7 +54,7 @@ The following table contains the list of the original English modules, their Ita
 | [`lock.i`][lock.i]       |                                    |        |
 | [`look.i`][look.i]       |                                    |        |
 | [`meta.i`][meta.i]       |                                    |        |
-| [`nowhere.i`][nowhere.i] |                                    |        |
+| [`nowhere.i`][nowhere.i] | [`limbo.i`][limbo.i]               | WIP    |
 | [`open.i`][open.i]       |                                    |        |
 | [`people.i`][people.i]   |                                    |        |
 | [`push.i`][push.i]       |                                    |        |
@@ -79,6 +79,7 @@ The following table contains the list of the original English modules, their Ita
 <!-- Lib IT modules -->
 
 [Alan-Italian.i]: ./Alan-Italian.i "View source module"
+[limbo.i]: ./limbo.i "View source module"
 
 <!-- Lib EN modules -->
 

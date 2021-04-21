@@ -44,11 +44,13 @@
 ---- Import 'invent.i'.
 
 
--- The limbo location and directions
--- Defines directions as full words, and short directions as synonyms to these.
--- So remember to use the full words in your exits or you will have E 333's
--- (e.g. 'e' defined both as a synonym and another word class)
----- Import 'nowhere.i'.
+-- LIMBO E DIREZIONI
+-- =================
+-- Definisce le varie direzioni e le loro abbreviazioni (sinonimi) e il "libmo",
+-- un luogo fittizio in cui parcheggiare le entità che si vogliono far sparire
+-- di scena.
+
+Import 'limbo.i'. -- 'nowhere.i'
 
 
 -- Verbose and brief mode
