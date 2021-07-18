@@ -26,7 +26,7 @@ Import 'guardare.i'. --> 'look.i'
 ---- Import 'examine.i'. -- + look at, search
 ---- Import 'read.i'.
 ---- Import 'put.i'.     -- + put near,behind,on,under
----- Import 'give.i'.
+Import 'dare.i'. --> 'give.i'
 ---- Import 'talk.i'.    -- + ask, tell, say, shout,
 ---- Import 'attack.i'.  -- + shoot
 ---- Import 'kiss.i'.
