@@ -61,7 +61,7 @@ The following table contains the list of the original English modules, their Ita
 | [`put.i`][put.i]         |                                    |        |
 | [`read.i`][read.i]       | [`leggere.i`][leggere.i]           | 85%    |
 | [`scenery.i`][scenery.i] |                                    |        |
-| [`smell.i`][smell.i]     |                                    |        |
+| [`smell.i`][smell.i]     | [`annusare.i`][annusare.i]         | 85%    |
 | [`std.i`][std.i]         | [`Alan-Italian.i`][Alan-Italian.i] | WIP    |
 | [`take.i`][take.i]       |                                    |        |
 | [`talk.i`][talk.i]       |                                    |        |
@@ -91,6 +91,7 @@ The following table contains the list of the original English modules, their Ita
 [mangiare.i]: ./mangiare.i "View source module"
 [spingere.i]: ./spingere.i "View source module"
 [leggere.i]: ./leggere.i "View source module"
+[annusare.i]: ./annusare.i "View source module"
 
 <!-- Lib EN modules -->
 

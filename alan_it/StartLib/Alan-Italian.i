@@ -32,7 +32,7 @@ Import 'dare.i'. --> 'give.i'
 Import 'baciare.i'. --> 'kiss.i'
 ---- Import 'turn.i'.    -- + switch
 ---- Import 'listen.i'.
----- Import 'smell.i'.
+Import 'annusare.i'. --> 'smell.i'
 ---- Import 'knock.i'.
 Import 'saltare.i'. --> 'jump.i'
 ---- Import 'wear.i'.    -- + remove, undress, put on
