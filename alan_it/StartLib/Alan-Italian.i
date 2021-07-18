@@ -29,7 +29,7 @@ Import 'guardare.i'. --> 'look.i'
 Import 'dare.i'. --> 'give.i'
 ---- Import 'talk.i'.    -- + ask, tell, say, shout,
 ---- Import 'attack.i'.  -- + shoot
----- Import 'kiss.i'.
+Import 'baciare.i'. --> 'kiss.i'
 ---- Import 'turn.i'.    -- + switch
 ---- Import 'listen.i'.
 ---- Import 'smell.i'.

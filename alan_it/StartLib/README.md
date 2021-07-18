@@ -48,7 +48,7 @@ The following table contains the list of the original English modules, their Ita
 | [`hero.i`][hero.i]       | [`eroe.i`][eroe.i]                 | 99%    |
 | [`invent.i`][invent.i]   |                                    |        |
 | [`jump.i`][jump.i]       | [`saltare.i`][saltare.i]           | 99%    |
-| [`kiss.i`][kiss.i]       |                                    |        |
+| [`kiss.i`][kiss.i]       | [`baciare.i`][baciare.i]           | 90%    |
 | [`knock.i`][knock.i]     |                                    |        |
 | [`listen.i`][listen.i]   |                                    |        |
 | [`lock.i`][lock.i]       |                                    |        |
@@ -86,6 +86,7 @@ The following table contains the list of the original English modules, their Ita
 [guardare.i]: ./guardare.i "View source module"
 [persone.i]: ./persone.i "View source module"
 [dare.i]: ./dare.i "View source module"
+[baciare.i]: ./baciare.i "View source module"
 
 <!-- Lib EN modules -->
 
