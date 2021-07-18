@@ -31,7 +31,7 @@ Import 'dare.i'. --> 'give.i'
 ---- Import 'attack.i'.  -- + shoot
 Import 'baciare.i'. --> 'kiss.i'
 ---- Import 'turn.i'.    -- + switch
----- Import 'listen.i'.
+Import 'ascoltare.i'. --> 'listen.i'
 Import 'annusare.i'. --> 'smell.i'
 ---- Import 'knock.i'.
 Import 'saltare.i'. --> 'jump.i'

@@ -50,7 +50,7 @@ The following table contains the list of the original English modules, their Ita
 | [`jump.i`][jump.i]       | [`saltare.i`][saltare.i]           | 99%    |
 | [`kiss.i`][kiss.i]       | [`baciare.i`][baciare.i]           | 90%    |
 | [`knock.i`][knock.i]     |                                    |        |
-| [`listen.i`][listen.i]   |                                    |        |
+| [`listen.i`][listen.i]   | [`ascoltare.i`][ascoltare.i]       | 85%    |
 | [`lock.i`][lock.i]       |                                    |        |
 | [`look.i`][look.i]       | [`guardare.i`][guardare.i]         | 99%    |
 | [`meta.i`][meta.i]       |                                    |        |
@@ -92,6 +92,7 @@ The following table contains the list of the original English modules, their Ita
 [spingere.i]: ./spingere.i "View source module"
 [leggere.i]: ./leggere.i "View source module"
 [annusare.i]: ./annusare.i "View source module"
+[ascoltare.i]: ./ascoltare.i "View source module"
 
 <!-- Lib EN modules -->
 
