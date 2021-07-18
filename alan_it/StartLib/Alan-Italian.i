@@ -8,7 +8,7 @@ Import 'grammatica.i'. -- Modulo creato appositamente per l'italiano.
 -- them do other things use DOES ONLY in your specialised verb body.
 
 -- player character, etc.
----- Import 'hero.i'.
+Import 'eroe.i'. --> 'hero.i'
 ---- Import 'global.i'.
 
 -- People, male/female etc.
@@ -53,7 +53,7 @@ Import 'grammatica.i'. -- Modulo creato appositamente per l'italiano.
 -- un luogo fittizio in cui parcheggiare le entità che si vogliono far sparire
 -- di scena.
 
-Import 'limbo.i'. -- 'nowhere.i'
+Import 'limbo.i'. --> 'nowhere.i'
 
 
 -- Verbose and brief mode
