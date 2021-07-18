@@ -69,7 +69,7 @@ The following table contains the list of the original English modules, their Ita
 | [`touch.i`][touch.i]     |                                    |        |
 | [`turn.i`][turn.i]       |                                    |        |
 | [`wear.i`][wear.i]       |                                    |        |
-
+|                          | [`grammatica.i`][grammatica.i]     | WIP    |
 
 
 <!-----------------------------------------------------------------------------
@@ -79,6 +79,7 @@ The following table contains the list of the original English modules, their Ita
 <!-- Lib IT modules -->
 
 [Alan-Italian.i]: ./Alan-Italian.i "View source module"
+[grammatica.i]: ./grammatica.i "View source module"
 [limbo.i]: ./limbo.i "View source module"
 
 <!-- Lib EN modules -->

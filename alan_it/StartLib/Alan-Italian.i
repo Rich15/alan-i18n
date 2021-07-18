@@ -1,6 +1,9 @@
 -- "Alan-Italian.i" ("lib_en/std.i")
 -- Library version 0.6.2
 
+Import 'grammatica.i'. -- Modulo creato appositamente per l'italiano.
+
+
 -- All verb definitions have a small, simple default body. To make
 -- them do other things use DOES ONLY in your specialised verb body.
 
