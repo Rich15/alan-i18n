@@ -22,7 +22,7 @@ Import 'guardare.i'. --> 'look.i'
 ---- Import 'eat.i'.     -- + drink.
 ---- Import 'throw.i'.
 ---- Import 'push.i'.
----- Import 'touch.i'.
+Import 'toccare.i'. --> 'touch.i'
 ---- Import 'examine.i'. -- + look at, search
 ---- Import 'read.i'.
 ---- Import 'put.i'.     -- + put near,behind,on,under

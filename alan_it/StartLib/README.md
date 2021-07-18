@@ -66,7 +66,7 @@ The following table contains the list of the original English modules, their Ita
 | [`take.i`][take.i]       |                                    |        |
 | [`talk.i`][talk.i]       |                                    |        |
 | [`throw.i`][throw.i]     |                                    |        |
-| [`touch.i`][touch.i]     |                                    |        |
+| [`touch.i`][touch.i]     | [`toccare.i`][toccare.i]           | 90%    |
 | [`turn.i`][turn.i]       |                                    |        |
 | [`wear.i`][wear.i]       |                                    |        |
 |                          | [`grammatica.i`][grammatica.i]     | WIP    |
@@ -87,6 +87,7 @@ The following table contains the list of the original English modules, their Ita
 [persone.i]: ./persone.i "View source module"
 [dare.i]: ./dare.i "View source module"
 [baciare.i]: ./baciare.i "View source module"
+[toccare.i]: ./toccare.i "View source module"
 
 <!-- Lib EN modules -->
 
