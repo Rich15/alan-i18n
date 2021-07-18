@@ -1,29 +1,13 @@
---= Alan StdLib Italian: Modulo Italian
---| Tristano Ajmone <tajmone@gmail.com>
+--| Alan Starter Library Italian | Alan 3.0beta6
 --~-----------------------------------------------------------------------------
---~ "lib_italian.i"
---| v0.22.0-Alpha, 2019-08-22: Alan 3.0beta6 build 2022
+--| "lib_italian.i" Modulo Grammatica
 --|=============================================================================
---| Modulo per il supporto della lingua italiana, utilizzabile indipendentemente
---| dalla Libreria Standard. Non presente nell'originale
---| _ALAN Standard Library_ v2.1 di Anssi Räisänen.
---| Creato da Tristano Ajmone,  (C) 2018, Artistic License 2.1.
+--| Modulo per il supporto della lingua italiana.
+--| Creato da Tristano Ajmone, <tajmone@gmail.com>.
+--| (C) 2021, ALAN IF Development team, Artistic License 2.0.
 --|=============================================================================
 
 
--->intro(100.1)
---~=============================================================================
---~* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
---~ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
---~-----------------------------------------------------------------------------
---|
---| == Introduzione
---|
---~-----------------------------------------------------------------------------
---~* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
---~ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
---~=============================================================================
---|
 --| Questo modulo della libreria è il cuore del supporto della lingua italiana
 --| in Alan. È stato progettato come un modulo a sé stante, indipendente dal
 --| resto della libreria, di modo che possa essere utilizzato anche al di fuori
@@ -35,7 +19,6 @@
 --|
 --| Dato che questo modulo è concepito per essere usato anche al di fuori della
 --| libreria, verrà inclusa una documentazione dettagliata su come utilizzarlo.
---<
 
 
 --==============================================================================
@@ -51,7 +34,6 @@
 --==============================================================================
 
 
--->valori_predefiniti(1100)
 --~============================================================================
 --~\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 --~-----------------------------------------------------------------------------
@@ -66,23 +48,22 @@
 --| = `"la"`, `maschi` = `"i"`, `femmine` = `"le"`), l'onere di specificare un
 --| corretto `articolo` su ogni istanza dell'avventura ricade sull'autore.
 
-ADD TO EVERY ENTITY
+Add to every entity
 
-  IS NOT plurale.
-  IS NOT femminile.
+  Is not plurale.
+  Is not femminile.
 
-  HAS NOT nome_proprio.
+  Has not nome_proprio.
 
-  HAS articolo "il".
+  Has articolo "il".
 
-  HAS vocale "o".
+  Has vocale "o".
 
-  HAS prep_DI "del".
-  HAS prep_A  "al".
-  HAS prep_DA "dal".
-  HAS prep_IN "nel".
-  HAS prep_SU "sul".
---<
+  Has prep_DI "del".
+  Has prep_A  "al".
+  Has prep_DA "dal".
+  Has prep_IN "nel".
+  Has prep_SU "sul".
 
 --=============================================================================
 --\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
@@ -101,96 +82,96 @@ ADD TO EVERY ENTITY
 --==============================================================================
 -- La prima parte dell'inizializzazione è comune a tutti le tipologie.
 
-  INITIALIZE
+  Initialize
 
-    IF THIS IS femminile           --| Questo è necessario per coprire il caso
-      THEN SET THIS:vocale TO "a". --| in cui 'articolo' = "l'", prima che il
-    END IF.                        --| codice seguente venga eseguito!
+    If this is femminile           --| Questo è necessario per coprire il caso
+      Then set this:vocale to "a". --| in cui 'articolo' = "l'", prima che il
+    End if.                        --| codice seguente venga eseguito!
 
-    DEPENDING ON articolo of THIS
-      = "lo" THEN
-        MAKE THIS NOT femminile.
-        MAKE THIS NOT plurale.
-        SET THIS:vocale TO "o".
-        SET THIS:prep_DI TO "dello".
-        SET THIS:prep_A TO  "allo".
-        SET THIS:prep_DA TO "dallo".
-        SET THIS:prep_IN TO "nello".
-        SET THIS:prep_SU TO "sullo".
+    Depending on articolo of this
+      = "lo" then
+        Make this not femminile.
+        Make this not plurale.
+        Set this:vocale to "o".
+        Set this:prep_DI to "dello".
+        Set this:prep_A  to "allo".
+        Set this:prep_DA to "dallo".
+        Set this:prep_IN to "nello".
+        Set this:prep_SU to "sullo".
 
-      = "la" THEN
-        MAKE THIS femminile.
-        MAKE THIS NOT plurale.
-        SET THIS:vocale TO "a".
-        SET THIS:prep_DI TO "della".
-        SET THIS:prep_A TO  "alla".
-        SET THIS:prep_DA TO "dalla".
-        SET THIS:prep_IN TO "nella".
-        SET THIS:prep_SU TO "sulla".
+      = "la" then
+        Make this femminile.
+        Make this not plurale.
+        Set this:vocale to "a".
+        Set this:prep_DI to "della".
+        Set this:prep_A  to "alla".
+        Set this:prep_DA to "dalla".
+        Set this:prep_IN to "nella".
+        Set this:prep_SU to "sulla".
 
-      = "l'" THEN              --| In questo caso non alteriamo il genere poiché
-        MAKE THIS NOT plurale. --| questa forma può essere sia masch. che femm.
+      = "l'" then              --| In questo caso non alteriamo il genere poiché
+        Make this not plurale. --| questa forma può essere sia masch. che femm.
                                --| Sta all'autore specificare il genere nell'istanza.
-        SET THIS:prep_DI TO "dell'$$".
-        SET THIS:prep_A TO  "all'$$".
-        SET THIS:prep_DA TO "dall'$$".
-        SET THIS:prep_IN TO "nell'$$".
-        SET THIS:prep_SU TO "sull'$$".
+        Set this:prep_DI to "dell'$$".
+        Set this:prep_A  to "all'$$".
+        Set this:prep_DA to "dall'$$".
+        Set this:prep_IN to "nell'$$".
+        Set this:prep_SU to "sull'$$".
 
-      = "i" THEN
-        MAKE THIS NOT femminile.
-        MAKE THIS plurale.
-        SET THIS:vocale TO "i".
-        SET THIS:prep_DI TO "dei".
-        SET THIS:prep_A TO  "ai".
-        SET THIS:prep_DA TO "dai".
-        SET THIS:prep_IN TO "nei".
-        SET THIS:prep_SU TO "sui".
+      = "i" then
+        Make this not femminile.
+        Make this plurale.
+        Set this:vocale to "i".
+        Set this:prep_DI to "dei".
+        Set this:prep_A  to "ai".
+        Set this:prep_DA to "dai".
+        Set this:prep_IN to "nei".
+        Set this:prep_SU to "sui".
 
-      = "gli" THEN
-        MAKE THIS NOT femminile.
-        MAKE THIS plurale.
-        SET THIS:vocale TO "i".
-        SET THIS:prep_DI TO "degli".
-        SET THIS:prep_A TO  "agli".
-        SET THIS:prep_DA TO "dagli".
-        SET THIS:prep_IN TO "negli".
-        SET THIS:prep_SU TO "sugli".
+      = "gli" then
+        Make this not femminile.
+        Make this plurale.
+        Set this:vocale to "i".
+        Set this:prep_DI to "degli".
+        Set this:prep_A  to "agli".
+        Set this:prep_DA to "dagli".
+        Set this:prep_IN to "negli".
+        Set this:prep_SU to "sugli".
 
-      = "le" THEN
-        MAKE THIS femminile.
-        MAKE THIS plurale.
-        SET THIS:vocale TO "e".
-        SET THIS:prep_DI TO "delle".
-        SET THIS:prep_A TO  "alle".
-        SET THIS:prep_DA TO "dalle".
-        SET THIS:prep_IN TO "nelle".
-        SET THIS:prep_SU TO "sulle".
+      = "le" then
+        Make this femminile.
+        Make this plurale.
+        Set this:vocale to "e".
+        Set this:prep_DI to "delle".
+        Set this:prep_A  to "alle".
+        Set this:prep_DA to "dalle".
+        Set this:prep_IN to "nelle".
+        Set this:prep_SU to "sulle".
 
-      ELSE -- = "il" (o dovrebbe esserlo)
-        MAKE THIS NOT femminile.
-        MAKE THIS NOT plurale.
-        SET THIS:prep_DI TO "del".
-        SET THIS:prep_A TO  "al".
-        SET THIS:prep_DA TO "dal".
-        SET THIS:prep_IN TO "nel".
-        SET THIS:prep_SU TO "sul".
+      Else -- = "il" (o dovrebbe esserlo)
+        Make this not femminile.
+        Make this not plurale.
+        Set this:prep_DI to "del".
+        Set this:prep_A  to "al".
+        Set this:prep_DA to "dal".
+        Set this:prep_IN to "nel".
+        Set this:prep_SU to "sul".
 
-    END DEPEND.
+    End depend.
 --==============================================================================
 -- Entità con nome proprio
 --==============================================================================
 -- Se l'entità ha un nome proprio, dovremo solo ridefinire le preposizioni da
 -- articolate a semplici, di modo che si possa avere "da Gino" anziché "dal Gino".
 
-    IF THIS HAS nome_proprio
-      THEN
-        SET THIS:prep_DI TO "di".
-        SET THIS:prep_A TO  "a".
-        SET THIS:prep_DA TO "da".
-        SET THIS:prep_IN TO "in".
-        SET THIS:prep_SU TO "su".
-    END IF.
+    If this has nome_proprio
+      Then
+        Set this:prep_DI to "di".
+        Set this:prep_A  to "a".
+        Set this:prep_DA to "da".
+        Set this:prep_IN to "in".
+        Set this:prep_SU to "su".
+    End if.
 
 
 --==============================================================================
@@ -199,46 +180,46 @@ ADD TO EVERY ENTITY
 --------------------------------------------------------------------------------
 --==============================================================================
 
-  INDEFINITE ARTICLE
+  Indefinite Article
 --==============================================================================
 -- Entità con nome proprio
 --==============================================================================
-  IF THIS HAS nome_proprio
-    THEN ""
-    ELSE
+  If this has nome_proprio
+    Then ""
+    Else
 --==============================================================================
 -- Entità senza nome proprio
 --==============================================================================
-      DEPENDING ON articolo of THIS
-        = "il"  THEN   "un"               ---> ms indet.
-        = "lo"  THEN   "uno"              ---> ms indet.
-        = "la"  THEN   "una"              ---> fs indet.
+      Depending on articolo of this
+        = "il"  then   "un"               ---> ms indet.
+        = "lo"  then   "uno"              ---> ms indet.
+        = "la"  then   "una"              ---> fs indet.
 
-        = "l'"  THEN
-          IF THIS IS NOT femminile
-                THEN   "un"               ---> ms indet.
-                ELSE   "un'$$"            ---> fs indet.
-          END IF.
+        = "l'"  then
+          If this is not femminile
+                Then   "un"               ---> ms indet.
+                Else   "un'$$"            ---> fs indet.
+          End if.
 
-        = "i"   THEN   "dei"              ---> mp indet.
-        = "gli" THEN   "degli"            ---> mp indet.
-        = "le"  THEN   "delle"            ---> fp indet.
+        = "i"   then   "dei"              ---> mp indet.
+        = "gli" then   "degli"            ---> mp indet.
+        = "le"  then   "delle"            ---> fp indet.
 
-        ELSE -- se non è definito
-          IF THIS IS NOT femminile
-          THEN
-            IF THIS IS NOT plurale
-                THEN   "un"               ---> ms indet.
-                ELSE   "dei"              ---> mp indet.
-            END IF.
-          ELSE
-            IF THIS IS NOT plurale
-                THEN   "una"              ---> fs indet.
-                ELSE   "delle"            ---> fp indet.
-            END IF.
-          END IF.
-      END DEPEND.
-  END IF.
+        Else -- se non è definito
+          If this is not femminile
+          Then
+            If this is not plurale
+                Then   "un"               ---> ms indet.
+                Else   "dei"              ---> mp indet.
+            End if.
+          Else
+            If this is not plurale
+                Then   "una"              ---> fs indet.
+                Else   "delle"            ---> fp indet.
+            End if.
+          End if.
+      End depend.
+  End if.
 
 --==============================================================================
 --------------------------------------------------------------------------------
@@ -246,48 +227,47 @@ ADD TO EVERY ENTITY
 --------------------------------------------------------------------------------
 --==============================================================================
 
-  DEFINITE ARTICLE
+  Definite Article
 
 --==============================================================================
 -- Entità con nome proprio
 --==============================================================================
-  IF THIS HAS nome_proprio
-    THEN ""
-    ELSE
+  If this has nome_proprio
+    Then ""
+    Else
 --==============================================================================
 -- Entità senza nome proprio
 --==============================================================================
-      DEPENDING ON articolo of THIS
-        = "il"  THEN   "il"               ---> ms  det.
-        = "lo"  THEN   "lo"               ---> ms  det.
-        = "la"  THEN   "la"               ---> fs  det.
+      Depending on articolo of this
+        = "il"  then   "il"               ---> ms  det.
+        = "lo"  then   "lo"               ---> ms  det.
+        = "la"  then   "la"               ---> fs  det.
 
-        = "l'"  THEN   "l'$$"             ---> *s det.  (masc & femm)
+        = "l'"  then   "l'$$"             ---> *s det.  (masc & femm)
 
-        = "i"   THEN   "i"                ---> mp det.
-        = "gli" THEN   "gli"              ---> mp det.
-        = "le"  THEN   "le"               ---> fp det.
+        = "i"   then   "i"                ---> mp det.
+        = "gli" then   "gli"              ---> mp det.
+        = "le"  then   "le"               ---> fp det.
 
-        ELSE -- se non è definito
-          IF THIS IS NOT femminile
-          THEN
-            IF THIS IS NOT plurale
-                THEN   "il"               ---> ms det.
-                ELSE   "i"                ---> mp det.
-            END IF.
-          ELSE
-            IF THIS IS NOT plurale
-                THEN   "la"               ---> fs det.
-                ELSE   "le"               ---> fp det.
-            END IF.
-          END IF.
-      END DEPEND.
-  END IF.
+        Else -- se non è definito
+          If this is not femminile
+          Then
+            If this is not plurale
+                Then   "il"               ---> ms det.
+                Else   "i"                ---> mp det.
+            End if.
+          Else
+            If this is not plurale
+                Then   "la"               ---> fs det.
+                Else   "le"               ---> fp det.
+            End if.
+          End if.
+      End depend.
+  End if.
 
-END ADD TO ENTITY.
+End add to entity.
 
 
--->player_words(2000.1)
 --~============================================================================
 --~\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 --~-----------------------------------------------------------------------------
@@ -317,7 +297,6 @@ END ADD TO ENTITY.
 --| Le _Player Words_ delle varie lingue sono definite nel file sorgente di Alan
 --| `compiler/wrd.c` (riga 182).
 --| ============================================================================
---<
 
 -->=============================================================================
 --~-----------------------------------------------------------------------------
@@ -339,9 +318,8 @@ END ADD TO ENTITY.
 --| * "prendi la mela POI prendi la pera"
 --| * "prendi la mela E POI prendi la pera"
 
-SYNONYMS e, poi = 'and'.
+Synonyms e, poi = 'and'.
 
---<
 
 
 -->=============================================================================
@@ -374,8 +352,7 @@ SYNONYMS e, poi = 'and'.
 --| _noise word_, e `albero` verrà ora riconosciuto come il nome dell'oggetto
 --| corrispondente.
 
-SYNONYMS il, lo, la, 'l''', i, gli, le = 'the'.
---<
+Synonyms il, lo, la, 'l''', i, gli, le = 'the'.
 
 -- @TODO: Dovrei aggiungere anche gli articoli indeterminativi (un, uno, ecc.)  CHECK!
 --        e forme come "delle", "alcune"? P.es. nel gioco potrebbero esserci
@@ -389,7 +366,7 @@ SYNONYMS il, lo, la, 'l''', i, gli, le = 'the'.
 
 -- This is not going to be useful:
 --
---    SYNONYMS vai = 'go'.
+--    Synonyms vai = 'go'.
 --
 -- ... because player would always type "VAI A" (GO TO) followed by the direction;
 -- but defining 'vai a' = 'go' doesn't work as expected, and 'a' must be preserved
@@ -409,8 +386,7 @@ SYNONYMS il, lo, la, 'l''', i, gli, le = 'the'.
 --| ALL: all everything
 --| .............
 
-SYNONYMS tutto, tutti, tutte = all.
---<
+Synonyms tutto, tutti, tutte = all.
 
 -- @NOTE: Dovrei includere anche "ogni"?                                        CHECK!
 
@@ -434,8 +410,7 @@ SYNONYMS tutto, tutti, tutte = all.
 --| * "lascia TUTTO ESCLUSI il mango e la mela"
 --| * "lascia TUTTO ESCLUSE la mela e la pera"
 
-SYNONYMS tranne, eccetto, escluso, esclusa, esclusi, escluse = except.
---<
+Synonyms tranne, eccetto, escluso, esclusa, esclusi, escluse = except.
 
 
 -->=============================================================================
@@ -456,7 +431,6 @@ SYNONYMS tranne, eccetto, escluso, esclusa, esclusi, escluse = except.
 --| Questo tipo di riferimento a oggetti multipli è consentito solo nei comandi
 --| che supportano parametri multipli. L'interprete restringerà il campo dei
 --| parametri idonei all'inclusione nel referente in base alle regole di _scoping_.
---<
 
 
 -->============================================================================
@@ -518,17 +492,17 @@ SYNONYMS tranne, eccetto, escluso, esclusa, esclusi, escluse = except.
 --~=============================================================================
 --| === "`DI`" + Articolo
 --~=============================================================================
-SYNONYMS
+Synonyms
   del, dello, della, 'dell''', dei, degli, delle = di.
 --~=============================================================================
 --| === "`A`" + Articolo
 --~=============================================================================
-SYNONYMS
+Synonyms
   al, allo, alla, 'all''', ai, agli, alle  = a.
 --~=============================================================================
 --| === "`DA`" + Articolo
 --~=============================================================================
-SYNONYMS
+Synonyms
   dal, dallo, dalla, 'dall''', dall, dagli, dalle  = da.
 
 --| [WARNING]
@@ -541,11 +515,9 @@ SYNONYMS
 --| ......................................................
 --| Sto ancora cercando una soluzione ottimale al problema.
 --| ======================================================
---<
 
 -->todo_checklist(.33)
 --| * [ ] Risolvi conflitti con verbo `dai_a` che prevenie `SYNONYMS dai = da.`.
---<
 
 --  dai = da.       -- dai (masc.plur.) --| CAN'T BE USED AS ALTERNATIVE because
 --                                      --| of conflict with 'dai' verb:
@@ -554,14 +526,13 @@ SYNONYMS
 -->=============================================================================
 --| === "`IN`" + Articolo
 --~=============================================================================
-SYNONYMS
+Synonyms
   nel, nello, nella, 'nell''', nei, negli, nelle, dentro = 'in'.
 --~=============================================================================
 --| === "`SU`" + Articolo
 --~=============================================================================
-SYNONYMS
+Synonyms
   sul, sullo, sulla, 'sull''', sui, sugli, sulle, sopra = su.
---<
 
 
 
@@ -618,7 +589,6 @@ SYNONYMS
 --| garantire che siano presenti in ogni possibile istanza assoggettabile a quel
 --| contesto d'esecuzione.
 --| ========================================================================
---<
 
 
 -->valori_predefiniti
@@ -777,60 +747,21 @@ SYNONYMS
 --| =================================
 --| Sezione non ancora disponibile...
 --| =================================
---<
 
--->todo(50000.1)
---~=============================================================================
---~* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
---~ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
---~-----------------------------------------------------------------------------
+--==============================================================================
+--* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+--------------------------------------------------------------------------------
 --|
---| == TODO
+--| TODO
 --|
---~-----------------------------------------------------------------------------
---~* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
---~ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
---~=============================================================================
+--------------------------------------------------------------------------------
+--* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+--==============================================================================
 --|
 --| Questa sezione contiene l'elenco delle cose da fare per completare il modulo
 --| della grammatica italiana.
---<
 
--->todo_checklist(51000.1)
---~=============================================================================
---~-----------------------------------------------------------------------------
---| === Check-list generale
---~-----------------------------------------------------------------------------
---~=============================================================================
---|
---| Lista della spesa per le varie cosucce da fare:
---<
-
--->todo_checklist(.665)
---|
---| === Check-list per Doxter
---|
---| Finisci di trasformare commenti in documentazione Doxter:
---|
---| * [ ] Aggiungi esempi pratici di codice:
---| ** [ ] Definizione `articolo`.
---| ** [ ] Uso attributi preposizioni (es. `SAY mia_AT:prep_IN.`).
---| ** [ ] Istanze attore con nome proprio.
---<
-
--->custom_attributes(100)
---| ////
---| ============================================================================
---| Custom AsciiDoc Attributes for Doxter
---| ============================================================================
---| ////
-
---| // Traduzione italiana degli attributi predefiniti di Asciidoctor:
---| include::attributes-it.adoc[tag=attributes-it]
-
---| // Definisci sostituzione di {X} con il carattere Unicode 'heavy check mark'
---| // (U+2714), usato nelle tabelle dei verbi:
---| :X: &#x2714;
---<
 
 ---< Fine del File >---
