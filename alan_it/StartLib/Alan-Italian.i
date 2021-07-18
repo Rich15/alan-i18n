@@ -24,7 +24,7 @@ Import 'mangiare.i'. -- + bere --> 'eat.i'  -- + drink.
 Import 'spingere.i'. --> 'push.i'
 Import 'toccare.i'. --> 'touch.i'
 ---- Import 'examine.i'. -- + look at, search
----- Import 'read.i'.
+Import 'leggere.i'. --> 'read.i'
 ---- Import 'put.i'.     -- + put near,behind,on,under
 Import 'dare.i'. --> 'give.i'
 ---- Import 'talk.i'.    -- + ask, tell, say, shout,
