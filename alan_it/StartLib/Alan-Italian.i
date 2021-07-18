@@ -15,7 +15,7 @@ Import 'eroe.i'. --> 'hero.i'
 ---- Import 'people.i'.
 
 -- Standard verbs
----- Import 'look.i'.
+Import 'guardare.i'. --> 'look.i'
 ---- Import 'take.i'.    -- + pick up, drop, put down.
 ---- Import 'open.i'.    -- + close.
 ---- Import 'lock.i'.    -- + unlock.

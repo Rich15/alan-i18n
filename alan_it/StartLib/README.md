@@ -52,7 +52,7 @@ The following table contains the list of the original English modules, their Ita
 | [`knock.i`][knock.i]     |                                    |        |
 | [`listen.i`][listen.i]   |                                    |        |
 | [`lock.i`][lock.i]       |                                    |        |
-| [`look.i`][look.i]       |                                    |        |
+| [`look.i`][look.i]       | [`guardare.i`][guardare.i]         | 99%    |
 | [`meta.i`][meta.i]       |                                    |        |
 | [`nowhere.i`][nowhere.i] | [`limbo.i`][limbo.i]               | WIP    |
 | [`open.i`][open.i]       |                                    |        |
@@ -83,6 +83,7 @@ The following table contains the list of the original English modules, their Ita
 [limbo.i]: ./limbo.i "View source module"
 [eroe.i]: ./eroe.i "View source module"
 [saltare.i]: ./saltare.i "View source module"
+[guardare.i]: ./guardare.i "View source module"
 
 <!-- Lib EN modules -->
 
