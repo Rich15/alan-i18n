@@ -57,7 +57,7 @@ The following table contains the list of the original English modules, their Ita
 | [`nowhere.i`][nowhere.i] | [`limbo.i`][limbo.i]               | WIP    |
 | [`open.i`][open.i]       |                                    |        |
 | [`people.i`][people.i]   | [`persone.i`][persone.i]           | 90%    |
-| [`push.i`][push.i]       |                                    |        |
+| [`push.i`][push.i]       | [`spingere.i`][spingere.i]         | 90%    |
 | [`put.i`][put.i]         |                                    |        |
 | [`read.i`][read.i]       |                                    |        |
 | [`scenery.i`][scenery.i] |                                    |        |
@@ -89,6 +89,7 @@ The following table contains the list of the original English modules, their Ita
 [baciare.i]: ./baciare.i "View source module"
 [toccare.i]: ./toccare.i "View source module"
 [mangiare.i]: ./mangiare.i "View source module"
+[spingere.i]: ./spingere.i "View source module"
 
 <!-- Lib EN modules -->
 
