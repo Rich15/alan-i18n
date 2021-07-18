@@ -40,7 +40,7 @@ The following table contains the list of the original English modules, their Ita
 |--------------------------|------------------------------------|--------|
 | [`attack.i`][attack.i]   |                                    |        |
 | [`brief.i`][brief.i]     |                                    |        |
-| [`eat.i`][eat.i]         |                                    |        |
+| [`eat.i`][eat.i]         | [`mangiare.i`][mangiare.i]         | 90%    |
 | [`examine.i`][examine.i] |                                    |        |
 | [`give.i`][give.i]       | [`dare.i`][dare.i]                 | 80%    |
 | [`global.i`][global.i]   |                                    |        |
@@ -88,6 +88,7 @@ The following table contains the list of the original English modules, their Ita
 [dare.i]: ./dare.i "View source module"
 [baciare.i]: ./baciare.i "View source module"
 [toccare.i]: ./toccare.i "View source module"
+[mangiare.i]: ./mangiare.i "View source module"
 
 <!-- Lib EN modules -->
 

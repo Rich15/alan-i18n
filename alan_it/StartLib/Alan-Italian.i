@@ -19,7 +19,7 @@ Import 'guardare.i'. --> 'look.i'
 ---- Import 'take.i'.    -- + pick up, drop, put down.
 ---- Import 'open.i'.    -- + close.
 ---- Import 'lock.i'.    -- + unlock.
----- Import 'eat.i'.     -- + drink.
+Import 'mangiare.i'. -- + bere --> 'eat.i'  -- + drink.
 ---- Import 'throw.i'.
 ---- Import 'push.i'.
 Import 'toccare.i'. --> 'touch.i'
