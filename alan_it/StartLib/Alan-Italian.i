@@ -34,7 +34,7 @@ Import 'eroe.i'. --> 'hero.i'
 ---- Import 'listen.i'.
 ---- Import 'smell.i'.
 ---- Import 'knock.i'.
----- Import 'jump.i'.
+Import 'saltare.i'. --> 'jump.i'
 ---- Import 'wear.i'.    -- + remove, undress, put on
 
 ---- Import 'help.i'.    -- + notes, hint

@@ -45,9 +45,9 @@ The following table contains the list of the original English modules, their Ita
 | [`give.i`][give.i]       |                                    |        |
 | [`global.i`][global.i]   |                                    |        |
 | [`help.i`][help.i]       |                                    |        |
-| [`hero.i`][hero.i]       | [`eroe.i`][eroe.i]                 | WIP    |
+| [`hero.i`][hero.i]       | [`eroe.i`][eroe.i]                 | 99%    |
 | [`invent.i`][invent.i]   |                                    |        |
-| [`jump.i`][jump.i]       |                                    |        |
+| [`jump.i`][jump.i]       | [`saltare.i`][saltare.i]           | 99%    |
 | [`kiss.i`][kiss.i]       |                                    |        |
 | [`knock.i`][knock.i]     |                                    |        |
 | [`listen.i`][listen.i]   |                                    |        |
@@ -82,6 +82,7 @@ The following table contains the list of the original English modules, their Ita
 [grammatica.i]: ./grammatica.i "View source module"
 [limbo.i]: ./limbo.i "View source module"
 [eroe.i]: ./eroe.i "View source module"
+[saltare.i]: ./saltare.i "View source module"
 
 <!-- Lib EN modules -->
 
