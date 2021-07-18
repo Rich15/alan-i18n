@@ -12,7 +12,7 @@ Import 'eroe.i'. --> 'hero.i'
 ---- Import 'global.i'.
 
 -- People, male/female etc.
----- Import 'people.i'.
+Import 'persone.i'. --> 'people.i'
 
 -- Standard verbs
 Import 'guardare.i'. --> 'look.i'

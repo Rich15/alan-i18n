@@ -56,7 +56,7 @@ The following table contains the list of the original English modules, their Ita
 | [`meta.i`][meta.i]       |                                    |        |
 | [`nowhere.i`][nowhere.i] | [`limbo.i`][limbo.i]               | WIP    |
 | [`open.i`][open.i]       |                                    |        |
-| [`people.i`][people.i]   |                                    |        |
+| [`people.i`][people.i]   | [`persone.i`][persone.i]           | 90%    |
 | [`push.i`][push.i]       |                                    |        |
 | [`put.i`][put.i]         |                                    |        |
 | [`read.i`][read.i]       |                                    |        |
@@ -84,6 +84,7 @@ The following table contains the list of the original English modules, their Ita
 [eroe.i]: ./eroe.i "View source module"
 [saltare.i]: ./saltare.i "View source module"
 [guardare.i]: ./guardare.i "View source module"
+[persone.i]: ./persone.i "View source module"
 
 <!-- Lib EN modules -->
 
