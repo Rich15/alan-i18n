@@ -50,7 +50,7 @@ Add to every object
       else "You've already got that - you're wearing that."
     And ogg not in hero
       else "You've already got that."
-    And weight Of ogg <=50
+    And peso Of ogg <=50
       else "That is too heavy to lift."
     Does
       Locate ogg in hero.

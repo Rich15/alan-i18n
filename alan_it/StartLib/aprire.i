@@ -15,16 +15,16 @@ Syntax
 
 Add to every object
   Is
-    Not openable.
-    Not open.
+    Not apribile.
+    Not aperto.
 
   Verb open
-    Check ogg is openable
+    Check ogg is apribile
       else "You can't open that!"
-    And ogg is not open
+    And ogg is not aperto
       else "It's already open."
     Does
-      Make ogg open.
+      Make ogg aperto.
       Say the ogg. "is now open."
   End verb.
 
@@ -58,15 +58,15 @@ Syntax
       else "You can only close objects."
 
 Add to every object
-  Is not closeable.
+  Is not chiudibile.
 
   Verb close
-    Check ogg is closeable
+    Check ogg is chiudibile
       else "You can't close that."
-    And ogg is open
+    And ogg is aperto
       else "It is not open."
      Does
-       Make ogg not open.
+       Make ogg not aperto.
        Say the ogg. "is now closed."
     End verb.
 
@@ -85,7 +85,7 @@ Add to every object
     When ogg1
       Check ogg2 in hero
         else "You don't have" say the ogg2. "."
-      And ogg1 Is openable
+      And ogg1 Is apribile
         else "You can't close" say the ogg1. "."
       Does -- To be overridden by DOES ONLY where appropriate...
         "You can't close" say the ogg1. "with" say the ogg2. "."

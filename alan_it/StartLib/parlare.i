@@ -31,11 +31,11 @@
 
 
 Add to every thing
-  Is not can_talk.
+  Can not parlare.
 End add.
 
 Add to every actor
-  Is can_talk.
+  Can parlare.
 End add.
 
 
@@ -75,7 +75,7 @@ Syntax
 Add to every thing
   Verb say_to
     When act
-      Check act Has can_talk
+      Check act can parlare
         else "You can't talk to that."
     Does
       Say the act. "doesn't seem interested."
@@ -93,7 +93,7 @@ Syntax
 Add to every thing
   Verb ask
     When act
-      Check act Has can_talk
+      Check act can parlare
         else "You can't talk to that."
       Does
         Say the act.
@@ -114,7 +114,7 @@ Syntax
 Add to every thing
   Verb talk_to
     When  topic
-      Check act Has can_talk
+      Check act can parlare
         else "You can't talk to that."
       Does
         """I don't think I need to know about"
@@ -131,7 +131,7 @@ Syntax
 
 Add to every thing
   Verb talk_to_a
-    Check act Has can_talk
+    Check act can parlare
       else "You can't talk to that."
     Does
       Say the act.

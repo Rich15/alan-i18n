@@ -6,16 +6,16 @@
 
 
 Add to every thing
-  Has weight 0.
+  Has peso 0.
 End add.
 
 
 Add to every actor
-  Has weight 50.
+  Has peso 50.
 End add.
 
 Add to every object
-  Has weight 5.
+  Has peso 5.
 End add.
 
 
@@ -37,7 +37,7 @@ The worn IsA entity
     Limits
       Count 10 then
         "You can't wear anything more. You have to remove something first."
-      weight 50 then
+      peso 50 then
           "You can't wear anything more. You have to remove something first."
     Header
       "You are wearing"

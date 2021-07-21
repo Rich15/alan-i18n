@@ -54,7 +54,7 @@ The following table contains the list of the Italian modules, their original Eng
 | [`globali.i`][globali.i]           | [`global.i`][global.i]   | TBD!   |
 | [`grammatica.i`][grammatica.i]     |                          | WIP    |
 | [`guardare.i`][guardare.i]         | [`look.i`][look.i]       | 99%    |
-| [`indossare.i`][indossare.i]       | [`wear.i`][wear.i]       | TBD!   |
+| [`indossare.i`][indossare.i]       | [`wear.i`][wear.i]       | 5%     |
 | [`inventario.i`][inventario.i]     | [`invent.i`][invent.i]   | TBD!   |
 | [`lanciare.i`][lanciare.i]         | [`throw.i`][throw.i]     | TBD!   |
 | [`leggere.i`][leggere.i]           | [`read.i`][read.i]       | 85%    |

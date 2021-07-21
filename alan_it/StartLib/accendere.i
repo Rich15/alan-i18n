@@ -6,8 +6,8 @@
 
 Add to every object
   Is
-    Not 'on'.
-    Not switchable.
+    Not acceso.
+    Not accendibile.
 End add.
 
 
@@ -31,12 +31,12 @@ Syntax
 
 Add to every object
   Verb turn_on1, turn_on2, switch_on1, switch_on2
-    Check ogg is switchable
+    Check ogg is accendibile
       else "You can't turn that on."
-    And ogg is not 'on'
+    And ogg is not acceso
       else "It's already on."
     Does
-      Make ogg 'on'.
+      Make ogg acceso.
       "You turn on" say the ogg. "."
   End verb.
 End add.
@@ -62,12 +62,12 @@ Syntax
 
 Add to every object
   Verb turn_off1, turn_off2, switch_off1, switch_off2
-    Check ogg is switchable
+    Check ogg is accendibile
       else "You can't turn that off."
-    And ogg is 'on'
+    And ogg is acceso
       else "It's already off."
     Does
-      Make ogg not 'on'.
+      Make ogg not acceso.
       "You turn off" say the ogg. "."
   End verb.
 End add.

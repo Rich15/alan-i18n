@@ -5,7 +5,7 @@
 
 
 Add to every object
-  Is not wearable.
+  Is not indossabile.
 End add.
 
 
@@ -18,7 +18,7 @@ Syntax
 
 Add to every object
   Verb wear
-    Check ogg is wearable
+    Check ogg is indossabile
       else "You can't wear" say the ogg. "."
     And ogg not in worn
       else "You are already wearing" say the ogg. "."

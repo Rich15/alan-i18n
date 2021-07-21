@@ -10,7 +10,7 @@ The hero IsA actor
     Limits
       Count 10 then
         "Non puoi trasportare più nulla. Dovresti prima lasciare qualcosa."
-      weight 50 then
+      peso 50 then
         "Non puoi trasportare più nulla. Dovresti prima lasciare qualcosa."
     Header
       "Stai trasportando"
