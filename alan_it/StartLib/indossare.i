@@ -10,45 +10,45 @@ End add.
 
 
 Syntax
-  wear = wear (obj)
-    Where obj IsA object
+  wear = wear (ogg)
+    Where ogg IsA object
       else "You can't wear that."
-  wear = put (obj) 'on'.
-  wear = put 'on' (obj).
+  wear = put (ogg) 'on'.
+  wear = put 'on' (ogg).
 
 Add to every object
   Verb wear
-    Check obj is wearable
-      else "You can't wear" say the obj. "."
-    And obj not in worn
-      else "You are already wearing" say the obj. "."
-    And obj is takeable
-      else "You can't pick" say the obj. "up."
+    Check ogg is wearable
+      else "You can't wear" say the ogg. "."
+    And ogg not in worn
+      else "You are already wearing" say the ogg. "."
+    And ogg is takeable
+      else "You can't pick" say the ogg. "up."
     Does
-      If obj not in hero then
-        Locate obj in hero.
-        "(You pick" say the obj. "up.)$n"
+      If ogg not in hero then
+        Locate ogg in hero.
+        "(You pick" say the ogg. "up.)$n"
       End if.
-      Locate obj in worn.
-      "You put on" say the obj. "."
+      Locate ogg in worn.
+      "You put on" say the ogg. "."
   End verb.
 End add.
 
 
 Syntax
-  'remove' = 'remove' (obj)
-    Where obj IsA object
+  'remove' = 'remove' (ogg)
+    Where ogg IsA object
       else "You can't remove that."
-  'remove' = take (obj) off.
-  'remove' = take off (obj).
+  'remove' = take (ogg) off.
+  'remove' = take off (ogg).
 
 Add to every object
   Verb 'remove'
-    Check obj in worn
-      else "You are not wearing" say the obj. "."
+    Check ogg in worn
+      else "You are not wearing" say the ogg. "."
     Does
-      Locate obj in hero.
-      "You take off" say the obj. "."
+      Locate ogg in hero.
+      "You take off" say the ogg. "."
   End verb.
 End add.
 

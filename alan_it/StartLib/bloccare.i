@@ -12,81 +12,81 @@ End add.
 
 
 Syntax
-  lock = lock (obj)
-    Where obj IsA object
+  lock = lock (ogg)
+    Where ogg IsA object
       else "You can't lock that."
 
 Add to every object
   Verb lock
-    Check obj is lockable
+    Check ogg is lockable
       else "You can't lock that!"
-    And obj is not locked
+    And ogg is not locked
       else "It's already locked."
     Does
-      Make obj locked. Say the obj. "is now locked."
+      Make ogg locked. Say the ogg. "is now locked."
   End verb.
 End add.
 
 
 Syntax
-  lock_with = lock (obj) 'with' (key)
-    Where obj IsA object
+  lock_with = lock (ogg) 'with' (key)
+    Where ogg IsA object
       else "You can't lock that."
     And key IsA object
       else "You can't lock anything with that."
 
 Add to every Object
   Verb lock_with
-    When obj
-      Check obj is lockable
+    When ogg
+      Check ogg is lockable
         else "You can't lock that!"
-      And obj is not locked
+      And ogg is not locked
         else "It's already locked."
       And key in hero
         else "You don't have" say the key. "."
       Does
-        Make obj locked.
-        Say the obj. "is now locked."
+        Make ogg locked.
+        Say the ogg. "is now locked."
   End verb.
 End add.
 
 
 Syntax
-  unlock = unlock (obj)
-    Where obj IsA object
+  unlock = unlock (ogg)
+    Where ogg IsA object
       else "You can't lock that."
 
 Add to every object
   Verb unlock
-    Check obj is lockable
+    Check ogg is lockable
       else "You can't unlock that!"
-    And obj is locked
+    And ogg is locked
       else "It's already unlocked."
     Does
-      Make obj not locked.
-      Say the obj. "is now unlocked."
+      Make ogg not locked.
+      Say the ogg. "is now unlocked."
   End verb.
 End add.
 
 
 Syntax
-  unlock_with = unlock (obj) 'with' (key)
-    Where obj IsA object
+  unlock_with = unlock (ogg) 'with' (key)
+    Where ogg IsA object
       else "You can't lock that."
     And key IsA object
       else "You can't lock anything with that."
 
 Add to every object
   Verb unlock_with
-    When obj
-      Check obj is lockable
+    When ogg
+      Check ogg is lockable
         else "You can't unlock that!"
-      And obj is locked
+      And ogg is locked
         else "It's already unlocked."
       And key in hero
         else "You don't have" say the key. "."
       Does
-        Make obj not locked.
-        Say the obj. "is now unlocked."
+        Make ogg not locked.
+        Say the ogg. "is now unlocked."
   End verb.
 End add.

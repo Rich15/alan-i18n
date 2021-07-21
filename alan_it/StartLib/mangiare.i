@@ -24,7 +24,7 @@ Add to every object
     Check ogg is commestibile
       else "$+1 non è commestibile!"
     Does
-      Locate ogg at nowhere.
+      Locate ogg at limbo.
       "Mangi" say the ogg. "."
   End verb.
 
@@ -32,7 +32,7 @@ Add to every object
     Check ogg is potabile
       else "$+1 non è potabile."
     Does
-      Locate ogg at nowhere.
+      Locate ogg at limbo.
       "Bevi" say the ogg. "."
   End verb.
 End add.

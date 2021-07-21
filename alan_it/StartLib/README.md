@@ -42,7 +42,7 @@ The following table contains the list of the original English modules, their Ita
 | [`attack.i`][attack.i]   | [`aggredire.i`][aggredire.i]       | TBD!   |
 | [`brief.i`][brief.i]     | [`verbosità.i`][verbosità.i]       | TBD!   |
 | [`eat.i`][eat.i]         | [`mangiare.i`][mangiare.i]         | 90%    |
-| [`examine.i`][examine.i] | [`esaminare.i`][esaminare.i]       | TBD!   |
+| [`examine.i`][examine.i] | [`esaminare.i`][esaminare.i]       | 15%    |
 | [`give.i`][give.i]       | [`dare.i`][dare.i]                 | 80%    |
 | [`global.i`][global.i]   | [`globali.i`][globali.i]           | TBD!   |
 | [`help.i`][help.i]       | [`aiuto.i`][aiuto.i]               | TBD!   |

@@ -12,62 +12,62 @@ End add.
 
 
 Syntax
-  turn_on1 = turn 'on' (obj)
-    Where obj IsA object
+  turn_on1 = turn 'on' (ogg)
+    Where ogg IsA object
       else "You can't turn that on."
 
-  turn_on2 = turn (obj) 'on'
-    Where obj IsA object
+  turn_on2 = turn (ogg) 'on'
+    Where ogg IsA object
       else "You can't turn that on."
 
-  switch_on1 = switch 'on' (obj)
-    Where obj IsA object
+  switch_on1 = switch 'on' (ogg)
+    Where ogg IsA object
       else "You can't switch that on."
 
-  switch_on2 = switch (obj) 'on'
-    Where obj IsA object
+  switch_on2 = switch (ogg) 'on'
+    Where ogg IsA object
       else "You can't switch that on."
 
 
 Add to every object
   Verb turn_on1, turn_on2, switch_on1, switch_on2
-    Check obj is switchable
+    Check ogg is switchable
       else "You can't turn that on."
-    And obj is not 'on'
+    And ogg is not 'on'
       else "It's already on."
     Does
-      Make obj 'on'.
-      "You turn on" say the obj. "."
+      Make ogg 'on'.
+      "You turn on" say the ogg. "."
   End verb.
 End add.
 
 
 Syntax
-  turn_off1 = turn off (obj)
-    Where obj IsA object
+  turn_off1 = turn off (ogg)
+    Where ogg IsA object
       else "You can't turn that off."
 
-  turn_off2 = turn (obj) off
-    Where obj IsA object
+  turn_off2 = turn (ogg) off
+    Where ogg IsA object
       else "You can't turn that off."
 
-  switch_off1 = switch off (obj)
-    Where obj IsA object
+  switch_off1 = switch off (ogg)
+    Where ogg IsA object
       else "You can't switch that off."
 
-  switch_off2 = switch (obj) off
-    Where obj IsA object
+  switch_off2 = switch (ogg) off
+    Where ogg IsA object
       else "You can't switch that off."
 
 
 Add to every object
   Verb turn_off1, turn_off2, switch_off1, switch_off2
-    Check obj is switchable
+    Check ogg is switchable
       else "You can't turn that off."
-    And obj is 'on'
+    And ogg is 'on'
       else "It's already off."
     Does
-      Make obj not 'on'.
-      "You turn off" say the obj. "."
+      Make ogg not 'on'.
+      "You turn off" say the ogg. "."
   End verb.
 End add.

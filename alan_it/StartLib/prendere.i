@@ -8,7 +8,7 @@
 
 
 Add to every thing
-  Is inanimate.
+  Is inanimato.
 End add.
 
 Add to every object
@@ -16,7 +16,7 @@ Add to every object
 End add.
 
 Add to every actor
-  Is not inanimate.
+  Is not inanimato.
 End add.
 
 
@@ -25,32 +25,32 @@ Synonyms
 
 
 Syntax
-  take = take (obj) *
-    Where obj IsA object
+  take = take (ogg) *
+    Where ogg IsA object
       else "You can't take that with you!"
 
 
 Syntax
-  pick_up1 = pick up (obj)*
-    Where obj IsA object
+  pick_up1 = pick up (ogg)*
+    Where ogg IsA object
       else "You can't take that with you!"
 
-  pick_up2 = pick (obj)* up
-    Where obj IsA object
+  pick_up2 = pick (ogg)* up
+    Where ogg IsA object
       else "You can't take that with you!"
 
 Add to every object
   Verb take, pick_up1, pick_up2
-    Check obj is takeable
+    Check ogg is takeable
       else "You can't take that!"
-    And obj not in worn
+    And ogg not in worn
       else "You've already got that - you're wearing that."
-    And obj not in hero
+    And ogg not in hero
       else "You've already got that."
-    And weight Of obj <=50
+    And weight Of ogg <=50
       else "That is too heavy to lift."
     Does
-      Locate obj in hero.
+      Locate ogg in hero.
       "Taken."
   End verb.
 End add.
@@ -60,28 +60,28 @@ Synonyms
   discard = drop.
 
 Syntax
-  drop = drop (obj)*.
+  drop = drop (ogg)*.
 
 Syntax
-  put_down1 = put (obj) * down.
+  put_down1 = put (ogg) * down.
 
 Syntax
-  put_down2 = put down (obj)*.
+  put_down2 = put down (ogg)*.
 
 Add to every object
   Verb drop, put_down1, put_down2
-    Check obj in hero
+    Check ogg in hero
       else "You aren't carrying that."
     Does
-      Locate obj here.
+      Locate ogg here.
       "Dropped."
   End verb.
 End add.
 
 
 Syntax
-  take_from = 'take' (obj) 'from' (holder)
-    Where obj IsA object
+  take_from = 'take' (ogg) 'from' (holder)
+    Where ogg IsA object
       else "You can only take objects."
     And holder IsA thing
       else "You can't take things from that!"
@@ -90,17 +90,17 @@ Syntax
 
 Add to every object
   Verb take_from
-    When obj
-      Check obj not in hero
-        else "You already have" say the obj. "."
-      And obj in holder
-        else Say the obj. "is not there."
+    When ogg
+      Check ogg not in hero
+        else "You already have" say the ogg. "."
+      And ogg in holder
+        else Say the ogg. "is not there."
       Does
         If holder=hero then
           "You don't need to take things from yourself!"
         else
-          Locate obj in hero.
-          "You take" say the obj. "."
+          Locate ogg in hero.
+          "You take" say the ogg. "."
         End if.
   End verb.
 End add.

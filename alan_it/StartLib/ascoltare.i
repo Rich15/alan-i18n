@@ -14,14 +14,14 @@ Verb ascoltare0
 End verb.
 
 Syntax
-  ascoltare = ascolta (obj)
-    Where obj IsA thing
+  ascoltare = ascolta (ogg)
+    Where ogg IsA thing
       else "You can't listen to that!" -- @TRANSLATE
 
 Add to every thing
   Verb ascoltare
     Does
-      "Ascolti" say the obj. "."
+      "Ascolti" say the ogg. "."
   End verb.
 End add.
 

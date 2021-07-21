@@ -9,8 +9,8 @@
 
 
 Syntax
-  open = open (obj)
-    Where obj IsA object
+  open = open (ogg)
+    Where ogg IsA object
       else "You can't open that."
 
 Add to every object
@@ -19,32 +19,32 @@ Add to every object
     Not open.
 
   Verb open
-    Check obj is openable
+    Check ogg is openable
       else "You can't open that!"
-    And obj is not open
+    And ogg is not open
       else "It's already open."
     Does
-      Make obj open.
-      Say the obj. "is now open."
+      Make ogg open.
+      Say the ogg. "is now open."
   End verb.
 
 End add.
 
 
 Syntax
-  open_with = open (obj1) 'with' (obj2)
-    Where obj1 IsA object
+  open_with = open (ogg1) 'with' (ogg2)
+    Where ogg1 IsA object
       else "You can't open that."
-    And obj2 IsA object
+    And ogg2 IsA object
       else "You can't open anything with that."
 
 Add to every object
   Verb open_with
-    When obj1
-      Check obj2 in hero
-        else "You don't have" say the obj2. "."
+    When ogg1
+      Check ogg2 in hero
+        else "You don't have" say the ogg2. "."
       Does
-        "You can't open" say the obj1. "with" say the obj2. "."
+        "You can't open" say the ogg1. "with" say the ogg2. "."
   End verb.
 End add.
 
@@ -53,41 +53,41 @@ Synonyms
   shut = close.
 
 Syntax
-  close = close (obj)
-    Where obj IsA object
+  close = close (ogg)
+    Where ogg IsA object
       else "You can only close objects."
 
 Add to every object
   Is not closeable.
 
   Verb close
-    Check obj is closeable
+    Check ogg is closeable
       else "You can't close that."
-    And obj is open
+    And ogg is open
       else "It is not open."
      Does
-       Make obj not open.
-       Say the obj. "is now closed."
+       Make ogg not open.
+       Say the ogg. "is now closed."
     End verb.
 
 End add.
 
 
 Syntax
-  close_with = close (obj1) 'with' (obj2)
-    Where obj1 IsA object
+  close_with = close (ogg1) 'with' (ogg2)
+    Where ogg1 IsA object
       else "You can't close that."
-    And obj2 IsA object
+    And ogg2 IsA object
       else "You can't close anything with that."
 
 Add to every object
   Verb close_with
-    When obj1
-      Check obj2 in hero
-        else "You don't have" say the obj2. "."
-      And obj1 Is openable
-        else "You can't close" say the obj1. "."
+    When ogg1
+      Check ogg2 in hero
+        else "You don't have" say the ogg2. "."
+      And ogg1 Is openable
+        else "You can't close" say the ogg1. "."
       Does -- To be overridden by DOES ONLY where appropriate...
-        "You can't close" say the obj1. "with" say the obj2. "."
+        "You can't close" say the ogg1. "with" say the ogg2. "."
   End verb.
 End add.

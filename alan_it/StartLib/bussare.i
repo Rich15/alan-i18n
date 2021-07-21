@@ -5,14 +5,14 @@
 
 
 Syntax
-  knock_on = knock 'on' (obj)
-    Where obj IsA thing
+  knock_on = knock 'on' (ogg)
+    Where ogg IsA thing
       else "You can't knock on that!"
 
 Add to every thing
   Verb knock_on
     Does
-      "You knock on" say the obj. "."
+      "You knock on" say the ogg. "."
   End verb.
 End add.
 

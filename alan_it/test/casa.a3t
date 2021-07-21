@@ -1,0 +1,21 @@
+
+
+Salotto
+There is un divano here.
+
+> guarda
+Salotto
+There is un divano here.
+
+> inventory
+Sei a mani vuote.
+
+> x divano
+Non noti nulla di particolare riguardo il divano.
+
+> guarda divano
+Non noti nulla di particolare riguardo il divano.
+
+> 
+
+Do you want to UNDO, RESTART, RESTORE or QUIT ? 

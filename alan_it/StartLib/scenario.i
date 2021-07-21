@@ -4,12 +4,12 @@
 
 Every scenery IsA object
   Is
-    Not searchable.
+    Not ispezionabile.
     Not takeable.
     Not pushable.
     Not touchable.
 
-  Verb examine, take
+  Verb esaminare, take
     Does only
       "That's only scenery."
   End verb.

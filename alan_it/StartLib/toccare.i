@@ -18,7 +18,7 @@ Syntax
   toccare_con = touch (ogg1) con (ogg2)
     Where ogg1 IsA thing
     --else "You can't touch that."
-      else "Non è possibile toccarl$$" say ogg:vocale. "$$!"
+      else "Non è possibile toccarl$$" say ogg1:vocale. "$$!"
     And ogg2 IsA object
     --else "You can only use objects to touch with."
       else "You can only use objects to touch with." -- @TRANSLATE!
@@ -36,7 +36,7 @@ Add to every object
     When ogg1
       Check ogg1 Is toccabile
       --else "You can't touch that."
-        else "Non è possibile toccarl$$" say ogg:vocale. "$$!"
+        else "Non è possibile toccarl$$" say ogg1:vocale. "$$!"
       And ogg1 <> ogg2
       --else "It doesn't make sense to touch something with itself."
         else "Non avrebbe alcun senso toccare qualcosa con sé stessa."

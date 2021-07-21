@@ -1,0 +1,13 @@
+--==============================================================================
+-- "Casa Dolce Casa" by Tristano Ajmone
+--==============================================================================
+
+Import 'Alan-Italian.i'.
+
+The Salotto IsA location
+End the Salotto.
+
+The divano IsA object at Salotto.
+End the divano.
+
+Start at Salotto.

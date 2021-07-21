@@ -6,68 +6,71 @@
 
 Add to every thing
   Is
-    examinable.
-    searchable.
+    esaminabile.    --> examinable
+    ispezionabile.  --> searchable
 End add.
 
 Add to every actor
-  Is not searchable.
+  Is not ispezionabile.
 End add.
 
 ----
 
 Synonyms
-  x, inspect, 'check' = examine.
+  descrivi, osserva, X = esamina.
+--x, inspect, 'check' = examine.
 
 Syntax
-  examine = examine (obj) *
-    Where obj IsA thing
+  esaminare = esamina (ogg) *
+    Where ogg IsA thing
       else "You can't examine that!"
+  esaminare = guarda (ogg) *.
 
-Syntax
-  examine = 'look' 'at' (obj) *.
 
 Add to every thing
-  Verb examine
-    Check obj is examinable
-      else "You can't examine" say the obj. "."
+  Verb esaminare
+    Check ogg is esaminabile
+      else "Non puoi esaminare" say the ogg. "."
     Does
-      "There is nothing special about" say the obj. "."
+      "Non noti nulla di particolare riguardo" say the ogg. "."
   End verb.
 End add.
 
 ----
 
 Synonyms
-  inside, into = 'in'.
+  dentro = 'in'.
 
 Syntax
-  look_in = 'look' 'in' (obj)
-    Where obj IsA thing
+  guardare_dentro = guarda 'in' (ogg)
+    Where ogg IsA thing
       else "You can't look inside that."
-    And obj IsA container
+    And ogg IsA container
       else "You can't look inside that."
 
 Add to every object
-  Verb look_in
-    Check obj is examinable
-      else "You can't look inside" say the obj. "."
+  Verb guardare_dentro
+    Check ogg is esaminabile
+      else "You can't look inside" say the ogg. "."
     Does
-      List obj.
+      List ogg.
   End verb.
 End add.
 
 ----
 
+Synonyms
+  perquisisci = ispeziona.
+
 Syntax
-  search = search (obj)
-    Where obj IsA thing
+  ispezionare = ispeziona (ogg)
+    Where ogg IsA thing
       else "You can't search that!"
 
 Add to every object
-  Verb search
-    Check obj is searchable
-      else "You can't search" say the obj. "."
+  Verb ispezionare
+    Check ogg is ispezionabile
+      else "You can't search" say the ogg. "."
     Does
       "You find nothing of interest."
   End verb.
