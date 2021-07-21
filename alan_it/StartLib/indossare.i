@@ -22,7 +22,7 @@ Add to every object
       else "You can't wear" say the ogg. "."
     And ogg not in worn
       else "You are already wearing" say the ogg. "."
-    And ogg is takeable
+    And ogg is prendibile
       else "You can't pick" say the ogg. "up."
     Does
       If ogg not in hero then

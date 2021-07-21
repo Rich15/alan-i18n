@@ -16,6 +16,22 @@ Non noti nulla di particolare riguardo il divano.
 > guarda divano
 Non noti nulla di particolare riguardo il divano.
 
+> prendi il divano
+You can't take that!
+
+> spingi il divano
+Spingi il divano. Dietro il divano trovi una chiave.
+
+> l
+Salotto
+There is una chiave and un divano here.
+
+> prendi la chiave
+Taken.
+
+> inventory
+Stai trasportando una chiave.
+
 > 
 
 Do you want to UNDO, RESTART, RESTORE or QUIT ? 

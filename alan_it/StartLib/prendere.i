@@ -12,7 +12,7 @@ Add to every thing
 End add.
 
 Add to every object
-  Is takeable.
+  Is prendibile.
 End add.
 
 Add to every actor
@@ -25,9 +25,12 @@ Synonyms
 
 
 Syntax
-  take = take (ogg) *
+  prendere = prendi (ogg) *
     Where ogg IsA object
       else "You can't take that with you!"
+  prendere = raccogli (ogg).
+  prendere = afferra (ogg).   --> @TODO: Eliminare?
+  prendere = trasporta (ogg). --> @TODO: Eliminare?
 
 
 Syntax
@@ -40,8 +43,8 @@ Syntax
       else "You can't take that with you!"
 
 Add to every object
-  Verb take, pick_up1, pick_up2
-    Check ogg is takeable
+  Verb prendere, pick_up1, pick_up2
+    Check ogg is prendibile
       else "You can't take that!"
     And ogg not in worn
       else "You've already got that - you're wearing that."

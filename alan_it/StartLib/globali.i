@@ -29,7 +29,7 @@
 
 
 Add to every thing
-  Is not plural.
+  Is not plurale.
 End add.
 
 Every named_actor IsA actor

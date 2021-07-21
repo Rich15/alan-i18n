@@ -5,11 +5,11 @@
 Every scenery IsA object
   Is
     Not ispezionabile.
-    Not takeable.
-    Not pushable.
-    Not touchable.
+    Not prendibile.
+    Not spingibile.
+    Not toccabile.
 
-  Verb esaminare, take
+  Verb esaminare, prendere
     Does only
       "That's only scenery."
   End verb.

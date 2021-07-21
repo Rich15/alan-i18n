@@ -10,7 +10,7 @@ End add.
 
 
 Syntax
-  spingere = push (ogg)
+  spingere = spingi (ogg)
     Where ogg IsA thing
     --else "You can't push that."
       else "You can't push that." -- @TRANSLATE
@@ -27,7 +27,7 @@ End add.
 
 
 Syntax
-  spingere_con = push (ogg1) con (ogg2)
+  spingere_con = spingi (ogg1) con (ogg2)
     Where ogg1 IsA thing
     --else "You can't push that."
       else "You can't push that." -- @TRANSLATE

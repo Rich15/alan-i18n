@@ -7,7 +7,26 @@ Import 'Alan-Italian.i'.
 The Salotto IsA location
 End the Salotto.
 
+The chiave IsA object.
+  Has articolo "la".
+  Verb esaminre
+    Does only "È una piccola chiave in ottone."
+  End verb.
+End the chiave.
+
 The divano IsA object at Salotto.
+  Is not prendibile.
+  Is spingibile.
+  Has not been_pushed.
+
+  Verb spingere
+    Check this has not been_pushed
+      Else "Non serve più spostare il divano, l'hai già fatto."
+    Does after
+      "Dietro il divano trovi una chiave."
+      Locate chiave at Hero.
+  End verb spingere.
+
 End the divano.
 
 Start at Salotto.
