@@ -12,7 +12,6 @@ Syntax
 Add to every thing
   Verb saltare_su
     Does
-      "You jump on" say the ogg. "."
       "Salti" say ogg:prep_SU. say the ogg. "."
   End verb.
 End add.

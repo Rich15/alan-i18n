@@ -20,7 +20,7 @@ End add.
 
 
 Synonyms
-  i, inventory = invent.
+  i = inventario.
 
 Syntax
   invent = invent.

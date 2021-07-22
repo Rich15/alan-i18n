@@ -10,7 +10,7 @@ End add.
 
 
 Syntax
-  leggere = read (ogg)
+  leggere = leggi (ogg)
     Where ogg IsA object
       else "You can't read that." -- @TRANSLATE
 

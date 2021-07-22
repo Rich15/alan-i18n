@@ -9,9 +9,13 @@ The hero IsA actor
   Container
     Limits
       Count 10 then
-        "Non puoi trasportare più nulla. Dovresti prima lasciare qualcosa."
+        -- @TODO: Sepcifica limite oggetti max.
+        "Non puoi trasportare più nulla.
+         Dovresti prima lasciare qualcosa."
       peso 50 then
-        "Non puoi trasportare più nulla. Dovresti prima lasciare qualcosa."
+        -- @TODO: Sepcifica limite peso max.
+        "Non puoi trasportare più nulla.
+         Dovresti prima lasciare qualcosa."
     Header
       "Stai trasportando"
     else

@@ -7,8 +7,8 @@ There is un divano here.
 Salotto
 There is un divano here.
 
-> inventory
-Sei a mani vuote.
+> inventario
+I don't know the word 'inventario'.
 
 > x divano
 Non noti nulla di particolare riguardo il divano.
@@ -18,6 +18,9 @@ Non noti nulla di particolare riguardo il divano.
 
 > prendi il divano
 You can't take that!
+
+> apri il divano
+Non è possibile aprirlo.
 
 > spingi il divano
 Spingi il divano. Dietro il divano trovi una chiave.
@@ -29,8 +32,8 @@ There is una chiave and un divano here.
 > prendi la chiave
 Taken.
 
-> inventory
-Stai trasportando una chiave.
+> inventario
+I don't know the word 'inventario'.
 
 > 
 

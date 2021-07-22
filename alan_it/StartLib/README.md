@@ -43,7 +43,7 @@ The following table contains the list of the Italian modules, their original Eng
 | [`aggredire.i`][aggredire.i]       | [`attack.i`][attack.i]   | TBD!   |
 | [`aiuto.i`][aiuto.i]               | [`help.i`][help.i]       | TBD!   |
 | [`annusare.i`][annusare.i]         | [`smell.i`][smell.i]     | 85%    |
-| [`aprire.i`][aprire.i]             | [`open.i`][open.i]       | TBD!   |
+| [`aprire.i`][aprire.i]             | [`open.i`][open.i]       | 5%     |
 | [`ascoltare.i`][ascoltare.i]       | [`listen.i`][listen.i]   | 85%    |
 | [`baciare.i`][baciare.i]           | [`kiss.i`][kiss.i]       | 90%    |
 | [`bloccare.i`][bloccare.i]         | [`lock.i`][lock.i]       | TBD!   |
@@ -55,7 +55,7 @@ The following table contains the list of the Italian modules, their original Eng
 | [`grammatica.i`][grammatica.i]     |                          | WIP    |
 | [`guardare.i`][guardare.i]         | [`look.i`][look.i]       | 99%    |
 | [`indossare.i`][indossare.i]       | [`wear.i`][wear.i]       | 5%     |
-| [`inventario.i`][inventario.i]     | [`invent.i`][invent.i]   | TBD!   |
+| [`inventario.i`][inventario.i]     | [`invent.i`][invent.i]   | 5%     |
 | [`lanciare.i`][lanciare.i]         | [`throw.i`][throw.i]     | TBD!   |
 | [`leggere.i`][leggere.i]           | [`read.i`][read.i]       | 85%    |
 | [`limbo.i`][limbo.i]               | [`nowhere.i`][nowhere.i] | WIP    |

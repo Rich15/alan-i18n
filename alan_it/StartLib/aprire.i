@@ -9,7 +9,7 @@
 
 
 Syntax
-  open = open (ogg)
+  aprire = apri (ogg)
     Where ogg IsA object
       else "You can't open that."
 
@@ -18,28 +18,39 @@ Add to every object
     Not apribile.
     Not aperto.
 
-  Verb open
+  Verb aprire
     Check ogg is apribile
-      else "You can't open that!"
+      else "Non è possibile aprirl$$" Say ogg:vocale. "."
     And ogg is not aperto
-      else "It's already open."
+      else
+        Say the ogg.
+        If ogg is not plurale
+          then "è"
+          else "sono"
+        End if.
+        "già apert$$" Say ogg:vocale. "."
     Does
       Make ogg aperto.
-      Say the ogg. "is now open."
+      "Fatto. Ora" say the ogg.
+      If ogg is not plurale
+        then "è"
+        else "sono"
+      End if.
+      "apert$$" Say ogg:vocale. "."
   End verb.
 
 End add.
 
 
 Syntax
-  open_with = open (ogg1) 'with' (ogg2)
+  aprire_con = open (ogg1) con (ogg2)
     Where ogg1 IsA object
       else "You can't open that."
     And ogg2 IsA object
       else "You can't open anything with that."
 
 Add to every object
-  Verb open_with
+  Verb aprire_con
     When ogg1
       Check ogg2 in hero
         else "You don't have" say the ogg2. "."
