@@ -10,10 +10,16 @@ End add.
 
 Add to every object
   Is
-    Not weapon.
-    Not shootable.
+    Not weapon.    -- @TRANSLATE ATTRIBUTE!
+    Not shootable. -- @TRANSLATE ATTRIBUTE!
 End add.
 
+
+-- @NOTE: Alan StdLib Italian:
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--    SYNONYMS combatti, picchia = attacca.
+--    SYNTAX attacca = attacca (bersaglio)
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Synonyms
   kill, fight, hit = attack.
@@ -32,6 +38,11 @@ Add to every thing
   End verb.
 End add.
 
+
+-- @NOTE: Alan StdLib Italian:
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--    SYNTAX attacca_con = attacca (bersaglio) con (arma)
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Syntax
   attack_with = attack (act) 'with' (ogg)
@@ -53,6 +64,12 @@ Add to every thing
 End add.
 
 
+
+-- @NOTE: Alan StdLib Italian:
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--    SYNTAX spara = spara con (arma)
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 Syntax
   shoot = shoot (ogg)
     Where ogg IsA thing
@@ -72,6 +89,18 @@ Add to every thing
   End verb.
 End add.
 
+
+-- @NOTE: Alan StdLib Italian:
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--    SYNTAX  spara_a = spara con (arma) a (bersaglio)
+--            spara_a = spara a (bersaglio) con (arma).
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+-- @NOTE: Le due sintassi inglesi non legano bene con le esigenze italiane.
+--        'shoot_at' non può avere la sintassi "spara pistola a pippo".
+--        Il problema è che l'oggetto di "spara" non può essere l'arma ma
+--        piuttosto i suoi proiettili ("spara fuoco"). Non credo che in
+--        inglese sia così diverso, e che questi verbi andrebbero rivisti.
 
 Syntax
   shoot_at = shoot (ogg) 'at' (act)

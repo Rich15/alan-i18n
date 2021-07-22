@@ -1,11 +1,13 @@
 
 
 Salotto
-There is un divano here.
+Un cupo salotto avvolto in una tappezzeria logora. There is un divano 
+here.
 
 > guarda
 Salotto
-There is un divano here.
+Un cupo salotto avvolto in una tappezzeria logora. There is un divano 
+here.
 
 > inventario
 I don't know the word 'inventario'.
@@ -27,7 +29,8 @@ Spingi il divano. Dietro il divano trovi una chiave.
 
 > l
 Salotto
-There is una chiave and un divano here.
+Un cupo salotto avvolto in una tappezzeria logora. There is una chiave and 
+un divano here.
 
 > prendi la chiave
 Taken.

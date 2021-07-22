@@ -4,8 +4,17 @@
 
 Import 'Alan-Italian.i'.
 
+--==============================================================================
+-- Il Salotto
+--==============================================================================
 The Salotto IsA location
 End the Salotto.
+
+The tappezzeria_salotto IsA scenery at Salotto.
+  Name tappezzeria
+  Has articolo "la".
+  Description "Un cupo salotto avvolto in una tappezzeria logora."
+End the tappezzeria_salotto.
 
 The chiave IsA object.
   Has articolo "la".
@@ -26,7 +35,7 @@ The divano IsA object at Salotto.
       "Dietro il divano trovi una chiave."
       Locate chiave at Hero.
   End verb spingere.
-
 End the divano.
 
+--------------------------------------------------------------------------------
 Start at Salotto.
