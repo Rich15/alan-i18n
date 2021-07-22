@@ -36,40 +36,41 @@ alan -include lib_it my_adventure.alan
 
 The following table contains the list of the Italian modules, their original English counterparts and progress status, as well as the additional modules for the Italian language.
 
-|               Lib IT               |          Lib EN          | Status |
-|------------------------------------|--------------------------|--------|
-| [`Alan-Italian.i`][Alan-Italian.i] | [`std.i`][std.i]         | WIP    |
-| [`accendere.i`][accendere.i]       | [`turn.i`][turn.i]       | TBD!   |
-| [`aggredire.i`][aggredire.i]       | [`attack.i`][attack.i]   | TBD!   |
-| [`aiuto.i`][aiuto.i]               | [`help.i`][help.i]       | 3%     |
-| [`annusare.i`][annusare.i]         | [`smell.i`][smell.i]     | 85%    |
-| [`aprire.i`][aprire.i]             | [`open.i`][open.i]       | 5%     |
-| [`ascoltare.i`][ascoltare.i]       | [`listen.i`][listen.i]   | 85%    |
-| [`baciare.i`][baciare.i]           | [`kiss.i`][kiss.i]       | 90%    |
-| [`bloccare.i`][bloccare.i]         | [`lock.i`][lock.i]       | 30%    |
-| [`bussare.i`][bussare.i]           | [`knock.i`][knock.i]     | 90%    |
-| [`dare.i`][dare.i]                 | [`give.i`][give.i]       | 80%    |
-| [`eroe.i`][eroe.i]                 | [`hero.i`][hero.i]       | 99%    |
-| [`esaminare.i`][esaminare.i]       | [`examine.i`][examine.i] | 15%    |
-| [`globali.i`][globali.i]           | [`global.i`][global.i]   | TBD!   |
-| [`grammatica.i`][grammatica.i]     |                          | WIP    |
-| [`guardare.i`][guardare.i]         | [`look.i`][look.i]       | 99%    |
-| [`indossare.i`][indossare.i]       | [`wear.i`][wear.i]       | 15%    |
-| [`inventario.i`][inventario.i]     | [`invent.i`][invent.i]   | 5%     |
-| [`lanciare.i`][lanciare.i]         | [`throw.i`][throw.i]     | 20%    |
-| [`leggere.i`][leggere.i]           | [`read.i`][read.i]       | 85%    |
-| [`limbo.i`][limbo.i]               | [`nowhere.i`][nowhere.i] | WIP    |
-| [`mangiare.i`][mangiare.i]         | [`eat.i`][eat.i]         | 90%    |
-| [`meta_verbi.i`][meta_verbi.i]     | [`meta.i`][meta.i]       | TBD!   |
-| [`mettere.i`][mettere.i]           | [`put.i`][put.i]         | TBD!   |
-| [`parlare.i`][parlare.i]           | [`talk.i`][talk.i]       | TBD!   |
-| [`persone.i`][persone.i]           | [`people.i`][people.i]   | 90%    |
-| [`prendere.i`][prendere.i]         | [`take.i`][take.i]       | 10%    |
-| [`saltare.i`][saltare.i]           | [`jump.i`][jump.i]       | 99%    |
-| [`scenario.i`][scenario.i]         | [`scenery.i`][scenery.i] | 99%    |
-| [`spingere.i`][spingere.i]         | [`push.i`][push.i]       | 90%    |
-| [`toccare.i`][toccare.i]           | [`touch.i`][touch.i]     | 90%    |
-| [`verbosità.i`][verbosità.i]       | [`brief.i`][brief.i]     | TBD!   |
+|                   Lib IT                   |          Lib EN          | Status |
+|--------------------------------------------|--------------------------|--------|
+| [`Alan-Italian.i`][Alan-Italian.i]         | [`std.i`][std.i]         | WIP    |
+| [`accendere.i`][accendere.i]               | [`turn.i`][turn.i]       | TBD!   |
+| [`aggredire.i`][aggredire.i]               | [`attack.i`][attack.i]   | TBD!   |
+| [`aiuto.i`][aiuto.i]                       | [`help.i`][help.i]       | 3%     |
+| [`annusare.i`][annusare.i]                 | [`smell.i`][smell.i]     | 85%    |
+| [`aprire.i`][aprire.i]                     | [`open.i`][open.i]       | 5%     |
+| [`ascoltare.i`][ascoltare.i]               | [`listen.i`][listen.i]   | 85%    |
+| [`baciare.i`][baciare.i]                   | [`kiss.i`][kiss.i]       | 90%    |
+| [`bloccare.i`][bloccare.i]                 | [`lock.i`][lock.i]       | 30%    |
+| [`bussare.i`][bussare.i]                   | [`knock.i`][knock.i]     | 90%    |
+| [`dare.i`][dare.i]                         | [`give.i`][give.i]       | 80%    |
+| [`eroe.i`][eroe.i]                         | [`hero.i`][hero.i]       | 99%    |
+| [`esaminare.i`][esaminare.i]               | [`examine.i`][examine.i] | 15%    |
+| [`globali.i`][globali.i]                   | [`global.i`][global.i]   | TBD!   |
+| [`grammatica.i`][grammatica.i]             |                          | WIP    |
+| [`guardare.i`][guardare.i]                 | [`look.i`][look.i]       | 99%    |
+| [`indossare.i`][indossare.i]               | [`wear.i`][wear.i]       | 15%    |
+| [`inventario.i`][inventario.i]             | [`invent.i`][invent.i]   | 5%     |
+| [`lanciare.i`][lanciare.i]                 | [`throw.i`][throw.i]     | 20%    |
+| [`leggere.i`][leggere.i]                   | [`read.i`][read.i]       | 85%    |
+| [`limbo.i`][limbo.i]                       | [`nowhere.i`][nowhere.i] | WIP    |
+| [`mangiare.i`][mangiare.i]                 | [`eat.i`][eat.i]         | 90%    |
+| [`messaggi_runtime.i`][messaggi_runtime.i] |                          | 70%    |
+| [`meta_verbi.i`][meta_verbi.i]             | [`meta.i`][meta.i]       | TBD!   |
+| [`mettere.i`][mettere.i]                   | [`put.i`][put.i]         | TBD!   |
+| [`parlare.i`][parlare.i]                   | [`talk.i`][talk.i]       | TBD!   |
+| [`persone.i`][persone.i]                   | [`people.i`][people.i]   | 90%    |
+| [`prendere.i`][prendere.i]                 | [`take.i`][take.i]       | 10%    |
+| [`saltare.i`][saltare.i]                   | [`jump.i`][jump.i]       | 99%    |
+| [`scenario.i`][scenario.i]                 | [`scenery.i`][scenery.i] | 99%    |
+| [`spingere.i`][spingere.i]                 | [`push.i`][push.i]       | 90%    |
+| [`toccare.i`][toccare.i]                   | [`touch.i`][touch.i]     | 90%    |
+| [`verbosità.i`][verbosità.i]               | [`brief.i`][brief.i]     | TBD!   |
 
 
 <!-----------------------------------------------------------------------------
@@ -100,6 +101,7 @@ The following table contains the list of the Italian modules, their original Eng
 [leggere.i]: ./leggere.i "View source module"
 [limbo.i]: ./limbo.i "View source module"
 [mangiare.i]: ./mangiare.i "View source module"
+[messaggi_runtime.i]: ./messaggi_runtime.i "View source module"
 [meta_verbi.i]: ./meta_verbi.i "View source module"
 [mettere.i]: ./mettere.i "View source module"
 [parlare.i]: ./parlare.i "View source module"

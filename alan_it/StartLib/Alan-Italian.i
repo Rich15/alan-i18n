@@ -1,7 +1,9 @@
 -- "Alan-Italian.i" ("lib_en/std.i")
 -- Library version 0.6.2
 
-Import 'grammatica.i'. -- Modulo creato appositamente per l'italiano.
+-- Moduli creaty appositamente per l'italiano.
+Import 'grammatica.i'.
+Import 'messaggi_runtime.i'.
 
 
 -- All verb definitions have a small, simple default body. To make

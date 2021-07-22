@@ -1,16 +1,16 @@
 
 
 Salotto
-Un cupo salotto avvolto in una tappezzeria logora. There is un divano 
-here.
+Un cupo salotto avvolto in una tappezzeria logora. Puoi vedere un divano 
+qui.
 
 > guarda
 Salotto
-Un cupo salotto avvolto in una tappezzeria logora. There is un divano 
-here.
+Un cupo salotto avvolto in una tappezzeria logora. Puoi vedere un divano 
+qui.
 
 > inventario
-I don't know the word 'inventario'.
+Sei a mani vuote.
 
 > x divano
 Non noti nulla di particolare riguardo il divano.
@@ -29,15 +29,15 @@ Spingi il divano. Dietro il divano trovi una chiave.
 
 > l
 Salotto
-Un cupo salotto avvolto in una tappezzeria logora. There is una chiave and 
-un divano here.
+Un cupo salotto avvolto in una tappezzeria logora. Puoi vedere una chiave 
+e un divano qui.
 
 > prendi la chiave
 Taken.
 
 > inventario
-I don't know the word 'inventario'.
+Stai trasportando una chiave.
 
 > 
 
-Do you want to UNDO, RESTART, RESTORE or QUIT ? 
+Cosa vuoi fare: RESTART, RESTORE, QUIT o UNDO? 

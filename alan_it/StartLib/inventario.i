@@ -23,9 +23,9 @@ Synonyms
   i = inventario.
 
 Syntax
-  invent = invent.
+  inventario = inventario.
 
-Verb invent
+Verb inventario
   Does
     List hero.
     List worn.
