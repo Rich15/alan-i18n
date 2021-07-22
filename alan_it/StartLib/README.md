@@ -41,22 +41,22 @@ The following table contains the list of the Italian modules, their original Eng
 | [`Alan-Italian.i`][Alan-Italian.i] | [`std.i`][std.i]         | WIP    |
 | [`accendere.i`][accendere.i]       | [`turn.i`][turn.i]       | TBD!   |
 | [`aggredire.i`][aggredire.i]       | [`attack.i`][attack.i]   | TBD!   |
-| [`aiuto.i`][aiuto.i]               | [`help.i`][help.i]       | TBD!   |
+| [`aiuto.i`][aiuto.i]               | [`help.i`][help.i]       | 3%     |
 | [`annusare.i`][annusare.i]         | [`smell.i`][smell.i]     | 85%    |
 | [`aprire.i`][aprire.i]             | [`open.i`][open.i]       | 5%     |
 | [`ascoltare.i`][ascoltare.i]       | [`listen.i`][listen.i]   | 85%    |
 | [`baciare.i`][baciare.i]           | [`kiss.i`][kiss.i]       | 90%    |
-| [`bloccare.i`][bloccare.i]         | [`lock.i`][lock.i]       | TBD!   |
-| [`bussare.i`][bussare.i]           | [`knock.i`][knock.i]     | TBD!   |
+| [`bloccare.i`][bloccare.i]         | [`lock.i`][lock.i]       | 30%    |
+| [`bussare.i`][bussare.i]           | [`knock.i`][knock.i]     | 90%    |
 | [`dare.i`][dare.i]                 | [`give.i`][give.i]       | 80%    |
 | [`eroe.i`][eroe.i]                 | [`hero.i`][hero.i]       | 99%    |
 | [`esaminare.i`][esaminare.i]       | [`examine.i`][examine.i] | 15%    |
 | [`globali.i`][globali.i]           | [`global.i`][global.i]   | TBD!   |
 | [`grammatica.i`][grammatica.i]     |                          | WIP    |
 | [`guardare.i`][guardare.i]         | [`look.i`][look.i]       | 99%    |
-| [`indossare.i`][indossare.i]       | [`wear.i`][wear.i]       | 5%     |
+| [`indossare.i`][indossare.i]       | [`wear.i`][wear.i]       | 15%    |
 | [`inventario.i`][inventario.i]     | [`invent.i`][invent.i]   | 5%     |
-| [`lanciare.i`][lanciare.i]         | [`throw.i`][throw.i]     | TBD!   |
+| [`lanciare.i`][lanciare.i]         | [`throw.i`][throw.i]     | 20%    |
 | [`leggere.i`][leggere.i]           | [`read.i`][read.i]       | 85%    |
 | [`limbo.i`][limbo.i]               | [`nowhere.i`][nowhere.i] | WIP    |
 | [`mangiare.i`][mangiare.i]         | [`eat.i`][eat.i]         | 90%    |

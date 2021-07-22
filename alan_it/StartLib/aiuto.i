@@ -2,6 +2,12 @@
 -- Library version 0.5.0
 
 
+-- @NOTE: Alan StdLib Italian:
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--    SYNONYMS help, info = istruzioni.
+--    META VERB istruzioni
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 Synonyms
   h = help.
 
@@ -23,6 +29,14 @@ Verb help
 End verb.
 
 
+-- @NOTE: Alan StdLib Italian:
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--    SYNONYMS
+--      hint, aiutino = suggerimento.
+--
+--    META VERB suggerimento
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 Synonyms
   hints = hint.
 
@@ -33,6 +47,17 @@ Verb hint
   Does
     "Unfortunately hints are not available in this game."
 End verb.
+
+
+-- @NOTE: Alan StdLib Italian:
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--    SYNTAX ringraziamenti = ringraziamenti.
+--           ringraziamenti = credits.
+--           ringraziamenti = autore.
+--           ringraziamenti = copyright.
+--
+--    META VERB ringraziamenti
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 Synonyms

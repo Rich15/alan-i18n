@@ -4,16 +4,20 @@
 -- 0.4.1 - converted to ALANv3
 
 
-Synonyms
-  dump, cast = throw.
+-- Synonyms
+--   dump, cast = throw.
+
+-- @NOTE: sinonimi: scaglia, tira?
+--        Però 'tira' è ambiguo e si sovrappone a tira (=pull).
+
 
 Syntax
-  throw = throw (ogg) *
+  lanciare = lancia (ogg) *
     Where ogg IsA object
       else "You can only throw objects."
 
 Add to every object
-  Verb throw
+  Verb lanciare
     Check ogg in hero
       else "You haven't got that!"
     Does
@@ -23,22 +27,21 @@ Add to every object
   End verb.
 End add.
 
-
 Syntax
-  throw_at = throw (ogg1) 'at' (ogg2)
+  lanciare_contro = lancia (ogg1) contro (ogg2)
     Where ogg1 IsA object
       else "You can only throw objects."
     And ogg2 IsA thing
       else "You can't throw anything at that."
 
-  throw_to = throw (ogg1) 'to' (ogg2)
+  lanciare_a = lancia (ogg1) a (ogg2)
     Where ogg1 IsA object
       else "You can't be serious."
     And ogg2 IsA thing
       else "You can't throw anything to that."
 
 Add to every object
-  Verb throw_at, throw_to
+  Verb lanciare_contro, lanciare_a
     When ogg1
       Check ogg1 in hero
         else "You haven't got that!"
@@ -58,14 +61,14 @@ End add.
 
 
 Syntax
-  throw_in = throw (ogg1) 'in' (ogg2)
+  lanciare_in = lancia (ogg1) 'in' (ogg2)
     Where ogg1 IsA object
       else "Don't be silly."
     And ogg2 IsA container
       else "You can't throw anything in that."
 
 Add to every object
-  Verb throw_in
+  Verb lanciare_in
     When ogg1
       Check ogg1 in hero
         else "You haven't got that!"

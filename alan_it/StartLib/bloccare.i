@@ -6,87 +6,95 @@
 
 Add to every object
   Is
-    Not lockable.
-    locked.
+    Not bloccabile.
+    bloccato.
 End add.
 
 
+-- @NOTE: Alan StdLib Italian:
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--    SYNTAX blocca = blocca (ogg)
+--    SYNONYMS serra = blocca.
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Synonyms serra = blocca.
+
 Syntax
-  lock = lock (ogg)
+  bloccare = blocca (ogg)
     Where ogg IsA object
-      else "You can't lock that."
+      else "You can't lock that." -- @TRANSLATE!
 
 Add to every object
-  Verb lock
-    Check ogg is lockable
-      else "You can't lock that!"
-    And ogg is not locked
-      else "It's already locked."
+  Verb bloccare
+    Check ogg is bloccabile
+      else "You can't lock that!" -- @TRANSLATE!
+    And ogg is not bloccato
+      else "It's already locked." -- @TRANSLATE!
     Does
-      Make ogg locked. Say the ogg. "is now locked."
+      Make ogg bloccato. Say the ogg. "is now locked." -- @TRANSLATE!
   End verb.
 End add.
 
 
 Syntax
-  lock_with = lock (ogg) 'with' (key)
+  bloccare_con = blocca (ogg) con (chiave)
     Where ogg IsA object
-      else "You can't lock that."
-    And key IsA object
-      else "You can't lock anything with that."
+      else "You can't lock that." -- @TRANSLATE!
+    And chiave IsA object
+      else "You can't lock anything with that." -- @TRANSLATE!
 
 Add to every Object
-  Verb lock_with
+  Verb bloccare_con
     When ogg
-      Check ogg is lockable
-        else "You can't lock that!"
-      And ogg is not locked
-        else "It's already locked."
-      And key in hero
-        else "You don't have" say the key. "."
+      Check ogg is bloccabile
+        else "You can't lock that!" -- @TRANSLATE!
+      And ogg is not bloccato
+        else "It's already locked." -- @TRANSLATE!
+      And chiave in hero
+        else "You don't have" say the chiave. "." -- @TRANSLATE!
       Does
-        Make ogg locked.
-        Say the ogg. "is now locked."
+        Make ogg bloccato.
+        Say the ogg. "is now locked." -- @TRANSLATE!
   End verb.
 End add.
 
 
 Syntax
-  unlock = unlock (ogg)
+  sbloccare = sblocca (ogg)
     Where ogg IsA object
-      else "You can't lock that."
+      else "You can't lock that." -- @TRANSLATE!
 
 Add to every object
-  Verb unlock
-    Check ogg is lockable
-      else "You can't unlock that!"
-    And ogg is locked
-      else "It's already unlocked."
+  Verb sbloccare
+    Check ogg is bloccabile
+      else "You can't unlock that!" -- @TRANSLATE!
+    And ogg is bloccato
+      else "It's already unlocked." -- @TRANSLATE!
     Does
-      Make ogg not locked.
-      Say the ogg. "is now unlocked."
+      Make ogg not bloccato.
+      Say the ogg. "is now unlocked." -- @TRANSLATE!
   End verb.
 End add.
 
 
 Syntax
-  unlock_with = unlock (ogg) 'with' (key)
+  sbloccare_con = sblocca (ogg) con (chiave)
     Where ogg IsA object
-      else "You can't lock that."
-    And key IsA object
-      else "You can't lock anything with that."
+      else "You can't lock that." -- @TRANSLATE!
+    And chiave IsA object
+      else "You can't lock anything with that." -- @TRANSLATE!
 
 Add to every object
-  Verb unlock_with
+  Verb sbloccare_con
     When ogg
-      Check ogg is lockable
-        else "You can't unlock that!"
-      And ogg is locked
-        else "It's already unlocked."
-      And key in hero
-        else "You don't have" say the key. "."
+      Check ogg is bloccabile
+        else "You can't unlock that!" -- @TRANSLATE!
+      And ogg is bloccato
+        else "It's already unlocked." -- @TRANSLATE!
+      And chiave in hero
+        else "You don't have" say the chiave. "." -- @TRANSLATE!
       Does
-        Make ogg not locked.
-        Say the ogg. "is now unlocked."
+        Make ogg not bloccato.
+        Say the ogg. "is now unlocked." -- @TRANSLATE!
   End verb.
 End add.
