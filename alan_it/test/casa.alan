@@ -42,5 +42,15 @@ The cassaforte IsA object at Salotto.
   Has peso 100.
 End the cassaforte.
 
+The bretelle IsA object at Salotto.
+  Has articolo "le".
+  Description "Per terra noti un paio di bretelle."
+  Is indossabile.
+
+  Verb esaminare
+    Does only "Sono le tue bretelle preferite."
+  End verb esaminare.
+End the bretelle.
+
 --------------------------------------------------------------------------------
 Start at Salotto.

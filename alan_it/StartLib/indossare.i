@@ -34,7 +34,7 @@ Add to every object
         "(You pick" say the ogg. "up.)$n" -- @TRANSLATE!
       End if.
       Locate ogg in worn.
-      "You put on" say the ogg. "." -- @TRANSLATE!
+      "Fatto. Ora indossi" say the ogg. "."
   End verb.
 End add.
 

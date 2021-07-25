@@ -37,7 +37,8 @@ Add to every object
     Check ogg is prendibile
       else "You can't take that!" -- @TRANSLATE!
     And ogg not in worn
-      else "You've already got that - you're wearing that." -- @TRANSLATE!
+      else "Possiedi già" say the ogg. "," say ogg:articolo.
+           "stai indossando."
     And ogg not in hero
       else "Possiedi già" say the ogg. "."
     And peso of ogg <=50

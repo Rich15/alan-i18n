@@ -20,3 +20,14 @@ inventario
 ; ------------------------------------------------------------------------------
 x la cassaforte
 prendi la cassaforte
+; ------------------------------------------------------------------------------
+; Bretelle
+; ------------------------------------------------------------------------------
+x le bretelle
+prendi le bretelle
+x le bretelle
+prendi le bretelle
+indossa le bretelle
+prendi le bretelle
+x le bretelle
+inventario

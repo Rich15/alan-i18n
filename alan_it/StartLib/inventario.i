@@ -40,6 +40,6 @@ The worn IsA entity
       peso 50 then
           "You can't wear anything more. You have to remove something first."
     Header
-      "You are wearing"
+      "Stai indossando"
     else ""
 End the.

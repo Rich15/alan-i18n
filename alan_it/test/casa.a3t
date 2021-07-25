@@ -1,16 +1,16 @@
 
 
 Salotto
-Un cupo salotto avvolto in una tappezzeria logora. Puoi vedere un divano e 
-una cassaforte qui.
+Un cupo salotto avvolto in una tappezzeria logora. Per terra noti un paio
+di bretelle. Puoi vedere un divano e una cassaforte qui.
 
 > ; ==============================================================================
 > ; IL SALOTTO
 > ; ==============================================================================
 > guarda
 Salotto
-Un cupo salotto avvolto in una tappezzeria logora. Puoi vedere un divano e 
-una cassaforte qui.
+Un cupo salotto avvolto in una tappezzeria logora. Per terra noti un paio
+di bretelle. Puoi vedere un divano e una cassaforte qui.
 
 > inventario
 Sei a mani vuote.
@@ -35,8 +35,8 @@ Spingi il divano. Dietro il divano trovi una chiave.
 
 > l
 Salotto
-Un cupo salotto avvolto in una tappezzeria logora. Puoi vedere una chiave, 
-un divano e una cassaforte qui.
+Un cupo salotto avvolto in una tappezzeria logora. Per terra noti un paio
+di bretelle. Puoi vedere una chiave, un divano e una cassaforte qui.
 
 > prendi la chiave
 Presa.
@@ -55,6 +55,33 @@ Non noti nulla di particolare riguardo la cassaforte.
 
 > prendi la cassaforte
 La cassaforte pesa troppo.
+
+> ; ------------------------------------------------------------------------------
+> ; Bretelle
+> ; ------------------------------------------------------------------------------
+> x le bretelle
+Sono le tue bretelle preferite.
+
+> prendi le bretelle
+Prese.
+
+> x le bretelle
+Sono le tue bretelle preferite.
+
+> prendi le bretelle
+Possiedi già le bretelle.
+
+> indossa le bretelle
+Fatto. Ora indossi le bretelle.
+
+> prendi le bretelle
+Possiedi già le bretelle, le stai indossando.
+
+> x le bretelle
+Sono le tue bretelle preferite.
+
+> inventario
+Stai trasportando una chiave. Stai indossando delle bretelle.
 
 > 
 
