@@ -1,7 +1,4 @@
 -- "parlare.i" -> talk.i
--- Library version 0.5.0
-
--- 0.4.1 - converted to ALANv3
 
 
 -- for verbs like 'ask' and 'tell' you need to individually program
@@ -14,9 +11,9 @@
 -- Actor simon
 --   ....
 --   Verb ask
---     When act
+--     When png
 --       Does only
---         If topic = ball then
+--         If argomento = ball then
 --           "Simon replies ""I love playing ball sports.
 --            Football is my favourite."""
 --         ElsIf ogg = fred then
@@ -40,102 +37,117 @@ End add.
 
 
 Synonyms
-  yell = shout.
-  scream = shout.
+  strilla, urla = grida.
 
 Syntax
-  shout = shout.
+  gridare = grida.  -- shout
 
-Verb shout
+Verb gridare
   Does
-    "You make a lot of noise..."
+    "You make a lot of noise..." -- @TRANSLATE!
 End verb.
 
 
 Syntax
-  say_word = 'say' (topic)!
-    Where topic IsA thing
-      else "You can't say that."
+  say_word = 'say' (argomento)!
+    Where argomento IsA thing
+      else "You can't say that." -- @TRANSLATE!
 
 Add to every thing
   Verb say_word
     Does
-      "$1? That's a nice word!"
+      "$1? That's a nice word!" -- @TRANSLATE!
   End verb.
 End add.
 
 
 Syntax
-  say_to = 'say' (topic)! 'to' (act)
-    Where topic IsA thing
-      else "You can't say that."
-    And act IsA thing
-      else "You can't talk to that."
+  dire_a = dì (argomento)! a (png)   -- say_to
+    Where argomento IsA thing
+      else "You can't say that." -- @TRANSLATE!
+    And png IsA thing
+      else "You can't talk to that." -- @TRANSLATE!
+  dire_a = dì a (png) (argomento)!.
 
 Add to every thing
-  Verb say_to
-    When act
-      Check act can parlare
-        else "You can't talk to that."
+  Verb dire_a
+    When png
+      Check png can parlare
+        else "You can't talk to that." -- @TRANSLATE!
     Does
-      Say the act. "doesn't seem interested."
+      Say the png. "doesn't seem interested." -- @TRANSLATE!
   End verb.
 End add.
 
 
+Synonyms
+  circa = riguardo.
+
 Syntax
-  ask = ask (act) about (topic)!
-    Where topic IsA thing
-      else "You can't ask about that."
-    And act IsA thing
-      else "You can't talk to that."
+  domandare = domanda a (png) di (argomento)!   -- ask
+    Where argomento IsA thing
+      else "You can't ask about that." -- @TRANSLATE!
+    And png IsA thing
+      else "You can't talk to that." -- @TRANSLATE!
+  domandare = domanda a (png) riguardo (argomento)!.
+  domandare = chiedi a (png) di (argomento)!.
+  domandare = chiedi a (png) riguardo (argomento)!.
+--Ordine dei parametri invertito:
+  domandare = domanda di (argomento)! a (png).
+  domandare = domanda riguardo (argomento)! a (png).
+  domandare = chiedi di (argomento)! a (png).
+  domandare = chiedi riguardo (argomento)! a (png).
 
 Add to every thing
-  Verb ask
-    When act
-      Check act can parlare
-        else "You can't talk to that."
+  Verb domandare
+    When png
+      Check png can parlare
+        else "You can't talk to that." -- @TRANSLATE!
       Does
-        Say the act.
-        "says ""I don't know anything about"
-        say the topic. "!"""
+        Say the png.
+        "says ""I don't know anything about" -- @TRANSLATE!
+        say the argomento. "!"""
   End verb.
 End add.
 
-
 Syntax
-  talk_to = talk 'to' (act) about (topic)!
-    Where topic IsA thing
-      else "You can't ask about that."
-    And act IsA thing
-      else "You can't talk to that."
-  talk_to = tell (act) about (topic)!.
+  raccontare = racconta a (png) di (argomento)!  -- talk_to
+    Where argomento IsA thing
+      else "You can't ask about that." -- @TRANSLATE!
+    And png IsA thing
+      else "You can't talk to that." -- @TRANSLATE!
+  raccontare = parla a (png) di (argomento)!.
+  raccontare = parla con (png) di (argomento)!.
+  raccontare = informa (png) di (argomento)!.
+  raccontare = informa (png) su (argomento)!.
+  raccontare = dì a (png) di (argomento)!.
 
 Add to every thing
-  Verb talk_to
-    When  topic
-      Check act can parlare
-        else "You can't talk to that."
+  Verb raccontare
+    When  argomento
+      Check png can parlare
+        else "You can't talk to that." -- @TRANSLATE!
       Does
-        """I don't think I need to know about"
-        Say the topic. "$$,"" says"
-        say the act. "."
+        """I don't think I need to know about" -- @TRANSLATE!
+        Say the argomento. "$$,"" says"
+        say the png. "."
   End verb.
 End add.
 
 
 Syntax
-  talk_to_a = talk 'to' (act)
-    Where act IsA thing
-      else "You can't talk to that."
+  parlare_con = parla con (png) -- talk_to_a
+    Where png IsA thing
+      else "You can't talk to that." -- @TRANSLATE!
+  parlare_con = parla a (png).
 
 Add to every thing
-  Verb talk_to_a
-    Check act can parlare
-      else "You can't talk to that."
+  Verb parlare_con
+    Check png can parlare
+      else "You can't talk to that." -- @TRANSLATE!
     Does
-      Say the act.
+      Say the png.
       "looks at you, seemingly wondering if you have
-       anything specific to talk about."
+       anything specific to talk about." -- @TRANSLATE!
   End verb.
 End add.

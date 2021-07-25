@@ -27,8 +27,8 @@ Synonyms
 
 
 Syntax
-  attack = attack (act)
-    Where act IsA thing
+  attack = attack (png)
+    Where png IsA thing
       else "You can't attack that."
 
 Add to every thing
@@ -45,8 +45,8 @@ End add.
 -- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Syntax
-  attack_with = attack (act) 'with' (ogg)
-    Where act IsA thing
+  attack_with = attack (png) 'with' (ogg)
+    Where png IsA thing
       else "You can't attack that."
     And ogg IsA object
       else "You can't attack anything with that!"
@@ -103,16 +103,16 @@ End add.
 --        inglese sia così diverso, e che questi verbi andrebbero rivisti.
 
 Syntax
-  shoot_at = shoot (ogg) 'at' (act)
+  shoot_at = shoot (ogg) 'at' (png)
     Where ogg IsA object
       else "You can't shoot that."
-    And act IsA thing
+    And png IsA thing
       else "You can't shoot at that."
 
-  shoot_with = shoot (act) 'with' (ogg)
+  shoot_with = shoot (png) 'with' (ogg)
     Where ogg IsA object
       else "You can't shoot that."
-    And act IsA thing
+    And png IsA thing
       else "You can't shoot at that."
 
 Add to every thing
