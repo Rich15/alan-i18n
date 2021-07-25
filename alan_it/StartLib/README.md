@@ -18,12 +18,12 @@ WIP port of the __ALAN Libraryv 0.6.2__ to Italian, by [Tristano Ajmone].
 
 # About
 
-The [`Alan-Italian.i`][Alan-Italian.i] file is the main library module that imports all others (called [`std.i`][std.i] in the English library).
+The [`StartLib.i`][StartLib.i] file is the main library module that imports all others (called [`std.i`][std.i] in the English library).
 
 In order to use the library is sufficient to import this single module from your main adventure source file:
 
 ```alan
-Import 'Alan-Italian.i'.
+Import 'StartLib.i'.
 ```
 
 and add the library folder to the import paths when invoking the compiler:
@@ -38,7 +38,7 @@ The following table contains the list of the Italian modules, their original Eng
 
 |                   Lib IT                   |          Lib EN          | Status |
 |--------------------------------------------|--------------------------|--------|
-| [`Alan-Italian.i`][Alan-Italian.i]         | [`std.i`][std.i]         | WIP    |
+| [`StartLib.i`][StartLib.i]                 | [`std.i`][std.i]         | WIP    |
 | [`accendere.i`][accendere.i]               | [`turn.i`][turn.i]       | TBD!   |
 | [`aggredire.i`][aggredire.i]               | [`attack.i`][attack.i]   | TBD!   |
 | [`aiuto.i`][aiuto.i]                       | [`help.i`][help.i]       | 3%     |
@@ -79,7 +79,7 @@ The following table contains the list of the Italian modules, their original Eng
 
 <!-- Lib IT modules -->
 
-[Alan-Italian.i]: ./Alan-Italian.i "View source module"
+[StartLib.i]: ./StartLib.i "View source module"
 [accendere.i]: ./accendere.i "View source module"
 [aggredire.i]: ./aggredire.i "View source module"
 [aiuto.i]: ./aiuto.i "View source module"

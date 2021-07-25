@@ -1,7 +1,10 @@
--- "Alan-Italian.i" ("lib_en/std.i")
--- Library version 0.6.2
+--==============================================================================
+--------------------------------------------------------------------------------
+-- * * * ALAN Starter Library Italian * * *   v0.1.0 | 2021/07/xx | ALAN 3.Beta7
+--------------------------------------------------------------------------------
+--==============================================================================
 
--- Moduli creaty appositamente per l'italiano.
+-- Moduli creati appositamente per l'italiano.
 Import 'grammatica.i'.
 Import 'messaggi_runtime.i'.
 
