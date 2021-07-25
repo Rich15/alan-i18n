@@ -62,7 +62,7 @@ The following table contains the list of the Italian modules, their original Eng
 | [`mangiare.i`][mangiare.i]                 | [`eat.i`][eat.i]         | 90%    |
 | [`messaggi_runtime.i`][messaggi_runtime.i] |                          | 70%    |
 | [`meta_verbi.i`][meta_verbi.i]             | [`meta.i`][meta.i]       | TBD!   |
-| [`mettere.i`][mettere.i]                   | [`put.i`][put.i]         | TBD!   |
+| [`mettere.i`][mettere.i]                   | [`put.i`][put.i]         | 50%    |
 | [`parlare.i`][parlare.i]                   | [`talk.i`][talk.i]       | TBD!   |
 | [`persone.i`][persone.i]                   | [`people.i`][people.i]   | 90%    |
 | [`prendere.i`][prendere.i]                 | [`take.i`][take.i]       | 20%    |

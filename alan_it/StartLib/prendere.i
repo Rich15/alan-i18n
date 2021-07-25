@@ -54,20 +54,19 @@ Add to every object
 End add.
 
 
+-- i6: lascia, lancia, abbandona, posa, metti giù
 Synonyms
   discard = drop.
 
 Syntax
-  drop = drop (ogg)*.
+  lasciare = lascia (ogg)*.
+  lasciare = abbandona (ogg)*.
+  lasciare = metti giù (ogg)*.
+  lasciare = posa (ogg)*.
 
-Syntax
-  put_down1 = put (ogg) * down.
-
-Syntax
-  put_down2 = put down (ogg)*.
 
 Add to every object
-  Verb drop, put_down1, put_down2
+  Verb lasciare
     Check ogg in hero
       else "You aren't carrying that." -- @TRANSLATE!
     Does
