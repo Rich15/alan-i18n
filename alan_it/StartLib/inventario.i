@@ -1,9 +1,4 @@
 -- "inventario.i" -> invent.i
--- 0.6.2 : changed 'the Worn' from a 'thing' to an 'entity'
-
--- Library version 0.5.0
--- 0.4.1 - converted to ALANv3
-
 
 Add to every thing
   Has peso 0.
@@ -23,9 +18,9 @@ Synonyms
   i = inventario.
 
 Syntax
-  inventario = inventario.
+  inventariare = inventario.
 
-Verb inventario
+Verb inventariare
   Does
     List hero.
     List worn.
@@ -36,9 +31,11 @@ The worn IsA entity
   Container
     Limits
       Count 10 then
-        "You can't wear anything more. You have to remove something first."
+        "Hai raggiunto il numero massimo di capi indossabili.
+         Dovresti toglierti qualcosa prima."
       peso 50 then
-          "You can't wear anything more. You have to remove something first."
+        "Hai raggiunto il peso massimo di capi indossabili.
+         Dovresti toglierti qualcosa prima."
     Header
       "Stai indossando"
     else ""
