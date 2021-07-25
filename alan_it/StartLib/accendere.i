@@ -1,8 +1,4 @@
 -- "accendere.i" -> turn.i
--- Library version 0.5.0
-
--- 0.4.1 - converted to ALANv3
-
 
 Add to every object
   Is
@@ -12,62 +8,36 @@ End add.
 
 
 Syntax
-  turn_on1 = turn 'on' (ogg)
+  accendere = accendi (ogg)
     Where ogg IsA object
-      else "You can't turn that on."
-
-  turn_on2 = turn (ogg) 'on'
-    Where ogg IsA object
-      else "You can't turn that on."
-
-  switch_on1 = switch 'on' (ogg)
-    Where ogg IsA object
-      else "You can't switch that on."
-
-  switch_on2 = switch (ogg) 'on'
-    Where ogg IsA object
-      else "You can't switch that on."
-
+      else "You can't turn that on." -- @TRANSLATE!
 
 Add to every object
-  Verb turn_on1, turn_on2, switch_on1, switch_on2
+  Verb accendere
     Check ogg is accendibile
-      else "You can't turn that on."
+      else "You can't turn that on." -- @TRANSLATE!
     And ogg is not acceso
-      else "It's already on."
+      else "It's already on." -- @TRANSLATE!
     Does
       Make ogg acceso.
-      "You turn on" say the ogg. "."
+      "You turn on" say the ogg. "." -- @TRANSLATE!
   End verb.
 End add.
 
 
 Syntax
-  turn_off1 = turn off (ogg)
+  spegnere = spegni (ogg)
     Where ogg IsA object
-      else "You can't turn that off."
-
-  turn_off2 = turn (ogg) off
-    Where ogg IsA object
-      else "You can't turn that off."
-
-  switch_off1 = switch off (ogg)
-    Where ogg IsA object
-      else "You can't switch that off."
-
-  switch_off2 = switch (ogg) off
-    Where ogg IsA object
-      else "You can't switch that off."
-
+      else "You can't turn that off." -- @TRANSLATE!
 
 Add to every object
-  Verb turn_off1, turn_off2, switch_off1, switch_off2
+  Verb spegnere
     Check ogg is accendibile
-      else "You can't turn that off."
+      else "You can't turn that off." -- @TRANSLATE!
     And ogg is acceso
-      else "It's already off."
+      else "It's already off." -- @TRANSLATE!
     Does
       Make ogg not acceso.
-      "You turn off" say the ogg. "."
+      "You turn off" say the ogg. "." -- @TRANSLATE!
   End verb.
 End add.

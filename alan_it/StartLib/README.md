@@ -39,7 +39,7 @@ The following table contains the list of the Italian modules, their original Eng
 |                   Lib IT                   |          Lib EN          | Status |
 |--------------------------------------------|--------------------------|--------|
 | [`StartLib.i`][StartLib.i]                 | [`std.i`][std.i]         | WIP    |
-| [`accendere.i`][accendere.i]               | [`turn.i`][turn.i]       | TBD!   |
+| [`accendere.i`][accendere.i]               | [`turn.i`][turn.i]       | 60%    |
 | [`aggredire.i`][aggredire.i]               | [`attack.i`][attack.i]   | TBD!   |
 | [`aiuto.i`][aiuto.i]                       | [`help.i`][help.i]       | 3%     |
 | [`annusare.i`][annusare.i]                 | [`smell.i`][smell.i]     | 85%    |
