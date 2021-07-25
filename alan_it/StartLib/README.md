@@ -65,7 +65,7 @@ The following table contains the list of the Italian modules, their original Eng
 | [`mettere.i`][mettere.i]                   | [`put.i`][put.i]         | TBD!   |
 | [`parlare.i`][parlare.i]                   | [`talk.i`][talk.i]       | TBD!   |
 | [`persone.i`][persone.i]                   | [`people.i`][people.i]   | 90%    |
-| [`prendere.i`][prendere.i]                 | [`take.i`][take.i]       | 10%    |
+| [`prendere.i`][prendere.i]                 | [`take.i`][take.i]       | 20%    |
 | [`saltare.i`][saltare.i]                   | [`jump.i`][jump.i]       | 99%    |
 | [`scenario.i`][scenario.i]                 | [`scenery.i`][scenery.i] | 99%    |
 | [`spingere.i`][spingere.i]                 | [`push.i`][push.i]       | 90%    |

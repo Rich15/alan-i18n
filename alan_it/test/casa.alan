@@ -37,5 +37,10 @@ The divano IsA object at Salotto.
   End verb spingere.
 End the divano.
 
+The cassaforte IsA object at Salotto.
+  Has articolo "la".
+  Has peso 100.
+End the cassaforte.
+
 --------------------------------------------------------------------------------
 Start at Salotto.

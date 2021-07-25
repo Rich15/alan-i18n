@@ -1,11 +1,4 @@
 -- "prendere.i" -> take.i
--- Library version 0.5.0
-
--- 0.6.0 - removed guard for taking things from animate containers since
---         Alan v3.0.29 supports Extract clause on containers
--- 0.5.0 - cleaned up formatting, made use of "." not making a leading space
--- 0.4.1 - converted to ALANv3
-
 
 Add to every thing
   Is inanimato.
@@ -20,41 +13,42 @@ Add to every actor
 End add.
 
 
-Synonyms
-  get, carry, obtain, grab, steal, confiscate, hold = take.
+-- Synonyms
+--   get, carry, obtain, grab, steal, confiscate, hold = take.
 
+-- @NOTE: Non sono convinto che definire 'raccogli' e 'trasporta' come sinonimi
+--        di 'prendi' sia una buona idea, perché l'utente potrebbe creare verbi
+--        in cui i termini non sarebbero intercambiabili (e.s. "prendi tempo",
+--        "raccogli la sfida", ecc.).
+
+-- @NOTE: Quanto ad 'afferra', non sempre collima con 'prendi', e.s. "afferra
+--        la fune", dove il senso non è di impossessarsene ma di trattenere.
 
 Syntax
   prendere = prendi (ogg) *
     Where ogg IsA object
-      else "You can't take that with you!"
+      else "You can't take that with you!" -- @TRANSLATE!
   prendere = raccogli (ogg).
   prendere = afferra (ogg).   --> @TODO: Eliminare?
   prendere = trasporta (ogg). --> @TODO: Eliminare?
 
-
-Syntax
-  pick_up1 = pick up (ogg)*
-    Where ogg IsA object
-      else "You can't take that with you!"
-
-  pick_up2 = pick (ogg)* up
-    Where ogg IsA object
-      else "You can't take that with you!"
-
 Add to every object
-  Verb prendere, pick_up1, pick_up2
+  Verb prendere
     Check ogg is prendibile
-      else "You can't take that!"
+      else "You can't take that!" -- @TRANSLATE!
     And ogg not in worn
-      else "You've already got that - you're wearing that."
+      else "You've already got that - you're wearing that." -- @TRANSLATE!
     And ogg not in hero
-      else "You've already got that."
-    And peso Of ogg <=50
-      else "That is too heavy to lift."
+      else "Possiedi già" say the ogg. "."
+    And peso of ogg <=50
+      else
+        Say the ogg. "pesa"
+        If ogg is plurale
+          then "$$no"
+        End if. "troppo."
     Does
       Locate ogg in hero.
-      "Taken."
+      "Pres$$" say ogg:vocale. "."
   End verb.
 End add.
 
@@ -74,10 +68,10 @@ Syntax
 Add to every object
   Verb drop, put_down1, put_down2
     Check ogg in hero
-      else "You aren't carrying that."
+      else "You aren't carrying that." -- @TRANSLATE!
     Does
       Locate ogg here.
-      "Dropped."
+      "Dropped." -- @TRANSLATE!
   End verb.
 End add.
 
@@ -85,25 +79,25 @@ End add.
 Syntax
   take_from = 'take' (ogg) 'from' (holder)
     Where ogg IsA object
-      else "You can only take objects."
+      else "You can only take objects." -- @TRANSLATE!
     And holder IsA thing
-      else "You can't take things from that!"
+      else "You can't take things from that!" -- @TRANSLATE!
     And holder IsA container
-      else "You can't take things from that!"
+      else "You can't take things from that!" -- @TRANSLATE!
 
 Add to every object
   Verb take_from
     When ogg
       Check ogg not in hero
-        else "You already have" say the ogg. "."
+        else "You already have" say the ogg. "." -- @TRANSLATE!
       And ogg in holder
-        else Say the ogg. "is not there."
+        else say the ogg. "is not there." -- @TRANSLATE!
       Does
         If holder=hero then
-          "You don't need to take things from yourself!"
+          "You don't need to take things from yourself!" -- @TRANSLATE!
         else
           Locate ogg in hero.
-          "You take" say the ogg. "."
+          "You take" say the ogg. "." -- @TRANSLATE!
         End if.
   End verb.
 End add.

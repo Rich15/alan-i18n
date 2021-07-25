@@ -1,17 +1,23 @@
 
 
 Salotto
-Un cupo salotto avvolto in una tappezzeria logora. Puoi vedere un divano 
-qui.
+Un cupo salotto avvolto in una tappezzeria logora. Puoi vedere un divano e 
+una cassaforte qui.
 
+> ; ==============================================================================
+> ; IL SALOTTO
+> ; ==============================================================================
 > guarda
 Salotto
-Un cupo salotto avvolto in una tappezzeria logora. Puoi vedere un divano 
-qui.
+Un cupo salotto avvolto in una tappezzeria logora. Puoi vedere un divano e 
+una cassaforte qui.
 
 > inventario
 Sei a mani vuote.
 
+> ; ------------------------------------------------------------------------------
+> ; Divano
+> ; ------------------------------------------------------------------------------
 > x divano
 Non noti nulla di particolare riguardo il divano.
 
@@ -29,14 +35,26 @@ Spingi il divano. Dietro il divano trovi una chiave.
 
 > l
 Salotto
-Un cupo salotto avvolto in una tappezzeria logora. Puoi vedere una chiave 
-e un divano qui.
+Un cupo salotto avvolto in una tappezzeria logora. Puoi vedere una chiave, 
+un divano e una cassaforte qui.
 
 > prendi la chiave
-Taken.
+Presa.
+
+> prendi la chiave
+Possiedi già la chiave.
 
 > inventario
 Stai trasportando una chiave.
+
+> ; ------------------------------------------------------------------------------
+> ; Cassaforte
+> ; ------------------------------------------------------------------------------
+> x la cassaforte
+Non noti nulla di particolare riguardo la cassaforte.
+
+> prendi la cassaforte
+La cassaforte pesa troppo.
 
 > 
 
