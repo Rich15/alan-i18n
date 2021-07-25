@@ -1,19 +1,18 @@
 -- "aggredire.i" -> attack.i
--- Library version 0.5.0
-
--- 0.4.1 - converted to ALANv3
-
 
 Add to every thing
-  Is not shootable.
+  Can not sparare.
 End add.
 
 Add to every object
-  Is
-    Not weapon.    -- @TRANSLATE ATTRIBUTE!
-    Not shootable. -- @TRANSLATE ATTRIBUTE!
+  Is not arma.
+  Can not sparare. -- @DELME? (redundant! already on THING)
 End add.
 
+
+-- @NOTA: In Inform 6 'attacca' riconosce questi sinonimi:
+--        rompi, colpisci, combatti, uccidi, tortura, lotta, sfonda, ammazza,
+--        picchia.
 
 -- @NOTE: Alan StdLib Italian:
 -- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -21,18 +20,21 @@ End add.
 --    SYNTAX attacca = attacca (bersaglio)
 -- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+-- Synonyms
+--   kill, fight, hit = attack.
+--   fire = shoot.
+
 Synonyms
-  kill, fight, hit = attack.
+  combatti, picchia, attacca = aggredisci.
   fire = shoot.
 
-
 Syntax
-  attack = attack (png)
+  aggredire = aggredisci (png)
     Where png IsA thing
       else "You can't attack that."
 
 Add to every thing
-  Verb attack
+  Verb aggredire
     Does
       "Violence is not the answer."
   End verb.
@@ -45,18 +47,18 @@ End add.
 -- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Syntax
-  attack_with = attack (png) 'with' (ogg)
+  aggredire_con = aggredisci (png) con (ogg)
     Where png IsA thing
       else "You can't attack that."
     And ogg IsA object
       else "You can't attack anything with that!"
 
 Add to every thing
-  Verb attack_with
+  Verb aggredire_con
     When ogg
       Check ogg in hero
         else "You don't have that object to attack with."
-      And ogg is weapon
+      And ogg is arma
         else "No point attacking anything with that!"
       Does
         "Violence is not the answer."
@@ -80,7 +82,7 @@ Syntax
 Add to every thing
   Verb shoot
     Does
-      If ogg is shootable then
+      If ogg can sparare then
         "You need to specify what to shoot at."
       else
         "You need to specify what you want to shoot"
@@ -120,7 +122,7 @@ Add to every thing
     When ogg
       Check ogg in hero
         else "You don't have that."
-      And ogg is shootable
+      And ogg can sparare
         else "You can't shoot anything with that."
       Does
         "Violence is not the answer."
@@ -130,7 +132,7 @@ Add to every thing
     When ogg
       Check ogg in hero
         else "You don't have that."
-      And ogg is shootable
+      And ogg can sparare
         else "You can't shoot anything with that."
       Does
         "Violence is not the answer."
