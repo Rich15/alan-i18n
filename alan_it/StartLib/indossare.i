@@ -1,8 +1,4 @@
 -- "indossare.i" -> wear.i
--- library version 0.4.1
-
--- 0.4.1 - converted to ALANv3
-
 
 Add to every object
   Is not indossabile.

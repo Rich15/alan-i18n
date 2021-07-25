@@ -31,12 +31,12 @@ Synonyms
 Syntax
   aggredire = aggredisci (png)
     Where png IsA thing
-      else "You can't attack that."
+      else "You can't attack that." -- @TRANSLATE!
 
 Add to every thing
   Verb aggredire
     Does
-      "Violence is not the answer."
+      "Violence is not the answer." -- @TRANSLATE!
   End verb.
 End add.
 
@@ -49,19 +49,19 @@ End add.
 Syntax
   aggredire_con = aggredisci (png) con (ogg)
     Where png IsA thing
-      else "You can't attack that."
+      else "You can't attack that." -- @TRANSLATE!
     And ogg IsA object
-      else "You can't attack anything with that!"
+      else "You can't attack anything with that!" -- @TRANSLATE!
 
 Add to every thing
   Verb aggredire_con
     When ogg
       Check ogg in hero
-        else "You don't have that object to attack with."
+        else "You don't have that object to attack with." -- @TRANSLATE!
       And ogg is arma
-        else "No point attacking anything with that!"
+        else "No point attacking anything with that!" -- @TRANSLATE!
       Does
-        "Violence is not the answer."
+        "Violence is not the answer." -- @TRANSLATE!
   End verb.
 End add.
 
@@ -75,7 +75,7 @@ End add.
 Syntax
   shoot = shoot (ogg)
     Where ogg IsA thing
-      else "You can't shoot at that."
+      else "You can't shoot at that." -- @TRANSLATE!
   shoot = shoot 'at' (ogg).
 
 
@@ -83,9 +83,9 @@ Add to every thing
   Verb shoot
     Does
       If ogg can sparare then
-        "You need to specify what to shoot at."
+        "You need to specify what to shoot at." -- @TRANSLATE!
       else
-        "You need to specify what you want to shoot"
+        "You need to specify what you want to shoot" -- @TRANSLATE!
         say the ogg. "with."
       End if.
   End verb.
@@ -107,34 +107,34 @@ End add.
 Syntax
   shoot_at = shoot (ogg) 'at' (png)
     Where ogg IsA object
-      else "You can't shoot that."
+      else "You can't shoot that." -- @TRANSLATE!
     And png IsA thing
-      else "You can't shoot at that."
+      else "You can't shoot at that." -- @TRANSLATE!
 
   shoot_with = shoot (png) 'with' (ogg)
     Where ogg IsA object
-      else "You can't shoot that."
+      else "You can't shoot that." -- @TRANSLATE!
     And png IsA thing
-      else "You can't shoot at that."
+      else "You can't shoot at that." -- @TRANSLATE!
 
 Add to every thing
   Verb shoot_at
     When ogg
       Check ogg in hero
-        else "You don't have that."
+        else "You don't have that." -- @TRANSLATE!
       And ogg can sparare
-        else "You can't shoot anything with that."
+        else "You can't shoot anything with that." -- @TRANSLATE!
       Does
-        "Violence is not the answer."
+        "Violence is not the answer." -- @TRANSLATE!
   End verb.
 
   Verb shoot_with
     When ogg
       Check ogg in hero
-        else "You don't have that."
+        else "You don't have that." -- @TRANSLATE!
       And ogg can sparare
-        else "You can't shoot anything with that."
+        else "You can't shoot anything with that." -- @TRANSLATE!
       Does
-        "Violence is not the answer."
+        "Violence is not the answer." -- @TRANSLATE!
   End verb.
 End add.

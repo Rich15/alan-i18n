@@ -1,5 +1,4 @@
 -- "persone.i" -> people.i
--- Library version 0.6.0
 
 
 -- Classi per le persone

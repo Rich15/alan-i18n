@@ -1,5 +1,4 @@
 -- "aiuto.i" -> help.i
--- Library version 0.5.0
 
 
 -- @NOTE: Alan StdLib Italian:
@@ -15,7 +14,7 @@ Syntax
   help = help.
 
 Verb help
-  Does
+  Does -- @TRANSLATE!
     "In this game I am your eyes and your body. I will describe
      the surroundings for you. You tell me what you want to do. For
      example if you want to go north, then type 'north'. But there
@@ -41,11 +40,11 @@ Synonyms
   hints = hint.
 
 Syntax
-  hint = hint.
+  hint = hint. -- @TRANSLATE!
 
 Verb hint
   Does
-    "Unfortunately hints are not available in this game."
+    "Unfortunately hints are not available in this game." -- @TRANSLATE!
 End verb.
 
 
@@ -64,10 +63,10 @@ Synonyms
   info, notes, author = credits.
 
 Syntax
-  credits = credits.
+  credits = credits. -- @TRANSLATE!
 
 Verb credits
-  Does
+  Does -- @TRANSLATE!
     "The author retains the copyright to this game.
      $pThis game was written using the ALAN Adventure Language.
      ALAN is an interactive fiction authoring system by Thomas Nilefalk

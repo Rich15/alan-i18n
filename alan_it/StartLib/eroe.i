@@ -1,6 +1,4 @@
 -- "eroe.i" --> "hero.i"
--- Library version 0.6.1dev
-
 
 Synonyms
   me = hero.

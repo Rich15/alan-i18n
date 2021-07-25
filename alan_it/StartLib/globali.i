@@ -1,18 +1,4 @@
 -- "globali.i" -> global.i
--- Library version 0.6.1
-
--- 0.6.0 -- removed synonyms 'him' and 'her' since Alan now defines them-
---          Use of 'named' as used in std.i messages to distinguish between
---          actors with real names like Fred (ie: is 'named') and The
---          Bus-driver is deprecated and the named attribute removed.
--- 0.4.1 -- due to ALANv3 changes:
---          added definition of 'hero' (the player character) as a
---          container for holding the player's "inventory", removed
---          inventory object from invent.i
-
---          synonyms for player's character so can "examine myself"
---          "look at me" etc. and synonyms for "it" so can say
---          "look at guard" and then "salute him"
 
 -- To make instance names always be capitalized (e.g. for persons),
 -- give the instance a capitalised name in single quotes. Since

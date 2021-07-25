@@ -1,13 +1,9 @@
 -- "meta_verbi.i" -> meta.i
--- 0.6.2 : removed q verb and just made 'q' a synonym for 'quit'
-
--- Library version 0.5.0
-
 
 Synonyms q = 'quit'.
 
 Syntax
-  'quit' = 'quit'.
+  'quit' = 'quit'. -- @TRANSLATE!
 
 Verb 'quit'
   Does
@@ -16,7 +12,7 @@ End verb.
 
 
 Syntax
-  'save' = 'save'.
+  'save' = 'save'. -- @TRANSLATE!
 
 Verb 'save'
   Does
@@ -26,7 +22,7 @@ End verb.
 
 
 Syntax
-  'restore' = 'restore'.
+  'restore' = 'restore'. -- @TRANSLATE!
 
 Verb 'restore'
   Does
@@ -37,7 +33,7 @@ End verb.
 
 
 Syntax
-  'restart' = 'restart'.
+  'restart' = 'restart'. -- @TRANSLATE!
 
 Verb 'restart'
   Does
@@ -46,7 +42,7 @@ End verb.
 
 
 Syntax
-  'score' = 'score'.
+  'score' = 'score'. -- @TRANSLATE!
 
 Verb 'score'
   Does
@@ -58,11 +54,11 @@ Synonyms
   z = 'wait'.
 
 Syntax
-  'wait' = 'wait'.
+  'wait' = 'wait'. -- @TRANSLATE!
 
 Verb 'wait'
   Does
-    "Time passes..."
+    "Time passes..." -- @TRANSLATE!
 End verb.
 
 
@@ -70,10 +66,10 @@ Synonyms
   g = again.
 
 Syntax
-  again = again.
+  again = again. -- @TRANSLATE!
 
 Verb again
-  Does
+  Does -- @TRANSLATE!
     "The 'again' command is not available, sorry. You can probably use
      the up and down arrow keys to scroll through your previous commands
      (unless you're using the MSDOS interpreter in which case you can

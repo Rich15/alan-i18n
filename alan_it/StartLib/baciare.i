@@ -20,7 +20,7 @@ Add to every thing
         If ogg is inanimato then
           "Baci" say the ogg. "."
         else
-          Say the ogg. "repsing$$"
+          Say the ogg. "resping$$"
           If ogg is not plurale
             Then "e"
             Else "ono"

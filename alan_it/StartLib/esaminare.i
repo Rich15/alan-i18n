@@ -1,8 +1,4 @@
 -- "esaminare.i" -> examine.i
--- Library version 0.5.0
-
--- 0.4.1 - converted to ALANv3
-
 
 Add to every thing
   Is
@@ -23,7 +19,7 @@ Synonyms
 Syntax
   esaminare = esamina (ogg) *
     Where ogg IsA thing
-      else "You can't examine that!"
+      else "You can't examine that!" -- @TRANSLATE!
   esaminare = guarda (ogg) *.
 
 
@@ -44,14 +40,14 @@ Synonyms
 Syntax
   guardare_dentro = guarda 'in' (ogg)
     Where ogg IsA thing
-      else "You can't look inside that."
+      else "You can't look inside that." -- @TRANSLATE!
     And ogg IsA container
-      else "You can't look inside that."
+      else "You can't look inside that." -- @TRANSLATE!
 
 Add to every object
   Verb guardare_dentro
     Check ogg is esaminabile
-      else "You can't look inside" say the ogg. "."
+      else "You can't look inside" say the ogg. "." -- @TRANSLATE!
     Does
       List ogg.
   End verb.
@@ -65,13 +61,13 @@ Synonyms
 Syntax
   ispezionare = ispeziona (ogg)
     Where ogg IsA thing
-      else "You can't search that!"
+      else "You can't search that!" -- @TRANSLATE!
 
 Add to every object
   Verb ispezionare
     Check ogg is ispezionabile
-      else "You can't search" say the ogg. "."
+      else "You can't search" say the ogg. "." -- @TRANSLATE!
     Does
-      "You find nothing of interest."
+      "You find nothing of interest." -- @TRANSLATE!
   End verb.
 End add.

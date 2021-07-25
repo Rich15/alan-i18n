@@ -1,17 +1,10 @@
 -- "aprire.i" -> open.i
--- Library version 0.5.0
-
--- 0.4.1 - converted to ALANv3
--- 0.5.0 - Changed attributes around:
---    'open' indicates state
---    'openable' indicates if it is possible to open
---    'closeable' indicates if it is possible to close
 
 
 Syntax
   aprire = apri (ogg)
     Where ogg IsA object
-      else "You can't open that."
+      else "You can't open that." -- @TRANSLATE!
 
 Add to every object
   Is
@@ -45,17 +38,17 @@ End add.
 Syntax
   aprire_con = open (ogg1) con (ogg2)
     Where ogg1 IsA object
-      else "You can't open that."
+      else "You can't open that." -- @TRANSLATE!
     And ogg2 IsA object
-      else "You can't open anything with that."
+      else "You can't open anything with that." -- @TRANSLATE!
 
 Add to every object
   Verb aprire_con
     When ogg1
       Check ogg2 in hero
-        else "You don't have" say the ogg2. "."
+        else "You don't have" say the ogg2. "." -- @TRANSLATE!
       Does
-        "You can't open" say the ogg1. "with" say the ogg2. "."
+        "You can't open" say the ogg1. "with" say the ogg2. "." -- @TRANSLATE!
   End verb.
 End add.
 
@@ -64,41 +57,41 @@ Synonyms
   shut = close.
 
 Syntax
-  close = close (ogg)
+  close = close (ogg) -- @TRANSLATE!
     Where ogg IsA object
-      else "You can only close objects."
+      else "You can only close objects." -- @TRANSLATE!
 
 Add to every object
   Is not chiudibile.
 
   Verb close
     Check ogg is chiudibile
-      else "You can't close that."
+      else "You can't close that." -- @TRANSLATE!
     And ogg is aperto
-      else "It is not open."
+      else "It is not open." -- @TRANSLATE!
      Does
        Make ogg not aperto.
-       Say the ogg. "is now closed."
+       Say the ogg. "is now closed." -- @TRANSLATE!
     End verb.
 
 End add.
 
 
 Syntax
-  close_with = close (ogg1) 'with' (ogg2)
+  close_with = close (ogg1) 'with' (ogg2) -- @TRANSLATE!
     Where ogg1 IsA object
-      else "You can't close that."
+      else "You can't close that." -- @TRANSLATE!
     And ogg2 IsA object
-      else "You can't close anything with that."
+      else "You can't close anything with that." -- @TRANSLATE!
 
 Add to every object
   Verb close_with
     When ogg1
       Check ogg2 in hero
-        else "You don't have" say the ogg2. "."
+        else "You don't have" say the ogg2. "." -- @TRANSLATE!
       And ogg1 Is apribile
-        else "You can't close" say the ogg1. "."
+        else "You can't close" say the ogg1. "." -- @TRANSLATE!
       Does -- To be overridden by DOES ONLY where appropriate...
-        "You can't close" say the ogg1. "with" say the ogg2. "."
+        "You can't close" say the ogg1. "with" say the ogg2. "." -- @TRANSLATE!
   End verb.
 End add.

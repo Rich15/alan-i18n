@@ -1,7 +1,7 @@
 -- "mettere.i" -> put.i
 
 -- Synonyms
---   place = metti.
+--   place = put.
 
 Syntax
   mettere = metti (ogg) *
