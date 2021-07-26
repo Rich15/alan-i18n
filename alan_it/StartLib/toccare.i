@@ -6,18 +6,19 @@ End add.
 
 
 Syntax
-  toccare = touch (ogg)
+  toccare = tocca (ogg)
     Where ogg IsA thing
     --else "You can't touch that."
       else "Non è possibile toccarl$$" say ogg:vocale. "$$!"
 
-  toccare_con = touch (ogg1) con (ogg2)
+  toccare_con = tocca (ogg1) con (ogg2)
     Where ogg1 IsA thing
     --else "You can't touch that."
       else "Non è possibile toccarl$$" say ogg1:vocale. "$$!"
     And ogg2 IsA object
     --else "You can only use objects to touch with."
-      else "You can only use objects to touch with." -- @TRANSLATE!
+      else "Impossible farlo con" say the ogg2.
+           "; l'azione richiede l'uso di oggetti." -- @REVISE TEXT!
 
 Add to every object
   Verb toccare

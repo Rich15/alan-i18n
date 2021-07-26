@@ -5,22 +5,28 @@
 -- the game to start in verbose or brief mode.
 --
 
-Syntax
-  verbose = verbose. -- @TRANSLATE!
+Syntax  modalità_lunga = modalità lunga.
+        modalità_lunga = verbose.
 
-Verb verbose
+Verb modalità_lunga
   Does
     Visits 0.
-    "Verbose mode is now on." -- @TRANSLATE!
+    "Il gioco è ora in modalità" STYLE EMPHASIZED.
+    "lunga" STYLE NORMAL. ", le descrizioni dei luoghi
+     saranno mostrate sempre (anche se già visitati)."
+
 End verb.
 
 
-Syntax
-  brief = brief. -- @TRANSLATE!
+Syntax  modalità_breve = modalità breve.
+        modalità_breve = modalità corta.
+        modalità_breve = brief.
 
-Verb brief
+Verb modalità_breve
   Does
-    Visits 1000. -- @TRANSLATE!
-    "Brief mode is now on. Location descriptions will only be shown
-     the first time you visit."
+    Visits 1000.
+    "Il gioco è ora in modalità" STYLE EMPHASIZED.
+    "breve" STYLE NORMAL. ", le descrizioni dei
+     luoghi già visitati non saranno più mostrate."
+
 End verb.
