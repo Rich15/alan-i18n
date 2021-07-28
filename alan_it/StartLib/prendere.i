@@ -77,23 +77,33 @@ End add.
 
 
 Syntax
-  take_from = 'take' (ogg) 'from' (holder)
+  prendere_da = prendi (ogg) da (detentore)
     Where ogg IsA object
       else "You can only take objects." -- @TRANSLATE!
-    And holder IsA thing
+    And detentore IsA thing
       else "You can't take things from that!" -- @TRANSLATE!
-    And holder IsA container
+    And detentore IsA container
       else "You can't take things from that!" -- @TRANSLATE!
+  prendere_da = prendi  (ogg)* dai (detentore).
+  prendere_da = rimuovi (ogg)* da  (detentore).
+  prendere_da = rimuovi (ogg)* dai (detentore).
+  prendere_da = togli   (ogg)* da  (detentore).
+  prendere_da = togli   (ogg)* dai (detentore).
+  ------------------------------------------------------------------------------
+  -- NOTA: Le sintassi alternative per la preposizione articolata 'dai' sono
+  --       necessarie perché 'dai' non può essere sinonimo di 'da' poiché
+  --       confliggerebbe con il verbo "dai".
+  ------------------------------------------------------------------------------
 
 Add to every object
-  Verb take_from
+  Verb prendere_da
     When ogg
       Check ogg not in hero
         else "Possiedi già" say the ogg. "."
-      And ogg in holder
+      And ogg in detentore
         else say the ogg. "is not there." -- @TRANSLATE!
       Does
-        If holder=hero then
+        If detentore=hero then
           -- @CHECKME: Would this ever be executed???
           "You don't need to take things from yourself!" -- @TRANSLATE!
         else

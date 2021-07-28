@@ -73,7 +73,7 @@ End add.
 -- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Syntax
-  shoot = shoot (ogg)
+  shoot = shoot (ogg) --> i.e. 'spara a'
     Where ogg IsA thing
       else "You can't shoot at that." -- @TRANSLATE!
   shoot = shoot 'at' (ogg).
@@ -103,6 +103,10 @@ End add.
 --        Il problema è che l'oggetto di "spara" non può essere l'arma ma
 --        piuttosto i suoi proiettili ("spara fuoco"). Non credo che in
 --        inglese sia così diverso, e che questi verbi andrebbero rivisti.
+
+
+-- @NOTE: (png) or (bersaglio)? Non sembra che questi verbi
+--        agiscano solo su attori, ma anche su oggetti!
 
 Syntax
   shoot_at = shoot (ogg) 'at' (png)
