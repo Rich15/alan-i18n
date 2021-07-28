@@ -11,16 +11,16 @@ Every persona IsA actor
       -- "There is" say an this. "here." @DELME
       "Qui"
       If this is not plurale
-        Then "c'è"
-        Else "ci sono"
+        then "c'è"
+        else "ci sono"
       End if.
       Say an this. "."
     else
       -- Say this. "is here."
       Say this.
       If this is not plurale
-        Then "è"
-        Else "sono"
+        then "è"
+        else "sono"
       End if. "qui."
     End if.
 End every.

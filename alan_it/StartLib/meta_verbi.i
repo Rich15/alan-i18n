@@ -5,7 +5,7 @@ Synonyms q = 'quit'.
 Syntax
   'quit' = 'quit'. -- @TRANSLATE!
 
-Verb 'quit'
+Meta verb 'quit'
   Does
     Quit.
 End verb.
@@ -14,7 +14,7 @@ End verb.
 Syntax
   'save' = 'save'. -- @TRANSLATE!
 
-Verb 'save'
+Meta verb 'save'
   Does
     Save.
     "Ok."
@@ -24,7 +24,7 @@ End verb.
 Syntax
   'restore' = 'restore'. -- @TRANSLATE!
 
-Verb 'restore'
+Meta verb 'restore'
   Does
     Restore.
     "Done.$n"
@@ -35,7 +35,7 @@ End verb.
 Syntax
   'restart' = 'restart'. -- @TRANSLATE!
 
-Verb 'restart'
+Meta verb 'restart'
   Does
     Restart.
 End verb.
@@ -44,7 +44,7 @@ End verb.
 Syntax
   'score' = 'score'. -- @TRANSLATE!
 
-Verb 'score'
+Meta verb 'score'
   Does
     Score.
 End verb.
@@ -56,7 +56,7 @@ Synonyms
 Syntax
   'wait' = 'wait'. -- @TRANSLATE!
 
-Verb 'wait'
+Verb 'wait' -- @TODO: Move elsewhere (not a META VERB!)
   Does
     "Time passes..." -- @TRANSLATE!
 End verb.
@@ -68,7 +68,7 @@ Synonyms
 Syntax
   again = again. -- @TRANSLATE!
 
-Verb again
+Meta verb again
   Does -- @TRANSLATE!
     "The 'again' command is not available, sorry. You can probably use
      the up and down arrow keys to scroll through your previous commands

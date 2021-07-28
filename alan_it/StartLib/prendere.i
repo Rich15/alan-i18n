@@ -94,7 +94,7 @@ Add to every object
         else say the ogg. "is not there." -- @TRANSLATE!
       Does
         If holder=hero then
-          -- @NOTE: Would this ever be executed???
+          -- @CHECKME: Would this ever be executed???
           "You don't need to take things from yourself!" -- @TRANSLATE!
         else
           Locate ogg in hero.

@@ -18,7 +18,7 @@ Add to every thing
   Is not plurale.
 End add.
 
-Every named_actor IsA actor
+Every named_actor IsA actor -- @TRANSLATE CLASS!
   Definite article ""
   Indefinite article ""
 End every.

@@ -44,7 +44,7 @@ Syntax
 
 Verb gridare
   Does
-    "You make a lot of noise..." -- @TRANSLATE!
+    "Gridi a squarciagola..."
 End verb.
 
 
@@ -129,7 +129,7 @@ Add to every thing
         else "You can't talk to that." -- @TRANSLATE!
       Does
         """I don't think I need to know about" -- @TRANSLATE!
-        Say the argomento. "$$,"" says"
+        say the argomento. "$$,"" says"
         say the png. "."
   End verb.
 End add.

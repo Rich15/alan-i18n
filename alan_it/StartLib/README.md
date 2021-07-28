@@ -46,7 +46,7 @@ The following table contains the list of the Italian modules, their original Eng
 | [`aprire.i`][aprire.i]                     | [`open.i`][open.i]       | 5%      |
 | [`ascoltare.i`][ascoltare.i]               | [`listen.i`][listen.i]   | 85%     |
 | [`baciare.i`][baciare.i]                   | [`kiss.i`][kiss.i]       | 90%     |
-| [`bloccare.i`][bloccare.i]                 | [`lock.i`][lock.i]       | 30%     |
+| [`bloccare.i`][bloccare.i]                 | [`lock.i`][lock.i]       | 80%     |
 | [`bussare.i`][bussare.i]                   | [`knock.i`][knock.i]     | 90%     |
 | [`dare.i`][dare.i]                         | [`give.i`][give.i]       | 80%     |
 | [`eroe.i`][eroe.i]                         | [`hero.i`][hero.i]       | 99%     |

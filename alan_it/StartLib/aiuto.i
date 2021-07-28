@@ -13,7 +13,7 @@ Synonyms
 Syntax
   help = help.
 
-Verb help
+Meta verb help
   Does -- @TRANSLATE!
     "In this game I am your eyes and your body. I will describe
      the surroundings for you. You tell me what you want to do. For
@@ -42,7 +42,7 @@ Synonyms
 Syntax
   hint = hint. -- @TRANSLATE!
 
-Verb hint
+Meta verb hint
   Does
     "Unfortunately hints are not available in this game." -- @TRANSLATE!
 End verb.
@@ -65,7 +65,7 @@ Synonyms
 Syntax
   credits = credits. -- @TRANSLATE!
 
-Verb credits
+Meta verb credits
   Does -- @TRANSLATE!
     "The author retains the copyright to this game.
      $pThis game was written using the ALAN Adventure Language.

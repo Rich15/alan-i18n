@@ -25,9 +25,19 @@ Add to every object
     Check ogg is bloccabile
       else "You can't lock that!" -- @TRANSLATE!
     And ogg is not bloccato
-      else "It's already locked." -- @TRANSLATE!
+      else say the ogg.
+           If ogg is not plurale
+             then "è"
+             else "sono"
+           End if. "già bloccat$$"
+           say vocale of ogg.
     Does
-      Make ogg bloccato. Say the ogg. "is now locked." -- @TRANSLATE!
+      Make ogg bloccato.
+      "Fatto, ora" say the ogg.
+      If ogg is not plurale
+        then "è"
+        else "sono"
+      End if. "bloccat$$" say vocale of ogg.
   End verb.
 End add.
 
@@ -45,12 +55,21 @@ Add to every Object
       Check ogg is bloccabile
         else "You can't lock that!" -- @TRANSLATE!
       And ogg is not bloccato
-        else "It's already locked." -- @TRANSLATE!
+        else say the ogg.
+             If ogg is not plurale
+               then "è"
+               else "sono"
+             End if. "già bloccat$$"
+             say vocale of ogg.
       And chiave in hero
-        else "You don't have" say the chiave. "." -- @TRANSLATE!
+        else "Non possiedi" say the chiave. "!"
       Does
         Make ogg bloccato.
-        Say the ogg. "is now locked." -- @TRANSLATE!
+        "Fatto, ora" say the ogg.
+        If ogg is not plurale
+          then "è"
+          else "sono"
+        End if. "bloccat$$" say vocale of ogg.
   End verb.
 End add.
 
@@ -65,10 +84,19 @@ Add to every object
     Check ogg is bloccabile
       else "You can't unlock that!" -- @TRANSLATE!
     And ogg is bloccato
-      else "It's already unlocked." -- @TRANSLATE!
+        else say the ogg.
+             If ogg is not plurale
+               then "è"
+               else "sono"
+             End if. "già sbloccat$$"
+             say vocale of ogg.
     Does
       Make ogg not bloccato.
-      Say the ogg. "is now unlocked." -- @TRANSLATE!
+      "Fatto, ora" say the ogg.
+      If ogg is not plurale
+        then "è"
+        else "sono"
+      End if. "sbloccat$$" say vocale of ogg.
   End verb.
 End add.
 
