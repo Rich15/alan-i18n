@@ -1,77 +1,70 @@
 -- "aiuto.i" -> help.i
 
-
--- @NOTE: Alan StdLib Italian:
--- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
---    SYNONYMS help, info = istruzioni.
---    META VERB istruzioni
--- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Synonyms
-  h = help.
-
-Syntax
-  help = help.
-
-Meta verb help
-  Does -- @TRANSLATE!
-    "In this game I am your eyes and your body. I will describe
-     the surroundings for you. You tell me what you want to do. For
-     example if you want to go north, then type 'north'. But there
-     are a lot of other things you may do, like picking up things,
-     examining them, opening doors and so on. Try anything you
-     would do if you really were standing here!$pRemember to study
-     the descriptions very carefully, they are sure to contain
-     clues!  $p'score' may be used to see how well you are
-     doing. 'save' and 'restore' allows you to save a game and
-     restore it later.  $pGood Luck!! You'll need it!"
-End verb.
+-- @TODO: Aggiungere meta-verbo COMANDI?
 
 
--- @NOTE: Alan StdLib Italian:
--- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
---    SYNONYMS
---      hint, aiutino = suggerimento.
---
---    META VERB suggerimento
--- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- Synonyms
+--   h = help.
 
 Synonyms
-  hints = hint.
+  help, info = istruzioni.
 
 Syntax
-  hint = hint. -- @TRANSLATE!
+  istruzioni = istruzioni. -- help
 
-Meta verb hint
+Meta verb istruzioni
+  -- @NOTE: Il comando PUNTEGGIO potrebbe non essere disponibile!
+  --        Forse è meglio non menzionarlo.
   Does
-    "Unfortunately hints are not available in this game." -- @TRANSLATE!
+    "In questo gioco sarò i tuoi occhi e il tuo corpo.
+     Io ti descriverò l'ambiente circostante, e tu dovrai
+     dirmi ciò che vorrai fare. Per esempio, se vuoi andare
+     a nord, digita NORD. Potrai fare tantissime cose, come
+     raccogliere oggetti, esaminarli, aprire porte, etc.
+     Tenta qualsiasi azione che ti verrebbe spontanea se ti
+     trovassi veramente qui!
+   $pRicordati di studiare attentamente le descrizioni, dato
+     che conterranno sicuramente indizi su come procedere.
+   $pIl comando PUNTEGGIO ti consente di verificare come
+     stai procedendo nell'avventura. I comandi SALVA e CARICA
+     ti consentono di salvare e ripristinare una partita tra
+     una sessione di gioco e l'altra.
+   $pBuona fortuna avventuriero! (ne avrai bisogno)"
 End verb.
 
 
--- @NOTE: Alan StdLib Italian:
--- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
---    SYNTAX ringraziamenti = ringraziamenti.
---           ringraziamenti = credits.
---           ringraziamenti = autore.
---           ringraziamenti = copyright.
---
---    META VERB ringraziamenti
--- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
+-- Synonyms
+--   hints = hint.
 
 Synonyms
-  info, notes, author = credits.
+  hint, aiutino = suggerimento. -- hint
 
 Syntax
-  credits = credits. -- @TRANSLATE!
+  suggerimento = suggerimento.
 
-Meta verb credits
-  Does -- @TRANSLATE!
-    "The author retains the copyright to this game.
-     $pThis game was written using the ALAN Adventure Language.
-     ALAN is an interactive fiction authoring system by Thomas Nilefalk
-     $nemail address: thomas@alanif.se
-     $pFurther information about the ALAN system can be obtained from
-     the World Wide Web Internet site
-     $ihttps://www.alanif.se/"
+Meta verb suggerimento
+  Does
+    "Nessun suggerimento disponibile
+     (digita ISTRUZIONI se hai bisogno di aiuto)."
+End verb.
+
+
+-- Synonyms
+--   info, notes, author = credits.
+
+Synonyms
+  credits, copyright = ringraziamenti.
+
+Syntax ringraziamenti = ringraziamenti. -- credits
+       ringraziamenti = autore.
+
+Meta verb ringraziamenti
+  Does
+    "I diritti d'autore ed il copyright di questa avventura
+     appartengono al suo autore.
+   $pQuesta avventura è stata realizzata con ALAN IF, il sistema
+     per lo sviluppo di avventure testuali creato da Thomas Nilefalk.
+   $nE-mail: thomas@alanif.se
+   $pPer maggiori informazioni su ALAN:
+   $ihttps://www.alanif.se$p"
 End verb.
