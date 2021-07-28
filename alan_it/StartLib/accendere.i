@@ -17,10 +17,14 @@ Add to every object
     Check ogg is accendibile
       else "You can't turn that on." -- @TRANSLATE!
     And ogg is not acceso
-      else "It's already on." -- @TRANSLATE!
+      else say the ogg.
+           If ogg is not plurale
+             then "è"
+             else "sono"
+           End if. "già acces$$" say ogg:vocale. "!"
     Does
       Make ogg acceso.
-      "You turn on" say the ogg. "." -- @TRANSLATE!
+      "Hai acceso" say the ogg. "."
   End verb.
 End add.
 
@@ -35,9 +39,13 @@ Add to every object
     Check ogg is accendibile
       else "You can't turn that off." -- @TRANSLATE!
     And ogg is acceso
-      else "It's already off." -- @TRANSLATE!
+      else say the ogg.
+           If ogg is not plurale
+             then "è"
+             else "sono"
+           End if. "già spent$$" say ogg:vocale. "!"
     Does
       Make ogg not acceso.
-      "You turn off" say the ogg. "." -- @TRANSLATE!
+      "Hai spento" say the ogg. "."
   End verb.
 End add.

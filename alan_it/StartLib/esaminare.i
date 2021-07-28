@@ -47,7 +47,8 @@ Syntax
 Add to every object
   Verb guardare_dentro
     Check ogg is esaminabile
-      else "You can't look inside" say the ogg. "." -- @TRANSLATE!
+      else "Non è possibile guardare"
+           say ogg:prep_IN. say the ogg. "."
     Does
       List ogg.
   End verb.
@@ -66,8 +67,8 @@ Syntax
 Add to every object
   Verb ispezionare
     Check ogg is ispezionabile
-      else "You can't search" say the ogg. "." -- @TRANSLATE!
+      else "Non è possibile ispezionare" say the ogg. "."
     Does
-      "You find nothing of interest." -- @TRANSLATE!
+      "L'ispezione non ha rivelato nulla di interessante."
   End verb.
 End add.

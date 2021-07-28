@@ -42,11 +42,10 @@ Add to every object
     And ogg not in hero
       else "Possiedi già" say the ogg. "."
     And peso of ogg <=50
-      else
-        Say the ogg. "pesa"
-        If ogg is plurale
-          then "$$no"
-        End if. "troppo."
+      else say the ogg. "pesa"
+           If ogg is plurale
+             then "$$no"
+           End if. "troppo."
     Does
       Locate ogg in hero.
       "Pres$$" say ogg:vocale. "."
@@ -55,8 +54,8 @@ End add.
 
 
 -- i6: lascia, lancia, abbandona, posa, metti giù
-Synonyms
-  discard = drop.
+-- Synonyms
+--   discard = drop.
 
 Syntax
   lasciare = lascia (ogg)*.
@@ -67,11 +66,12 @@ Syntax
 
 Add to every object
   Verb lasciare
+    -- @NOTE: But they might still be worn!
     Check ogg in hero
-      else "You aren't carrying that." -- @TRANSLATE!
+      else "Non possiedi" say the ogg. "."
     Does
       Locate ogg here.
-      "Dropped." -- @TRANSLATE!
+      "Fatto."
   End verb.
 End add.
 
@@ -89,15 +89,16 @@ Add to every object
   Verb take_from
     When ogg
       Check ogg not in hero
-        else "You already have" say the ogg. "." -- @TRANSLATE!
+        else "Possiedi già" say the ogg. "."
       And ogg in holder
         else say the ogg. "is not there." -- @TRANSLATE!
       Does
         If holder=hero then
+          -- @NOTE: Would this ever be executed???
           "You don't need to take things from yourself!" -- @TRANSLATE!
         else
           Locate ogg in hero.
-          "You take" say the ogg. "." -- @TRANSLATE!
+          "Fatto, hai preso" say the ogg. "."
         End if.
   End verb.
 End add.

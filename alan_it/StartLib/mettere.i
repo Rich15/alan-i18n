@@ -3,20 +3,23 @@
 -- Synonyms
 --   place = put.
 
-Syntax
-  mettere = metti (ogg) *
-    Where ogg IsA object
-      else "You can't put that anywhere." -- @TRANSLATE!
+-- @NOTE: Questo verbo non ha senso in italiano, dovrei invece usarlo per
+--        rettificare la sintassi!
 
-Add to every object
-  Verb mettere
-    Check ogg in hero
-      else "You haven't got that." -- @TRANSLATE!
-    Does
-      Locate ogg here.
-      "Dropped." -- @TRANSLATE!
-  End verb.
-End add.
+-- Syntax
+--   mettere = metti (ogg) *
+--     Where ogg IsA object
+--       else "You can't put that anywhere." -- @TRANSLATE!
+
+-- Add to every object
+--   Verb mettere
+--     Check ogg in hero
+--       else "Non possiedi" say the ogg. "."
+--     Does
+--       Locate ogg here.
+--       "Dropped." -- @TRANSLATE!
+--   End verb.
+-- End add.
 
 
 Syntax
@@ -30,8 +33,7 @@ Add to every object
   Verb mettere_in
     When ogg1
       Check ogg1 in hero
-        else
-          "You haven't got" say the ogg1. "." -- @TRANSLATE!
+      else "Non possiedi" say the ogg1. "."
       And ogg1 <> ogg2
         else "You can't put something into itself!" -- @TRANSLATE!
       And ogg2 <> hero
@@ -72,7 +74,7 @@ Add to every object
   Verb mettere_vicino, mettere_dietro, mettere_su, mettere_sotto
     When ogg1
       Check ogg1 in hero
-        else "You haven't got" say the ogg1. "." -- @TRANSLATE!
+      else "Non possiedi" say the ogg1. "."
       And ogg2 not in hero
         else
           "You are carrying" say the ogg2. -- @TRANSLATE!

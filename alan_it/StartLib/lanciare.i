@@ -14,7 +14,7 @@ Syntax
 Add to every object
   Verb lanciare
     Check ogg in hero
-      else "You haven't got that!" -- @TRANSLATE!
+      else "Non possiedi" say the ogg. "."
     Does
       "You can't throw very far,"
       say the ogg. "ends up on the ground." -- @TRANSLATE!
@@ -39,7 +39,7 @@ Add to every object
   Verb lanciare_contro, lanciare_a
     When ogg1
       Check ogg1 in hero
-        else "You haven't got that!" -- @TRANSLATE!
+        else "Non possiedi" say the ogg1. "."
       And ogg2 not in hero
         else
           "You are carrying" say the ogg2. "." -- @TRANSLATE!
@@ -66,7 +66,7 @@ Add to every object
   Verb lanciare_in
     When ogg1
       Check ogg1 in hero
-        else "You haven't got that!" -- @TRANSLATE!
+        else "Non possiedi" say the ogg1. "."
       And ogg1 <> ogg2
         else "Now, that would be a good trick!" -- @TRANSLATE!
       And ogg2 <> hero
@@ -74,6 +74,6 @@ Add to every object
           "You can't put" say the ogg1. "into yourself!" -- @TRANSLATE!
       Does
         Locate ogg1 in ogg2.
-        "Done." -- @TRANSLATE!
+        "Fatto."
   End verb.
 End add.

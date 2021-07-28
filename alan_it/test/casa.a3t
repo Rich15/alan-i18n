@@ -77,6 +77,20 @@ Fatto. Ora indossi le bretelle.
 > prendi le bretelle
 Possiedi già le bretelle, le stai indossando.
 
+> ; BUG 'lascia': Sì che lo possiedi, le stai indossando!
+> lascia le bretelle
+Non possiedi le bretelle.
+
+> togliti le bretelle
+Fatto. Ti sei sfilato le bretelle.
+
+> lascia le bretelle
+Fatto.
+
+> indossa le bretelle
+(Prima prendi le bretelle.)
+Fatto. Ora indossi le bretelle.
+
 > x le bretelle
 Sono le tue bretelle preferite.
 
