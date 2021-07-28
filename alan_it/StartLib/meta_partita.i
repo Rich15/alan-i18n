@@ -1,4 +1,4 @@
--- "meta_verbi.i" -> meta.i
+-- "meta_partita.i" -> meta.i
 
 Synonyms q = 'quit'.
 
@@ -40,26 +40,6 @@ Meta verb 'restart'
     Restart.
 End verb.
 
-
-Syntax
-  'score' = 'score'. -- @TRANSLATE!
-
-Meta verb 'score'
-  Does
-    Score.
-End verb.
-
-
-Synonyms
-  z = 'wait'.
-
-Syntax
-  'wait' = 'wait'. -- @TRANSLATE!
-
-Verb 'wait' -- @TODO: Move elsewhere (not a META VERB!)
-  Does
-    "Time passes..." -- @TRANSLATE!
-End verb.
 
 
 Synonyms

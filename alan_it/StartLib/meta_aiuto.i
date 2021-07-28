@@ -1,4 +1,4 @@
--- "aiuto.i" -> help.i
+-- "meta_aiuto.i" -> help.i
 
 -- @TODO: Aggiungere meta-verbo COMANDI?
 

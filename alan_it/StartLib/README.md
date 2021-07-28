@@ -45,6 +45,7 @@ The following table contains the list of the Italian modules, their original Eng
 | [`annusare.i`][annusare.i]                 | [`smell.i`][smell.i]     | 85%     |
 | [`aprire.i`][aprire.i]                     | [`open.i`][open.i]       | 5%      |
 | [`ascoltare.i`][ascoltare.i]               | [`listen.i`][listen.i]   | 85%     |
+| [`aspettare.i`][aspettare.i]               | [`meta.i`][meta.i]       | TBD!    |
 | [`baciare.i`][baciare.i]                   | [`kiss.i`][kiss.i]       | 90%     |
 | [`bloccare.i`][bloccare.i]                 | [`lock.i`][lock.i]       | 80%     |
 | [`bussare.i`][bussare.i]                   | [`knock.i`][knock.i]     | 90%     |
@@ -61,7 +62,9 @@ The following table contains the list of the Italian modules, their original Eng
 | [`limbo.i`][limbo.i]                       | [`nowhere.i`][nowhere.i] | WIP     |
 | [`mangiare.i`][mangiare.i]                 | [`eat.i`][eat.i]         | 90%     |
 | [`messaggi_runtime.i`][messaggi_runtime.i] |                          | 70%     |
-| [`meta_verbi.i`][meta_verbi.i]             | [`meta.i`][meta.i]       | TBD!    |
+| [`meta_partita.i`][meta_partita.i]         | [`meta.i`][meta.i]       | TBD!    |
+| [`meta_punteggio.i`][meta_punteggio.i]     | [`meta.i`][meta.i]       | TBD!    |
+| [`meta_verbosità.i`][meta_verbosità.i]     | [`brief.i`][brief.i]     | &check; |
 | [`mettere.i`][mettere.i]                   | [`put.i`][put.i]         | 50%     |
 | [`parlare.i`][parlare.i]                   | [`talk.i`][talk.i]       | 50%     |
 | [`persone.i`][persone.i]                   | [`people.i`][people.i]   | 90%     |
@@ -70,7 +73,6 @@ The following table contains the list of the Italian modules, their original Eng
 | [`scenario.i`][scenario.i]                 | [`scenery.i`][scenery.i] | 99%     |
 | [`spingere.i`][spingere.i]                 | [`push.i`][push.i]       | 90%     |
 | [`toccare.i`][toccare.i]                   | [`touch.i`][touch.i]     | &check; |
-| [`verbosità.i`][verbosità.i]               | [`brief.i`][brief.i]     | &check; |
 
 
 <!-----------------------------------------------------------------------------
@@ -86,6 +88,7 @@ The following table contains the list of the Italian modules, their original Eng
 [annusare.i]: ./annusare.i "View source module"
 [aprire.i]: ./aprire.i "View source module"
 [ascoltare.i]: ./ascoltare.i "View source module"
+[aspettare.i]: ./aspettare.i "View source module"
 [baciare.i]: ./baciare.i "View source module"
 [bloccare.i]: ./bloccare.i "View source module"
 [bussare.i]: ./bussare.i "View source module"
@@ -102,7 +105,9 @@ The following table contains the list of the Italian modules, their original Eng
 [limbo.i]: ./limbo.i "View source module"
 [mangiare.i]: ./mangiare.i "View source module"
 [messaggi_runtime.i]: ./messaggi_runtime.i "View source module"
-[meta_verbi.i]: ./meta_verbi.i "View source module"
+[meta_partita.i]: ./meta_partita.i "View source module"
+[meta_punteggio.i]: ./meta_punteggio.i "View source module"
+[meta_verbosità.i]: ./meta_verbosità.i "View source module"
 [mettere.i]: ./mettere.i "View source module"
 [parlare.i]: ./parlare.i "View source module"
 [persone.i]: ./persone.i "View source module"
@@ -111,7 +116,6 @@ The following table contains the list of the Italian modules, their original Eng
 [scenario.i]: ./scenario.i "View source module"
 [spingere.i]: ./spingere.i "View source module"
 [toccare.i]: ./toccare.i "View source module"
-[verbosità.i]: ./verbosità.i "View source module"
 
 <!-- Lib EN modules -->
 
