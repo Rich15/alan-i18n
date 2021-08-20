@@ -1,6 +1,6 @@
-# ALAN Library Italian
+# ALAN Foundation Library Italian
 
-WIP port of the __ALAN Libraryv 0.6.2__ to Italian, by [Tristano Ajmone].
+WIP port of the __ALAN Library v 0.6.2__ to Italian, by [Tristano Ajmone].
 
 
 -----
@@ -18,18 +18,18 @@ WIP port of the __ALAN Libraryv 0.6.2__ to Italian, by [Tristano Ajmone].
 
 # About
 
-The [`StartLib.i`][StartLib.i] file is the main library module that imports all others (called [`std.i`][std.i] in the English library).
+The [`Library.i`][Library.i] file is the main library module that imports all others (called [`std.i`][std.i] in the English library).
 
 In order to use the library is sufficient to import this single module from your main adventure source file:
 
 ```alan
-Import 'StartLib.i'.
+Import 'Library.i'.
 ```
 
 and add the library folder to the import paths when invoking the compiler:
 
 ```batch
-alan -include lib_it my_adventure.alan
+alan -include Foundation my_adventure.alan
 ```
 
 # Modules Status
@@ -38,7 +38,7 @@ The following table contains the list of the Italian modules, their original Eng
 
 |                   Lib IT                   |          Lib EN          |  Status |
 |--------------------------------------------|--------------------------|---------|
-| [`StartLib.i`][StartLib.i]                 | [`std.i`][std.i]         | WIP     |
+| [`Library.i`][Library.i]                   | [`std.i`][std.i]         | WIP     |
 | [`accendere.i`][accendere.i]               | [`turn.i`][turn.i]       | 60%     |
 | [`aggredire.i`][aggredire.i]               | [`attack.i`][attack.i]   | 10%     |
 | [`aiuto.i`][aiuto.i]                       | [`help.i`][help.i]       | 85%     |
@@ -81,7 +81,7 @@ The following table contains the list of the Italian modules, their original Eng
 
 <!-- Lib IT modules -->
 
-[StartLib.i]: ./StartLib.i "View source module"
+[Library.i]: ./Library.i "View source module"
 [accendere.i]: ./accendere.i "View source module"
 [aggredire.i]: ./aggredire.i "View source module"
 [aiuto.i]: ./aiuto.i "View source module"

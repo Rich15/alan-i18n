@@ -4,7 +4,7 @@ echo -e "\n## Compile Adventures"
 echo -e   "#####################\n"
 for adv in *.alan; do
 	echo "Compiling: $adv"
-	alan --warnings -include ../StartLib/ $adv
+	alan --warnings -include ../Foundation $adv
 done
 
 echo -e "\n## Run Tests Scripts"
