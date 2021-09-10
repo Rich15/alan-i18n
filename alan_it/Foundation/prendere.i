@@ -1,4 +1,4 @@
--- "prendere.i" -> take.i
+Ôªø-- "prendere.i" -> take.i
 
 Add to every thing
   Is inanimato.
@@ -17,12 +17,12 @@ End add.
 --   get, carry, obtain, grab, steal, confiscate, hold = take.
 
 -- @NOTE: Non sono convinto che definire 'raccogli' e 'trasporta' come sinonimi
---        di 'prendi' sia una buona idea, perchÈ l'utente potrebbe creare verbi
+--        di 'prendi' sia una buona idea, perch√© l'utente potrebbe creare verbi
 --        in cui i termini non sarebbero intercambiabili (e.s. "prendi tempo",
 --        "raccogli la sfida", ecc.).
 
 -- @NOTE: Quanto ad 'afferra', non sempre collima con 'prendi', e.s. "afferra
---        la fune", dove il senso non Ë di impossessarsene ma di trattenere.
+--        la fune", dove il senso non √® di impossessarsene ma di trattenere.
 
 Syntax
   prendere = prendi (ogg) *
@@ -37,10 +37,10 @@ Add to every object
     Check ogg is prendibile
       else "You can't take that!" -- @TRANSLATE!
     And ogg not in worn
-      else "Possiedi gi‡" say the ogg. "," say ogg:articolo.
+      else "Possiedi gi√†" say the ogg. "," say ogg:articolo.
            "stai indossando."
     And ogg not in hero
-      else "Possiedi gi‡" say the ogg. "."
+      else "Possiedi gi√†" say the ogg. "."
     And peso of ogg <=50
       else say the ogg. "pesa"
            If ogg is plurale
@@ -53,14 +53,14 @@ Add to every object
 End add.
 
 
--- i6: lascia, lancia, abbandona, posa, metti gi˘
+-- i6: lascia, lancia, abbandona, posa, metti gi√π
 -- Synonyms
 --   discard = drop.
 
 Syntax
   lasciare = lascia (ogg)*.
   lasciare = abbandona (ogg)*.
-  lasciare = metti gi˘ (ogg)*.
+  lasciare = metti gi√π (ogg)*.
   lasciare = posa (ogg)*.
 
 
@@ -91,7 +91,7 @@ Syntax
   prendere_da = togli   (ogg)* dai (detentore).
   ------------------------------------------------------------------------------
   -- NOTA: Le sintassi alternative per la preposizione articolata 'dai' sono
-  --       necessarie perchÈ 'dai' non puÚ essere sinonimo di 'da' poichÈ
+  --       necessarie perch√© 'dai' non pu√≤ essere sinonimo di 'da' poich√©
   --       confliggerebbe con il verbo "dai".
   ------------------------------------------------------------------------------
 
@@ -99,7 +99,7 @@ Add to every object
   Verb prendere_da
     When ogg
       Check ogg not in hero
-        else "Possiedi gi‡" say the ogg. "."
+        else "Possiedi gi√†" say the ogg. "."
       And ogg in detentore
         else say the ogg. "is not there." -- @TRANSLATE!
       Does

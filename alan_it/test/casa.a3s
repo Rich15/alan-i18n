@@ -1,4 +1,4 @@
-; ==============================================================================
+﻿; ==============================================================================
 ; IL SALOTTO
 ; ==============================================================================
 guarda
@@ -29,7 +29,7 @@ x le bretelle
 prendi le bretelle
 indossa le bretelle
 prendi le bretelle
-; BUG 'lascia': S� che lo possiedi, le stai indossando!
+; BUG 'lascia': Sì che lo possiedi, le stai indossando!
 lascia le bretelle
 togliti le bretelle
 lascia le bretelle

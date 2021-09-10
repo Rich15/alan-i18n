@@ -1,4 +1,4 @@
--- "dare.i" -> give.i
+﻿-- "dare.i" -> give.i
 
 Syntax
   dare_a = dai (ogg) a (png)
@@ -16,7 +16,7 @@ Add to every object
         else "Non possiedi" say the ogg. "."
     Does
       If png=hero then
-        "Possiedi gi�" say the ogg. "!"
+        "Possiedi già" say the ogg. "!"
       else
         "Dai" say the ogg. say png:prep_A. say the png. "."
         Locate ogg in png.

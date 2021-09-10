@@ -1,4 +1,4 @@
--- "saltare.i" -> "jump.i"
+﻿-- "saltare.i" -> "jump.i"
 
 Syntax
   saltare_su = salta su (ogg)

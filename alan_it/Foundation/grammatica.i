@@ -1,4 +1,4 @@
---| Alan Starter Library Italian | Alan 3.0beta6
+Ôªø--| Alan Starter Library Italian | Alan 3.0beta6
 --~-----------------------------------------------------------------------------
 --| "lib_italian.i" Modulo Grammatica
 --|=============================================================================
@@ -8,17 +8,17 @@
 --|=============================================================================
 
 
---| Questo modulo della libreria Ë il cuore del supporto della lingua italiana
---| in Alan. » stato progettato come un modulo a sÈ stante, indipendente dal
+--| Questo modulo della libreria √® il cuore del supporto della lingua italiana
+--| in Alan. √à stato progettato come un modulo a s√© stante, indipendente dal
 --| resto della libreria, di modo che possa essere utilizzato anche al di fuori
 --| di essa per creare avventure in italiano senza l'infrastruttura della libreria
 --| standard, usufruendo solo del codice base per la grammatica italiana.
 --|
 --| Per i suddetti motivi, tutti il codice necessario per implementare la lingua
---| italiana Ë contenuto in questo modulo.
+--| italiana √® contenuto in questo modulo.
 --|
---| Dato che questo modulo Ë concepito per essere usato anche al di fuori della
---| libreria, verr‡ inclusa una documentazione dettagliata su come utilizzarlo.
+--| Dato che questo modulo √® concepito per essere usato anche al di fuori della
+--| libreria, verr√† inclusa una documentazione dettagliata su come utilizzarlo.
 
 
 --==============================================================================
@@ -42,7 +42,7 @@
 --~/////////////////////////////////////////////////////////////////////////////
 --~============================================================================
 --|
---| I valori predefiniti su entit‡ sono quelli di un oggetto maschile singolare
+--| I valori predefiniti su entit√† sono quelli di un oggetto maschile singolare
 --| con articolo "`il`". Fatta eccezione per alcune classi specializzate della
 --| libreria, che definiscono articoli con numero e/o genere diversi (`femmina`
 --| = `"la"`, `maschi` = `"i"`, `femmine` = `"le"`), l'onere di specificare un
@@ -80,11 +80,11 @@ Add to every entity
 -- Inizializzazione di genere, numero e preposizioni articolate
 --------------------------------------------------------------------------------
 --==============================================================================
--- La prima parte dell'inizializzazione Ë comune a tutti le tipologie.
+-- La prima parte dell'inizializzazione √® comune a tutti le tipologie.
 
   Initialize
 
-    If this is femminile           --| Questo Ë necessario per coprire il caso
+    If this is femminile           --| Questo √® necessario per coprire il caso
       Then set this:vocale to "a". --| in cui 'articolo' = "l'", prima che il
     End if.                        --| codice seguente venga eseguito!
 
@@ -109,8 +109,8 @@ Add to every entity
         Set this:prep_IN to "nella".
         Set this:prep_SU to "sulla".
 
-      = "l'" then              --| In questo caso non alteriamo il genere poichÈ
-        Make this not plurale. --| questa forma puÚ essere sia masch. che femm.
+      = "l'" then              --| In questo caso non alteriamo il genere poich√©
+        Make this not plurale. --| questa forma pu√≤ essere sia masch. che femm.
                                --| Sta all'autore specificare il genere nell'istanza.
         Set this:prep_DI to "dell'$$".
         Set this:prep_A  to "all'$$".
@@ -159,10 +159,10 @@ Add to every entity
 
     End depend.
 --==============================================================================
--- Entit‡ con nome proprio
+-- Entit√† con nome proprio
 --==============================================================================
--- Se l'entit‡ ha un nome proprio, dovremo solo ridefinire le preposizioni da
--- articolate a semplici, di modo che si possa avere "da Gino" anzichÈ "dal Gino".
+-- Se l'entit√† ha un nome proprio, dovremo solo ridefinire le preposizioni da
+-- articolate a semplici, di modo che si possa avere "da Gino" anzich√© "dal Gino".
 
     If this has nome_proprio
       Then
@@ -182,13 +182,13 @@ Add to every entity
 
   Indefinite Article
 --==============================================================================
--- Entit‡ con nome proprio
+-- Entit√† con nome proprio
 --==============================================================================
   If this has nome_proprio
     Then ""
     Else
 --==============================================================================
--- Entit‡ senza nome proprio
+-- Entit√† senza nome proprio
 --==============================================================================
       Depending on articolo of this
         = "il"  then   "un"               ---> ms indet.
@@ -205,7 +205,7 @@ Add to every entity
         = "gli" then   "degli"            ---> mp indet.
         = "le"  then   "delle"            ---> fp indet.
 
-        Else -- se non Ë definito
+        Else -- se non √® definito
           If this is not femminile
           Then
             If this is not plurale
@@ -230,13 +230,13 @@ Add to every entity
   Definite Article
 
 --==============================================================================
--- Entit‡ con nome proprio
+-- Entit√† con nome proprio
 --==============================================================================
   If this has nome_proprio
     Then ""
     Else
 --==============================================================================
--- Entit‡ senza nome proprio
+-- Entit√† senza nome proprio
 --==============================================================================
       Depending on articolo of this
         = "il"  then   "il"               ---> ms  det.
@@ -249,7 +249,7 @@ Add to every entity
         = "gli" then   "gli"              ---> mp det.
         = "le"  then   "le"               ---> fp det.
 
-        Else -- se non Ë definito
+        Else -- se non √® definito
           If this is not femminile
           Then
             If this is not plurale
@@ -310,7 +310,7 @@ End add to entity.
 --|
 --| Le _conjunction words_ (parole di congiunzione) consentono al parser di
 --| interpretare correttamente i comandi del giocatore che fanno riferimento a
---| pi˘ oggetti, o le sequenze di comandi indipendenti combinati in una sola riga
+--| pi√π oggetti, o le sequenze di comandi indipendenti combinati in una sola riga
 --| di comando. Esempi:
 --|
 --| * "prendi la mela E la pera"
@@ -338,18 +338,18 @@ Synonyms e, poi = 'and'.
 --| ==== Articoli determinativi
 --|
 --| Definiamo tutti gli articoli determinativi come sinonimi della _noise word_
---| `'the'` affinchÈ vengano ignorati nel parsing dei comandi del giocatore, di
+--| `'the'` affinch√© vengano ignorati nel parsing dei comandi del giocatore, di
 --| modo che comandi come "prendi LA mela" vengano interpretati come "prendi
 --| mela".
 --|
 --| Nel caso di articoli con l'apostrofo, che vanno a formare un singolo lessema
---| con il sostantivo cui si riferiscono, il parser di Alan prima fallir‡ nel
+--| con il sostantivo cui si riferiscono, il parser di Alan prima fallir√† nel
 --| riconoscere il lessema (es. `l'albero`) ma, appurata la presenza di un
---| apostrofo nel lessema, prima di generare un errore eseguir‡ un ulteriore
+--| apostrofo nel lessema, prima di generare un errore eseguir√† un ulteriore
 --| tentativo spezzando in due il lessema originale nel punto successivo al primo
---| apostrofo, e ritenter‡ il parsing dei due nuovi lessemi (`l'` + `albero`).
---| Durante il secondo tentativo, l'articolo `l'` verr‡ soppresso  in quanto
---| _noise word_, e `albero` verr‡ ora riconosciuto come il nome dell'oggetto
+--| apostrofo, e ritenter√† il parsing dei due nuovi lessemi (`l'` + `albero`).
+--| Durante il secondo tentativo, l'articolo `l'` verr√† soppresso  in quanto
+--| _noise word_, e `albero` verr√† ora riconosciuto come il nome dell'oggetto
 --| corrispondente.
 
 Synonyms il, lo, la, 'l''', i, gli, le = 'the'.
@@ -359,9 +359,9 @@ Synonyms il, lo, la, 'l''', i, gli, le = 'the'.
 --        "delle mele" e il giocatore digiterebbe "prendi una mela". Il parser
 --        potrebbe ignorare quel "un". Mi chiedo se questo potrebbe introdurre
 --        conflitti, per esempio impedendo l'uso di "uno" come numero.
---        Sicuramente "delle" non puÚ essere definito come noise word dato che
+--        Sicuramente "delle" non pu√≤ essere definito come noise word dato che
 --        ne preverrebbe l'uso in comandi come "la mela delle streghe".
---        La questione va analizzata meglio, e dovrei informarmi sul perchÈ non
+--        La questione va analizzata meglio, e dovrei informarmi sul perch√© non
 --        sono presenti "a" ed "an" tra le noise words inglesi.
 
 -- This is not going to be useful:
@@ -428,8 +428,8 @@ Synonyms tranne, eccetto, escluso, esclusa, esclusi, escluse = except.
 --|
 --| * "remove the hat and the scarf then drop THEM"
 --|
---| Questo tipo di riferimento a oggetti multipli Ë consentito solo nei comandi
---| che supportano parametri multipli. L'interprete restringer‡ il campo dei
+--| Questo tipo di riferimento a oggetti multipli √® consentito solo nei comandi
+--| che supportano parametri multipli. L'interprete restringer√† il campo dei
 --| parametri idonei all'inclusione nel referente in base alle regole di _scoping_.
 
 
@@ -464,7 +464,7 @@ Synonyms tranne, eccetto, escluso, esclusa, esclusi, escluse = except.
 --| | per | (pel) | (pello) | (pella) | (pell')  | (pei) | (pegli) | (pelle)
 --| |========================================================================
 
---| Il mancato supporto di _dai_ Ë dovuto a un conflitto con l'imperativo del
+--| Il mancato supporto di _dai_ √® dovuto a un conflitto con l'imperativo del
 --| verbo _dare_, e si sta cercando una soluzione a questo.
 
 --| Le forme contratte di _con_+articolo sono state tralasciate per via dei
@@ -473,13 +473,13 @@ Synonyms tranne, eccetto, escluso, esclusa, esclusi, escluse = except.
 --| forme come sinonimi avrebbe impedito l'uso di quei vocaboli nelle avventure.
 
 --| Le varie preposizioni con _per_ (_pel_, _pello_, ecc.) sono state omesse
---| poichÈ raramente usate oggi, cosÏ come altre forme arcaiche (_gl`'_, e affini).
+--| poich√© raramente usate oggi, cos√¨ come altre forme arcaiche (_gl`'_, e affini).
 
 --| Nell'implementazione attuale sussistono comunque potenziali conflitti:
---| _dei_ (divinit‡), _dallo/a/e_ (verbo), _Nello/a_ (nomi propri),
+--| _dei_ (divinit√†), _dallo/a/e_ (verbo), _Nello/a_ (nomi propri),
 --| _nei_ (cutanei).
 --| Ma all'atto pratico questi non costituiscono un problema reale per le AT, e
---| simili occorrenze sono pi˘ rare nelle AT di quanto non lo siano nella vita
+--| simili occorrenze sono pi√π rare nelle AT di quanto non lo siano nella vita
 --| reale, ed eventuali loro conflitti dovrebbero essere comunque gestibili.
 
 --| Sull'argomento, si veda l'eccellente articolo di Max Bianchi:
@@ -507,7 +507,7 @@ Synonyms
 
 --| [WARNING]
 --| ======================================================
---| La preposizione `dai` Ë stata omessa dalla lista di sinonimi poichÈ creava
+--| La preposizione `dai` √® stata omessa dalla lista di sinonimi poich√© creava
 --| conflitto con la forma imperativa del verbo "`dare`", causando l'errore di
 --| compilazione:
 --| ......................................................
@@ -549,18 +549,18 @@ Synonyms
 --~ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 --~=============================================================================
 --|
---| Per poter utilizzare correttamente la lingua italiana in Alan Ë necessario
+--| Per poter utilizzare correttamente la lingua italiana in Alan √® necessario
 --| comprendere come funziona internamente questo modulo.
 
 
 --| [WARNING]
 --| ==========================================
---| La documentazione non Ë ancora completa...
+--| La documentazione non √® ancora completa...
 --| ==========================================
 
 --~=============================================================================
 --~-----------------------------------------------------------------------------
---| === Attributi grammaticali delle entit‡
+--| === Attributi grammaticali delle entit√†
 --~-----------------------------------------------------------------------------
 --~=============================================================================
 
@@ -575,17 +575,17 @@ Synonyms
 --| Ai fini pratici di un'avventura, le classi di maggior interesse per un
 --| autore saranno ovviamente gli oggetti e gli attori, le cui instanze dovranno
 --| sempre essere inizializzate correttamente per garantire una messaggistica
---| consona al loro genere e numero. In casi meno frequenti, ci si trover‡
---| anche a dover impostare gli attributi grammaticali su istanze di entit‡ e/o
---| luoghi. Le classi letterali (che non ammettono nÈ instanze nÈ sottoclassi)
+--| consona al loro genere e numero. In casi meno frequenti, ci si trover√†
+--| anche a dover impostare gli attributi grammaticali su istanze di entit√† e/o
+--| luoghi. Le classi letterali (che non ammettono n√© instanze n√© sottoclassi)
 --| non hanno rilevanza pratica ai fini della grammatica italiana, sebbene esse
 --| eriditino tali attributi di riflesso in quanto sottoclassi di `entity`.
 
 --| [NOTE]
 --| ========================================================================
---| La necessit‡ di definire questi attributi direttamente su `entity` Ë anche
+--| La necessit√† di definire questi attributi direttamente su `entity` √® anche
 --| dettata dal fatto che per poter usufruire di essi nelle clausole sintattiche
---| dei verbi (e in altri contesti di esecuzione condizionale) Ë indispensabile
+--| dei verbi (e in altri contesti di esecuzione condizionale) √® indispensabile
 --| garantire che siano presenti in ogni possibile istanza assoggettabile a quel
 --| contesto d'esecuzione.
 --| ========================================================================
@@ -594,7 +594,7 @@ Synonyms
 -->valori_predefiniti
 
 --| Fatta eccezione per gli attributi `articolo` e `nome_proprio`, questi
---| attributi sono destinati alla sola lettura, poichÈ i loro valori saranno
+--| attributi sono destinati alla sola lettura, poich√© i loro valori saranno
 --| settati automaticamente su ciascuna istanza durante l'inizializzazione,
 --| in base ai valori di `articolo` e `nome_proprio` della medesima.
 
@@ -610,25 +610,25 @@ Synonyms
 --| Ogni istanza possiede l'attributo `articolo` che ne specifica l'articolo
 --| determinativo ad essa associato. Questo attributo viene utilizzato dalla
 --| libreria per inizializzare le istanze del gioco: in base ad esso il modulo
---| Italian sar‡ in grado di dedurre il genere ed il numero dell'istanza, e
---| imposter‡ tutte le sue propriet‡ grammaticali con i valori appropriati.
+--| Italian sar√† in grado di dedurre il genere ed il numero dell'istanza, e
+--| imposter√† tutte le sue propriet√† grammaticali con i valori appropriati.
 
 --| L'autore deve semplicemente specficare l'articolo determinativo del
---| sostantivo, e la libreria far‡ tutto il resto. L'unica eccezione Ë
---| l'articolo `"l'"`, che puÚ rifererirsi sia a un sostantivo maschile che
---| femminile; per questo articolo l'autore dovr‡ specificare `IS femminile`
---| nel caso di sostantivi femminili, altrimenti la libreria presumer‡ che si
+--| sostantivo, e la libreria far√† tutto il resto. L'unica eccezione √®
+--| l'articolo `"l'"`, che pu√≤ rifererirsi sia a un sostantivo maschile che
+--| femminile; per questo articolo l'autore dovr√† specificare `IS femminile`
+--| nel caso di sostantivi femminili, altrimenti la libreria presumer√† che si
 --| tratti di un sostantivo maschile.
 
 --| [NOTE]
 --| ========================================================================
---| Dopo l'inizializzazione, l'attributo `articolo` non viene pi˘ utlizzato in
+--| Dopo l'inizializzazione, l'attributo `articolo` non viene pi√π utlizzato in
 --| alcun modo.
 --|
 --| La libreria non ricorre mai all'attributo `articolo` per stampare l'articolo
 --| di un istanza nei messaggi, e neanche gli autori dovrebbero farlo. L'attributo
---| `articolo` Ë solo un mezzo per inizializzare correttamente tutta una serie di
---| attributi e propriet‡ delle istanze, tra cui anche `DEFINITE`/`INDEFINITE
+--| `articolo` √® solo un mezzo per inizializzare correttamente tutta una serie di
+--| attributi e propriet√† delle istanze, tra cui anche `DEFINITE`/`INDEFINITE
 --| ARTICLE`.
 --| ========================================================================
 
@@ -639,7 +639,7 @@ Synonyms
 --| Supponiamo di voler creare i seguenti oggetti: un palloncino, una mela, un
 --| albero e un'arancia.
 
---| Per il palloncino non sar‡ necessario specificare l'articolo, dato che Ë il
+--| Per il palloncino non sar√† necessario specificare l'articolo, dato che √® il
 --| medesimo del predefinito ("`il`"):
 
 --| [source,alan,role=example]
@@ -658,8 +658,8 @@ Synonyms
 --| --------------------------
 
 --| Quanto all'albero e l'arancia, entrambi hanno il medesimo articolo ("`l'`"),
---| e in questo caso sar‡ necessario specificare il genere per l'arancia,
---| altrimenti il modulo Italian presumer‡ si tratti di un oggetto maschile:
+--| e in questo caso sar√† necessario specificare il genere per l'arancia,
+--| altrimenti il modulo Italian presumer√† si tratti di un oggetto maschile:
 
 --| [source,alan,role=example]
 --| --------------------------
@@ -673,8 +673,8 @@ Synonyms
 --| End the.
 --| --------------------------
 
---| L'articolo "`l'`" femminile Ë l'unico a richiedere di definire manualmente
---| il genere dell'istanza, poichÈ il modulo non Ë in grado di distinguere tra
+--| L'articolo "`l'`" femminile √® l'unico a richiedere di definire manualmente
+--| il genere dell'istanza, poich√© il modulo non √® in grado di distinguere tra
 --| maschile e femminile senza tale intervento.
 
 
@@ -703,16 +703,16 @@ Synonyms
 --| L'attributo `vocale` contiene la vocale finale di riferimento per gli
 --| aggettivi che seguono la forma "`o/a i/e`" nell'accordo di genere e numero.
 
---| Anche `vocale` sar‡ inizializzato automaticamente dalla libreria, basandosi
+--| Anche `vocale` sar√† inizializzato automaticamente dalla libreria, basandosi
 --| sul valore di `articolo` dell'istanza.
 --|
 --| Questo attributo semplifica molto la corretta rappresentazione di aggettivi
---| nei vari messaggi della libreria poichÈ consente di stampare direttamente
---| questo attributo come ultima vocale dell'aggetivo, anizichÈ dover eseguire
+--| nei vari messaggi della libreria poich√© consente di stampare direttamente
+--| questo attributo come ultima vocale dell'aggetivo, anizich√© dover eseguire
 --| controlli sul genere e sul numero dell'istanza in oggetto, riducendo quindi
 --| drasticamente la lunghezza del codice all'interno dei verbi.
---| Inoltre, questo attributo potr‡ essere impiegato anche dagli autori stessi,
---| poichÈ la sua utilit‡ non Ë limitata all'uso interno che ne fa la libreria.
+--| Inoltre, questo attributo potr√† essere impiegato anche dagli autori stessi,
+--| poich√© la sua utilit√† non √® limitata all'uso interno che ne fa la libreria.
 
 
 --~=============================================================================
@@ -723,11 +723,11 @@ Synonyms
 --|
 
 --| Grazie a questi attributi, nei messaggi della libreria (e delle avventure)
---| Ë possibile recuperare le corrette preposizioni articolate da usare con
+--| √® possibile recuperare le corrette preposizioni articolate da usare con
 --| ciascuna istanza.
 
 --~ @TODO: Chiarificare meglio! (non so neanche se sia corretto)                TODO!
---~ Non Ë necessario rappresentare tutte le preposizioni articolate, solo quelle
+--~ Non √® necessario rappresentare tutte le preposizioni articolate, solo quelle
 --~ che si uniscono all'articolo.
 
 --| [WARNING]

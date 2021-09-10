@@ -1,4 +1,4 @@
--- "ascoltare.i" -> listen.i
+﻿-- "ascoltare.i" -> listen.i
 
 Syntax
   ascoltare0 = ascolta.

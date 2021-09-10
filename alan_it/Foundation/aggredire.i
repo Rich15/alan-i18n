@@ -1,4 +1,4 @@
--- "aggredire.i" -> attack.i
+ï»¿-- "aggredire.i" -> attack.i
 
 Add to every thing
   Can not sparare.
@@ -99,10 +99,10 @@ End add.
 -- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 -- @NOTE: Le due sintassi inglesi non legano bene con le esigenze italiane.
---        'shoot_at' non può avere la sintassi "spara pistola a pippo".
---        Il problema è che l'oggetto di "spara" non può essere l'arma ma
+--        'shoot_at' non puÃ² avere la sintassi "spara pistola a pippo".
+--        Il problema Ã¨ che l'oggetto di "spara" non puÃ² essere l'arma ma
 --        piuttosto i suoi proiettili ("spara fuoco"). Non credo che in
---        inglese sia così diverso, e che questi verbi andrebbero rivisti.
+--        inglese sia cosÃ¬ diverso, e che questi verbi andrebbero rivisti.
 
 
 -- @NOTE: (png) or (bersaglio)? Non sembra che questi verbi

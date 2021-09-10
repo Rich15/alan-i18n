@@ -1,4 +1,4 @@
---- "messaggi_runtime.i" -> (nessuno)
+Ôªø--- "messaggi_runtime.i" -> (nessuno)
 
 --==============================================================================
 -- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
@@ -36,23 +36,23 @@ Message
   -- BUT_ALL:     "Puoi usare '$1' solo DOPO '$2'."
   BUT_ALL:        "Puoi usare '$1' solo DOPO 'tutto' (es. ""$v tutto $1..."")."
 
-  MULTIPLE:       "Non puoi usare pi˘ di un oggetto con '$v'."
+  MULTIPLE:       "Non puoi usare pi√π di un oggetto con '$v'."
   NO_SUCH:        "Qui non puoi vedere nulla del genere." -- "You can't see any $1 here."
-  NOT_MUCH:       "CosÏ non resta nulla per il verbo '$v'!" -- "That doesn't leave much to $v!"
+  NOT_MUCH:       "Cos√¨ non resta nulla per il verbo '$v'!" -- "That doesn't leave much to $v!"
   NOUN:           "Devi specificare un sostantivo."-- "You must supply a noun."
   UNKNOWN_WORD:   "Non conosco la parola '$1'."
   WHAT:           "Non ho capito la frase."
-  WHAT_WORD:      "Non mi Ë chiaro cosa intendi con '$1'."
+  WHAT_WORD:      "Non mi √® chiaro cosa intendi con '$1'."
 
   -- Disambiguazione ogetti/attori:
   -- ==============================
-  WHICH_START:    "Non mi Ë chiaro se intendi dire $+1"
+  WHICH_START:    "Non mi √® chiaro se intendi dire $+1"
   WHICH_COMMA:    ", $+1"
   WHICH_OR:       "o $+1."
 
   -- Disambiguazione pronomi:
   -- ========================
-  WHICH_PRONOUN_START: "Non mi Ë chiaro se con '$1'"
+  WHICH_PRONOUN_START: "Non mi √® chiaro se con '$1'"
   WHICH_PRONOUN_FIRST: "intendi dire $+1"
   --============================================================================
   -- RICOMINCIA PARTITA
@@ -61,37 +61,37 @@ Message
   QUIT_ACTION:    "Cosa vuoi fare: RESTART, RESTORE, QUIT o UNDO? "
   --| NOTA: Le possibili risposte a questo messaggio (RESTART, RESTORE, QUIT e
   --|       UNDO) sono codificate in Alan e non possono essere tradotte, quindi
-  --|       per non confondere il giocatore Ë meglio lasciarle in inglese.
+  --|       per non confondere il giocatore √® meglio lasciarle in inglese.
   --============================================================================
   -- SALVA PARTITA
   --============================================================================
   SAVE_FAILED:    "Salvataggio della partita fallito."
-  SAVE_OVERWRITE: "Esiste gi‡ un file con questo nome. Vuoi sovrascriverlo? (y)"
-  SAVE_WHERE:     "Inserisci il nome del file" -- niente "." perchÈ Alan aggiunge
+  SAVE_OVERWRITE: "Esiste gi√† un file con questo nome. Vuoi sovrascriverlo? (y)"
+  SAVE_WHERE:     "Inserisci il nome del file" -- niente "." perch√© Alan aggiunge
                                                -- il nome di default subito dopo!
   --============================================================================
   -- CARICA PARTITA
   --============================================================================
-  NOT_A_SAVEFILE: "Caricamento fallito, il file indicato non Ë una partita
+  NOT_A_SAVEFILE: "Caricamento fallito, il file indicato non √® una partita
                    salvata."
-  RESTORE_FROM:   "Inserisci il nome del file" -- niente "." perchÈ Alan aggiunge
+  RESTORE_FROM:   "Inserisci il nome del file" -- niente "." perch√© Alan aggiunge
                                                -- il nome di default subito dopo!
   SAVE_MISSING:   "Caricamento fallito, impossibile aprire il file richiesto."
-  SAVE_NAME:      "Caricamento fallito, il file indicato non Ë una partita salvata
+  SAVE_NAME:      "Caricamento fallito, il file indicato non √® una partita salvata
                    di questa avventura."
-  SAVE_VERSION:   "Caricamento fallito, il file indicato Ë stato creato con una
+  SAVE_VERSION:   "Caricamento fallito, il file indicato √® stato creato con una
                    versione diversa dell'avventura o dell'interprete."
 
 
 --==============================================================================
--- LUOGHI GI¿ VISITATI
+-- LUOGHI GI√Ä VISITATI
 --==============================================================================
 
 
 -- @TODO: Questo messaggio potrebbe essere attivabile tramite opzioni           TODO!
---        della libreria (un attributo come 'mia_AT:mostra_gi‡_visitati')
+--        della libreria (un attributo come 'mia_AT:mostra_gi√†_visitati')
 --
---        Nota perÚ che per mostrare l'accordo giusto con il nome visualizzato
+--        Nota per√≤ che per mostrare l'accordo giusto con il nome visualizzato
 --        del luogo servirebbe che l'attributo 'vocale' fosse disponibile anche
 --        sulle 'location'. Ovviamente, attivando questa opzione l'autore avrebbe
 --        anche l'onore di dover supplire l'articolo per ogni luogo creato.
@@ -102,30 +102,30 @@ Message
 --        blocco, partendo da 'entity'. Avevo tentato di farlo su 'thing' ma ho
 --        riscontrato problemi con gli attori. Dovrei riprovarci!
 
-  AGAIN: "" ---> Messaggio da mostrare accanto al nome di luoghi gi‡ visistati.
-            --  Es. "(gi‡ visitato)"
+  AGAIN: "" ---> Messaggio da mostrare accanto al nome di luoghi gi√† visistati.
+            --  Es. "(gi√† visitato)"
 
 
 --==============================================================================
 -- ERRORI DI CONTENIMENTO
 --==============================================================================
 
-  CAN_NOT_CONTAIN: "$+1 non puÚ contenere $+2."
+  CAN_NOT_CONTAIN: "$+1 non pu√≤ contenere $+2."
 
 
 --==============================================================================
 -- ERRORI DI INSERIMENTO IN CONTENITORI
 --==============================================================================
--- Questi messaggi riferiscono tentativi di inserire oggetti in sÈ stessi
+-- Questi messaggi riferiscono tentativi di inserire oggetti in s√© stessi
 
 
   CONTAINMENT_LOOP:
-    "Non Ë possibile mettere $+1 dentro sÈ stess$$" SAY parameter1:vocale. "."
+    "Non √® possibile mettere $+1 dentro s√© stess$$" SAY parameter1:vocale. "."
 
 
-  CONTAINMENT_LOOP2: "Non Ë possibile mettere $+1 in $+2 dato che $+2"
+  CONTAINMENT_LOOP2: "Non √® possibile mettere $+1 in $+2 dato che $+2"
     IF parameter2 IS NOT plurale
-      THEN "Ë"
+      THEN "√®"
       ELSE "sono"
     END IF.
     "all'interno di $+1."
@@ -197,14 +197,14 @@ Message
   -- but might be possible otherwise, this message is shown to indicate that it
   -- is the action with the parameter that is impossible.
 
-  IMPOSSIBLE_WITH: "» impossibile farlo con $+1."
+  IMPOSSIBLE_WITH: "√à impossibile farlo con $+1."
 
   ------------------------------------------------------------------------------
   -- Il messaggio predefinito per i contenitori vuoti.
 
   IS_EMPTY: "$+1"
     IF parameter1 IS NOT plurale
-      THEN "Ë"
+      THEN "√®"
       ELSE "sono"
     END IF.
     "vuot$$" SAY parameter1:vocale. "."
@@ -213,7 +213,7 @@ Message
 
   MORE: "<Continua>" --> Trad. di "<More>"
 
-  NO_UNDO: "Non Ë possible annullare ulteriormente."
+  NO_UNDO: "Non √® possible annullare ulteriormente."
         -- "No further undo available."
 
   UNDONE: "'$1' annullato."

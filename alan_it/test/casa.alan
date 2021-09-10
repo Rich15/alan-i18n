@@ -1,4 +1,4 @@
---==============================================================================
+ï»¿--==============================================================================
 -- "Casa Dolce Casa" by Tristano Ajmone
 --==============================================================================
 
@@ -19,7 +19,7 @@ End the tappezzeria_salotto.
 The chiave IsA object.
   Has articolo "la".
   Verb esaminre
-    Does only "È una piccola chiave in ottone."
+    Does only "Ãˆ una piccola chiave in ottone."
   End verb.
 End the chiave.
 
@@ -30,7 +30,7 @@ The divano IsA object at Salotto.
 
   Verb spingere
     Check this has not been_pushed
-      Else "Non serve più spostare il divano, l'hai già fatto."
+      Else "Non serve piÃ¹ spostare il divano, l'hai giÃ  fatto."
     Does after
       "Dietro il divano trovi una chiave."
       Locate chiave at Hero.

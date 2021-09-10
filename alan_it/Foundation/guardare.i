@@ -1,4 +1,4 @@
--- "guardare.i" -> look.i
+﻿-- "guardare.i" -> look.i
 
 Synonyms
   l = guarda.

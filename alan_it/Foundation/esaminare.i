@@ -1,4 +1,4 @@
--- "esaminare.i" -> examine.i
+ï»¿-- "esaminare.i" -> examine.i
 
 Add to every thing
   Is
@@ -47,7 +47,7 @@ Syntax
 Add to every object
   Verb guardare_dentro
     Check ogg is esaminabile
-      else "Non è possibile guardare"
+      else "Non Ã¨ possibile guardare"
            say ogg:prep_IN. say the ogg. "."
     Does
       List ogg.
@@ -67,7 +67,7 @@ Syntax
 Add to every object
   Verb ispezionare
     Check ogg is ispezionabile
-      else "Non è possibile ispezionare" say the ogg. "."
+      else "Non Ã¨ possibile ispezionare" say the ogg. "."
     Does
       "L'ispezione non ha rivelato nulla di interessante."
   End verb.

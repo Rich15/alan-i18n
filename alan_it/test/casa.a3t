@@ -4,7 +4,7 @@ Salotto
 Un cupo salotto avvolto in una tappezzeria logora. Per terra noti un paio
 di bretelle. Puoi vedere un divano e una cassaforte qui.
 
-> ; ==============================================================================
+> ï»¿; ==============================================================================
 > ; IL SALOTTO
 > ; ==============================================================================
 > guarda
@@ -28,7 +28,7 @@ Non noti nulla di particolare riguardo il divano.
 You can't take that!
 
 > apri il divano
-Non è possibile aprirlo.
+Non Ã¨ possibile aprirlo.
 
 > spingi il divano
 Spingi il divano. Dietro il divano trovi una chiave.
@@ -42,7 +42,7 @@ di bretelle. Puoi vedere una chiave, un divano e una cassaforte qui.
 Presa.
 
 > prendi la chiave
-Possiedi già la chiave.
+Possiedi giÃ  la chiave.
 
 > inventario
 Stai trasportando una chiave.
@@ -69,15 +69,15 @@ Prese.
 Sono le tue bretelle preferite.
 
 > prendi le bretelle
-Possiedi già le bretelle.
+Possiedi giÃ  le bretelle.
 
 > indossa le bretelle
 Fatto. Ora indossi le bretelle.
 
 > prendi le bretelle
-Possiedi già le bretelle, le stai indossando.
+Possiedi giÃ  le bretelle, le stai indossando.
 
-> ; BUG 'lascia': Sì che lo possiedi, le stai indossando!
+> ; BUG 'lascia': SÃ¬ che lo possiedi, le stai indossando!
 > lascia le bretelle
 Non possiedi le bretelle.
 

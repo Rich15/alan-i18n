@@ -1,4 +1,4 @@
--- "accendere.i" -> turn.i
+Ôªø-- "accendere.i" -> turn.i
 
 Add to every object
   Is
@@ -19,9 +19,9 @@ Add to every object
     And ogg is not acceso
       else say the ogg.
            If ogg is not plurale
-             then "Ë"
+             then "√®"
              else "sono"
-           End if. "gi‡ acces$$" say ogg:vocale. "!"
+           End if. "gi√† acces$$" say ogg:vocale. "!"
     Does
       Make ogg acceso.
       "Hai acceso" say the ogg. "."
@@ -41,9 +41,9 @@ Add to every object
     And ogg is acceso
       else say the ogg.
            If ogg is not plurale
-             then "Ë"
+             then "√®"
              else "sono"
-           End if. "gi‡ spent$$" say ogg:vocale. "!"
+           End if. "gi√† spent$$" say ogg:vocale. "!"
     Does
       Make ogg not acceso.
       "Hai spento" say the ogg. "."

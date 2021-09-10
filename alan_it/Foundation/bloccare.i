@@ -1,4 +1,4 @@
--- "bloccare.i" -> lock.i
+Ôªø-- "bloccare.i" -> lock.i
 
 Add to every object
   Is
@@ -27,15 +27,15 @@ Add to every object
     And ogg is not bloccato
       else say the ogg.
            If ogg is not plurale
-             then "Ë"
+             then "√®"
              else "sono"
-           End if. "gi‡ bloccat$$"
+           End if. "gi√† bloccat$$"
            say vocale of ogg.
     Does
       Make ogg bloccato.
       "Fatto, ora" say the ogg.
       If ogg is not plurale
-        then "Ë"
+        then "√®"
         else "sono"
       End if. "bloccat$$" say vocale of ogg.
   End verb.
@@ -57,9 +57,9 @@ Add to every Object
       And ogg is not bloccato
         else say the ogg.
              If ogg is not plurale
-               then "Ë"
+               then "√®"
                else "sono"
-             End if. "gi‡ bloccat$$"
+             End if. "gi√† bloccat$$"
              say vocale of ogg.
       And chiave in hero
         else "Non possiedi" say the chiave. "!"
@@ -67,7 +67,7 @@ Add to every Object
         Make ogg bloccato.
         "Fatto, ora" say the ogg.
         If ogg is not plurale
-          then "Ë"
+          then "√®"
           else "sono"
         End if. "bloccat$$" say vocale of ogg.
   End verb.
@@ -86,15 +86,15 @@ Add to every object
     And ogg is bloccato
         else say the ogg.
              If ogg is not plurale
-               then "Ë"
+               then "√®"
                else "sono"
-             End if. "gi‡ sbloccat$$"
+             End if. "gi√† sbloccat$$"
              say vocale of ogg.
     Does
       Make ogg not bloccato.
       "Fatto, ora" say the ogg.
       If ogg is not plurale
-        then "Ë"
+        then "√®"
         else "sono"
       End if. "sbloccat$$" say vocale of ogg.
   End verb.

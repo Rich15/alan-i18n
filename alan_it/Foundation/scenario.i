@@ -1,4 +1,4 @@
--- "scenario.i" -> scenery.i
+﻿-- "scenario.i" -> scenery.i
 
 Every scenery IsA object -- @TRANSLATE CLASS!
   Is
@@ -11,7 +11,7 @@ Every scenery IsA object -- @TRANSLATE CLASS!
     Does only
       Say the ogg. "non"
       If ogg is not plurale
-        then "� importante"
+        then "è importante"
         else "sono importanti"
       End if.
       "ai fini del gioco."

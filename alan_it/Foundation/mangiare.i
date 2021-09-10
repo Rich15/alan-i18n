@@ -1,4 +1,4 @@
--- "mangiare.i" -> eat.i
+ï»¿-- "mangiare.i" -> eat.i
 
 Add to every object
 Is
@@ -18,7 +18,7 @@ Syntax
 Add to every object
   Verb mangiare
     Check ogg is commestibile
-      else "$+1 non è commestibile!"
+      else "$+1 non Ã¨ commestibile!"
     Does
       Locate ogg at limbo.
       "Mangi" say the ogg. "."
@@ -26,7 +26,7 @@ Add to every object
 
   Verb bere
     Check ogg is potabile
-      else "$+1 non è potabile."
+      else "$+1 non Ã¨ potabile."
     Does
       Locate ogg at limbo.
       "Bevi" say the ogg. "."

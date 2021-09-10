@@ -1,4 +1,4 @@
--- "aprire.i" -> open.i
+Ôªø-- "aprire.i" -> open.i
 
 
 Syntax
@@ -13,20 +13,20 @@ Add to every object
 
   Verb aprire
     Check ogg is apribile
-      else "Non Ë possibile aprirl$$" Say ogg:vocale. "."
+      else "Non √® possibile aprirl$$" Say ogg:vocale. "."
     And ogg is not aperto
       else
         Say the ogg.
         If ogg is not plurale
-          then "Ë"
+          then "√®"
           else "sono"
         End if.
-        "gi‡ apert$$" Say ogg:vocale. "."
+        "gi√† apert$$" Say ogg:vocale. "."
     Does
       Make ogg aperto.
       "Fatto. Ora" say the ogg.
       If ogg is not plurale
-        then "Ë"
+        then "√®"
         else "sono"
       End if.
       "apert$$" Say ogg:vocale. "."

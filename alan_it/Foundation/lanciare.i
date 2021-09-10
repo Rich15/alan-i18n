@@ -1,10 +1,10 @@
--- "lanciare.i" -> throw.i
+ï»¿-- "lanciare.i" -> throw.i
 
 -- Synonyms
 --   dump, cast = throw.
 
 -- @NOTE: sinonimi: scaglia, tira?
---        Però 'tira' è ambiguo e si sovrappone a tira (=pull).
+--        PerÃ² 'tira' Ã¨ ambiguo e si sovrappone a tira (=pull).
 
 Syntax
   lanciare = lancia (ogg) *

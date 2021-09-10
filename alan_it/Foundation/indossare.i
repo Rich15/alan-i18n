@@ -1,4 +1,4 @@
--- "indossare.i" -> wear.i
+ï»¿-- "indossare.i" -> wear.i
 
 Add to every object
   Is not indossabile.
@@ -21,7 +21,7 @@ Add to every object
     Check ogg is indossabile
       else say the ogg. "non"
            If ogg is not plurale
-             then "è"
+             then "Ã¨"
              else "sono"
            End if. "indossabil$$"
            If ogg is not plurale
@@ -31,7 +31,7 @@ Add to every object
 
 
     And ogg not in worn
-      else "Indossi già" say the ogg. "."
+      else "Indossi giÃ " say the ogg. "."
     And ogg is prendibile
       else "You can't pick" say the ogg. "up." -- @TRANSLATE!
     Does
@@ -86,7 +86,7 @@ Add to every object
     Does
       If Count in worn, IsA thing > 0 then
         Empty worn in hero.
-        "Fatto, hai rimosso tutto ciò che indossavi."
+        "Fatto, hai rimosso tutto ciÃ² che indossavi."
       else
         "Ma non stai indossando nulla!"
       End if.

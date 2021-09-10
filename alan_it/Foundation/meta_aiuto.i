@@ -1,4 +1,4 @@
--- "meta_aiuto.i" -> help.i
+ï»¿-- "meta_aiuto.i" -> help.i
 
 -- @TODO: Aggiungere meta-verbo COMANDI?
 
@@ -14,11 +14,11 @@ Syntax
 
 Meta verb istruzioni
   -- @NOTE: Il comando PUNTEGGIO potrebbe non essere disponibile!
-  --        Forse è meglio non menzionarlo.
+  --        Forse Ã¨ meglio non menzionarlo.
   Does
-    "In questo gioco sarò i tuoi occhi e il tuo corpo.
-     Io ti descriverò l'ambiente circostante, e tu dovrai
-     dirmi ciò che vorrai fare. Per esempio, se vuoi andare
+    "In questo gioco sarÃ² i tuoi occhi e il tuo corpo.
+     Io ti descriverÃ² l'ambiente circostante, e tu dovrai
+     dirmi ciÃ² che vorrai fare. Per esempio, se vuoi andare
      a nord, digita NORD. Potrai fare tantissime cose, come
      raccogliere oggetti, esaminarli, aprire porte, etc.
      Tenta qualsiasi azione che ti verrebbe spontanea se ti
@@ -62,7 +62,7 @@ Meta verb ringraziamenti
   Does
     "I diritti d'autore ed il copyright di questa avventura
      appartengono al suo autore.
-   $pQuesta avventura è stata realizzata con ALAN IF, il sistema
+   $pQuesta avventura Ã¨ stata realizzata con ALAN IF, il sistema
      per lo sviluppo di avventure testuali creato da Thomas Nilefalk.
    $nE-mail: thomas@alanif.se
    $pPer maggiori informazioni su ALAN:

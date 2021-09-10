@@ -1,4 +1,4 @@
--- "toccare.i" -> touch.i
+ï»¿-- "toccare.i" -> touch.i
 
 Add to every thing
   Is toccabile.
@@ -9,12 +9,12 @@ Syntax
   toccare = tocca (ogg)
     Where ogg IsA thing
     --else "You can't touch that."
-      else "Non è possibile toccarl$$" say ogg:vocale. "$$!"
+      else "Non Ã¨ possibile toccarl$$" say ogg:vocale. "$$!"
 
   toccare_con = tocca (ogg1) con (ogg2)
     Where ogg1 IsA thing
     --else "You can't touch that."
-      else "Non è possibile toccarl$$" say ogg1:vocale. "$$!"
+      else "Non Ã¨ possibile toccarl$$" say ogg1:vocale. "$$!"
     And ogg2 IsA object
     --else "You can only use objects to touch with."
       else "Impossible farlo con" say the ogg2.
@@ -24,7 +24,7 @@ Add to every object
   Verb toccare
     Check ogg is toccabile
     --else "You can't touch that."
-      else "Non è possibile toccarl$$" say ogg:vocale. "$$!"
+      else "Non Ã¨ possibile toccarl$$" say ogg:vocale. "$$!"
     Does
       "Tocchi" say the ogg. "."
   End verb.
@@ -33,10 +33,10 @@ Add to every object
     When ogg1
       Check ogg1 Is toccabile
       --else "You can't touch that."
-        else "Non è possibile toccarl$$" say ogg1:vocale. "$$!"
+        else "Non Ã¨ possibile toccarl$$" say ogg1:vocale. "$$!"
       And ogg1 <> ogg2
       --else "It doesn't make sense to touch something with itself."
-        else "Non avrebbe alcun senso toccare qualcosa con sé stessa."
+        else "Non avrebbe alcun senso toccare qualcosa con sÃ© stessa."
       Does
         "Tocchi" say the ogg1. "con" say the ogg2. "."
   End verb.

@@ -1,4 +1,4 @@
--- "meta_partita.i" -> meta.i
+﻿-- "meta_partita.i" -> meta.i
 
 Synonyms q = 'quit'.
 

@@ -1,4 +1,4 @@
--- "mettere.i" -> put.i
+﻿-- "mettere.i" -> put.i
 
 -- Synonyms
 --   place = put.

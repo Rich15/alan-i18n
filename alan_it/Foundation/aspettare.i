@@ -1,4 +1,4 @@
--- "aspettare.i" -> meta.i
+﻿-- "aspettare.i" -> meta.i
 
 
 Synonyms

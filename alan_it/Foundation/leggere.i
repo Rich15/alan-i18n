@@ -1,4 +1,4 @@
--- "leggere.i" -> read.i
+﻿-- "leggere.i" -> read.i
 
 Add to every object
   Is not leggibile.
@@ -13,7 +13,7 @@ Syntax
 Add to every object
   Verb leggere
     Check ogg is leggibile
-      else "Non c'� scritto nulla" say ogg:prep_SU. say the ogg. "."
+      else "Non c'è scritto nulla" say ogg:prep_SU. say the ogg. "."
     Does
       "Leggi" say the ogg. "."
   End verb.

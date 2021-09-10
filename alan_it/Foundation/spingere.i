@@ -1,4 +1,4 @@
--- "spingere.i" -> push.i
+﻿-- "spingere.i" -> push.i
 
 Add to every thing
   Is spingibile.

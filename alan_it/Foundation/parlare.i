@@ -1,4 +1,4 @@
--- "parlare.i" -> talk.i
+ï»¿-- "parlare.i" -> talk.i
 
 
 -- for verbs like 'ask' and 'tell' you need to individually program
@@ -62,12 +62,12 @@ End add.
 
 
 Syntax
-  dire_a = dì (argomento)! a (png)   -- say_to
+  dire_a = dÃ¬ (argomento)! a (png)   -- say_to
     Where argomento IsA thing
       else "You can't say that." -- @TRANSLATE!
     And png IsA thing
       else "You can't talk to that." -- @TRANSLATE!
-  dire_a = dì a (png) (argomento)!.
+  dire_a = dÃ¬ a (png) (argomento)!.
 
 Add to every thing
   Verb dire_a
@@ -120,7 +120,7 @@ Syntax
   raccontare = parla con (png) di (argomento)!.
   raccontare = informa (png) di (argomento)!.
   raccontare = informa (png) su (argomento)!.
-  raccontare = dì a (png) di (argomento)!.
+  raccontare = dÃ¬ a (png) di (argomento)!.
 
 Add to every thing
   Verb raccontare

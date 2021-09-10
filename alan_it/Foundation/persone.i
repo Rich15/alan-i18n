@@ -1,4 +1,4 @@
--- "persone.i" -> people.i
+ï»¿-- "persone.i" -> people.i
 
 
 -- Classi per le persone
@@ -11,7 +11,7 @@ Every persona IsA actor
       -- "There is" say an this. "here." @DELME
       "Qui"
       If this is not plurale
-        then "c'è"
+        then "c'Ã¨"
         else "ci sono"
       End if.
       Say an this. "."
@@ -19,7 +19,7 @@ Every persona IsA actor
       -- Say this. "is here."
       Say this.
       If this is not plurale
-        then "è"
+        then "Ã¨"
         else "sono"
       End if. "qui."
     End if.

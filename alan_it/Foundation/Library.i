@@ -1,4 +1,4 @@
---==============================================================================
+ï»¿--==============================================================================
 --------------------------------------------------------------------------------
 -- * *  ALAN Foundation Library Italian  * *  v0.1.0 | 2021/07/xx | ALAN 3.Beta7
 --------------------------------------------------------------------------------
@@ -53,7 +53,7 @@ Import 'inventario.i'.         --> 'invent.i'
 -- LIMBO E DIREZIONI
 -- =================
 -- Definisce le varie direzioni e le loro abbreviazioni (sinonimi) e il "libmo",
--- un luogo fittizio in cui parcheggiare le entità che si vogliono far sparire
+-- un luogo fittizio in cui parcheggiare le entitÃ  che si vogliono far sparire
 -- di scena.
 
 Import 'limbo.i'.              --> 'nowhere.i'
@@ -67,4 +67,4 @@ Import 'limbo.i'.              --> 'nowhere.i'
 Import 'meta_aiuto.i'.         --> 'help.i' + notes, hint
 Import 'meta_partita.i'.       --> 'meta.i'
 Import 'meta_punteggio.i'.     --> 'meta.i'
-Import 'meta_verbosità.i'.     --> 'brief.i'
+Import 'meta_verbositÃ .i'.     --> 'brief.i'

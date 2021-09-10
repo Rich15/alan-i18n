@@ -1,4 +1,4 @@
--- "eroe.i" --> "hero.i"
+ï»¿-- "eroe.i" --> "hero.i"
 
 Synonyms
   me = hero.
@@ -8,11 +8,11 @@ The hero IsA actor
     Limits
       Count 10 then
         -- @TODO: Sepcifica limite oggetti max.
-        "Non puoi trasportare più nulla.
+        "Non puoi trasportare piÃ¹ nulla.
          Dovresti prima lasciare qualcosa."
       peso 50 then
         -- @TODO: Sepcifica limite peso max.
-        "Non puoi trasportare più nulla.
+        "Non puoi trasportare piÃ¹ nulla.
          Dovresti prima lasciare qualcosa."
     Header
       "Stai trasportando"
