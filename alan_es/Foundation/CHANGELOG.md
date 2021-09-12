@@ -14,7 +14,8 @@ To learn more about the library version scheme, see the [`VERSION_SCHEME.md`][VE
 
 - [Beta Releases](#beta-releases)
     - [v0.2.0 \(2021/xx/xx\)](#v020-2021xxxx)
-        - [New Wearing Mechanics](#new-wearing-mechanics)
+        - [Wearing Mechanics Refs \(DELME!\)](#wearing-mechanics-refs-delme)
+        - [New wearing Mechanics](#new-wearing-mechanics)
         - [Drop Implicit Taking](#drop-implicit-taking)
         - [Bug Fixes](#bug-fixes)
     - [v0.1.3 \(2021/09/12\)](#v013-20210912)
@@ -37,7 +38,65 @@ Lacking a native Spanish speaker who could take on maintenance of the Spanish li
 
 ## v0.2.0 (2021/xx/xx)
 
-### New Wearing Mechanics
+### Wearing Mechanics Refs (DELME!)
+
+Some temporary lookup tables to find and compare elements names in Spanish and English, and their defining module (in both libs, since they might differ), to aid the adaptation work.
+
+#### Library Elements
+
+|    type   |   name EN    |     name ES     |   module ES    |  module EN  |
+|-----------|--------------|-----------------|----------------|-------------|
+| ACTOR     | `nobody`     | _TBD!_          | `persona.i`    | `people.i`  |
+| ATTRIBUTE | `wearer`     | _TBD!_          | `llevar.i`     | `wear.i`    |
+| ATTRIBUTE | `worn`       | _TBD!_          | `llevar.i`     | `wear.i`    |
+| ENTITY    | `worn`       | `llevado`       | `inventario.i` | `invent.i`  |
+| LOCATION  | `nowhere`    | `limbo`         | `limbo.i`      | `nowhere.i` |
+| VERB      | `drink`      | `beber`         | `comer.i`      | `eat.i`     |
+| VERB      | `drop`       | `dejar`         | `tomar.i`      | `take.i`    |
+| VERB      | `eat`        | `comer`         | `comer.i`      | `eat.i`     |
+| VERB      | `examine`    | `examinar`      | `examinar.i`   | `examine.i` |
+| VERB      | `give`       | `dar`           | `dar.i`        | `give.i`    |
+| VERB      | `invent`     | `invent`        | `inventario.i` | `invent.i`  |
+| VERB      | `pick_up1`   | _not available_ | `tomar.i`      | `take.i`    |
+| VERB      | `pick_up2`   | _not available_ | `tomar.i`      | `take.i`    |
+| VERB      | `put_behind` | `poner_detras`  | `poner.i`      | `put.i`     |
+| VERB      | `put_down1`  | _not available_ | `tomar.i`      | `take.i`    |
+| VERB      | `put_down2`  | _not available_ | `tomar.i`      | `take.i`    |
+| VERB      | `put_in`     | `poner_en`      | `poner.i`      | `put.i`     |
+| VERB      | `put_near`   | `poner_cerca`   | `poner.i`      | `put.i`     |
+| VERB      | `put_on`     | `poner_sobre`   | `poner.i`      | `put.i`     |
+| VERB      | `put_under`  | `poner_bajo`    | `poner.i`      | `put.i`     |
+| VERB      | `put`        | `poner`         | `poner.i`      | `put.i`     |
+| VERB      | `remove`     | `quitar`        | `llevar.i`     | `wear.i`    |
+| VERB      | `take_from`  | `tomar_de`      | `tomar.i`      | `take.i`    |
+| VERB      | `take`       | `tomar`         | `tomar.i`      | `take.i`    |
+| VERB      | `throw_at`   | `lanzar_a`      | `lanzar.i`     | `throw.i`   |
+| VERB      | `throw_in`   | `lanzar_en`     | `lanzar.i`     | `throw.i`   |
+| VERB      | `throw_to`   | `lanzar_a`      | `lanzar.i`     | `throw.i`   |
+| VERB      | `throw`      | `lanzar`        | `lanzar.i`     | `throw.i`   |
+| VERB      | `undress`    | `desnudar`      | `llevar.i`     | `wear.i`    |
+| VERB      | `wear`       | `llevar`        | `llevar.i`     | `wear.i`    |
+
+
+#### Library Modules
+
+|  module EN  |    module ES    |
+|-------------|-----------------|
+| `eat.i`     | `comer.i`       |
+| `examine.i` | `examinar.i`    |
+| `give.i`    | `dar.i`         |
+| `globals.i` | _not available_ |
+| `invent.i`  | `inventario.i`  |
+| `limbo.i`   | `nowhere.i`     |
+| `people.i`  | `persona.i`     |
+| `put.i`     | `poner.i`       |
+| `take.i`    | `tomar.i`       |
+| `take.i`    | `tomar.i`       |
+| `throw.i`   | `lanzar.i`      |
+| `wear.i`    | `llevar.i`      |
+
+
+### New wearing Mechanics
 
 The wearing mechanics have been entireLy redesigned, the new system being simpler and less error-prone, also allowing NPCs to wear items:
 
