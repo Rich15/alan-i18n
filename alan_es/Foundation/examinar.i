@@ -34,8 +34,63 @@ Add to every thing
   End verb.
 End add to.
 
+Add to every actor
+  Verb examine
+    Does after
+      If this <> hero
+        then
+          -- ------------------
+          -- List carried items
+          -- ------------------
+          -- Don't say anything if the actor is not carrying anything.
+          Set temp:cnt to count directly in this, is not puesto.
+          If  temp:cnt <> 0
+            then "$+1"
+              If this is not plural
+                then "is" -- @TRANSLATE!
+                ELSE "are" -- @TRANSLATE!
+              End if. "carrying" -- @TRANSLATE!
+              -- @TRANSLATE 'carried_item' ID!
+              For each carried_item directly in this, is not puesto
+                do
+                  Say an carried_item.
+                  Decrease temp:cnt.
+                  Depending on temp:cnt
+                    = 1 then "y"
+                    = 0 then "."
+                    else ","
+                  End depend.
+              End for.
+          End if.
+          -- ------------------------
+          -- List worn clothing items
+          -- ------------------------
+          -- Don't say anything if the actor is not wearing anything.
+          Set temp:cnt to count directly in this, is puesto.
+          If  temp:cnt <> 0
+            then "$+1"
+              If this is not plural
+                then "is" -- @TRANSLATE!
+                ELSE "are" -- @TRANSLATE!
+              End if. "wearing" -- @TRANSLATE!
+              -- @TRANSLATE 'worn_item' ID!
+              For each worn_item directly in this, is puesto
+                do
+                  Say an worn_item.
+                  Decrease temp:cnt.
+                  Depending on temp:cnt
+                    = 1 then "y"
+                    = 0 then "."
+                    ELSE ","
+                  End depend.
+              End for.
+          End if.
+      End if.
+  End verb examine.
+End add to actor.
 
 ----
+
 Synonyms
   veo, ve, ver, m, l, 'look' = mirar.
 

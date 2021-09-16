@@ -37,5 +37,6 @@ Import 'oler.i'.        -- Oler
 Import 'persona.i'.     -- clase persona, macho, hembra
 Import 'poner.i'.       -- poner, poner_en, poner_bajo, poner_sobre...
 Import 'saltar.i'.      -- Saltar
+Import 'temp.i'.        -- Temporary variables
 Import 'tocar.i'.       -- Tocar
 Import 'tomar.i'.       -- Tomar, Dejar, Tomar_de

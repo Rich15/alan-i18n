@@ -131,10 +131,10 @@ The Pasillo Isa lugar
   Exit oeste To Cocina.
 End The Pasillo.
 
-The Traje Isa Object In llevado
+The Traje Isa Object In hero
   Name traje barato.
   Name traje.
-  Is llevable.
+  Is ponible. puesto.
   Description "Un traje."
   Verb Examinar
     Does Only
