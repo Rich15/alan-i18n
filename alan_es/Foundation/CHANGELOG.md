@@ -35,6 +35,8 @@ To learn more about the library version scheme, see the [`VERSION_SCHEME.md`][VE
 
 Lacking a native Spanish speaker who could take on maintenance of the Spanish library, [Tristano Ajmone] began updating the __Spanish Foundation Library__ to mirror the changes of the new __[English Foundation Library]__ as much as possible — the limit being the inability to handle text changes due to lack of confidence when it comes to writing in Spanish.
 
+Thanks to [Ricardo] for all the support with the Spanish language.
+
 
 ## v0.2.0 (2021/xx/xx)
 
@@ -98,7 +100,7 @@ Some temporary lookup tables to find and compare elements names in Spanish and E
 
 ### New wearing Mechanics
 
-The wearing mechanics have been entireLy redesigned, the new system being simpler and less error-prone, also allowing NPCs to wear items:
+The wearing mechanics have been entirely redesigned, the new system being simpler and less error-prone, also allowing NPCs to wear items:
 
 - [x] Renamed the `llevable` attribute to `ponible`, which is more explicitly focused on "wearing" rather than "carrying".
 - [x] Removed the `llevado` ENTIY (in `inventario.i`), which is now replaced by two new attributes defined on every `object`:
@@ -110,7 +112,7 @@ The wearing mechanics have been entireLy redesigned, the new system being simple
     + [x] Verbs `llevar`, `quitar` and `desnudar` (in `llevar.i`).
     + [x] Verb `tomar` (in `tomar.i`).
     + [x] The `invent` verb (in `inventario.i`).
-- [x] Every verb that moves around object must now also make that object unworn by making it `not worn` and setting its `wearer to nobody`. The following verbs were modified accordingly:
+- [x] Every verb that moves around an object must now also make that object unworn by making it `not puesto` and setting its `portador` to `nadie`. The following verbs were modified accordingly:
     + [x] `desnudar` (in `llevar.i`)
     + [x] `comer` and `beber` (in `comer.i`) — food and drinks shouldn't be wearable, but you never know in IF.
     + [x] `dar` (in `dar.i`)
@@ -131,7 +133,7 @@ These new features also required some tweaks here and there:
 - [x] In `atributos.i`:
     + [x] Every actor is provided with the `Container` propriety.
     + [x] The grammar attributes (`femenina`, `plural`, etc.) are now defined on `entity` instead of `thing` to simplify handling run-time MESSAGEs, verb checks and filters.
-        This can also be useful in advanced adventures which need to refer to locations names, which might be singular or plural named.
+        This can also be useful in advanced adventures which need to refer to locations names, which might require specific gender and number accordance in messages.
 - [x] A new module has been added to the library:
     + [x] `temp.i` — defining the `temp` location, on which the `cnt` numeric attribute is defined for storing temporary values needed in some complex library code.
 - [ ] `messages_runtime.i` — redefines run-time messages to add "(being worn)" to each worn item being listed through the `list` statement. Useful in case author need to use `list` without having to replicate the iteration code for producing two separate lists for carried and worn items.
@@ -265,7 +267,8 @@ The __Foundation Library__ is not going to be just a series of updates to the ol
 [Alan IF Development team]: https://github.com/alan-if "Visit the Alan Interactive Fiction Development team organization on GitHub"
 
 [Anssi Räisänen]: https://github.com/AnssiR66 "View Anssi Räisänen's GitHub profile"
-[Tristano Ajmone]: https://github.com/tajmone "View Tristano Ajmone's GitHub profile"
+[Ricardo]: https://github.com/Rich15 "View Ricardo's GitHub profile"
 [Thomas Nilefalk]: https://github.com/thoni56 "View Thomas Nilefalk's GitHub profile"
+[Tristano Ajmone]: https://github.com/tajmone "View Tristano Ajmone's GitHub profile"
 
 <!-- EOF -->
